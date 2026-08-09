@@ -288,10 +288,9 @@ section {
 }
 
 .musician:hover {
-
-    transform: translateY(-8px);
-
+    transform: scale(1.03);
     border-color: #d4af37;
+    box-shadow: 0 15px 40px rgba(212, 175, 55, .15);
 }
 
 .musician img {
@@ -301,6 +300,7 @@ section {
     object-fit: contain;
     object-position: center;
     background: #080808;
+    transition: transform .5s ease;
 }
 .musician h3 {
 
