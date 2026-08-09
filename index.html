@@ -1,626 +1,1199 @@
 <!DOCTYPE html>
+
 <html lang="es">
+
 <head>
 
+```
 <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
 
-<title>Dúo Agnus Praise | Piano y Violín | Colombia</title>
+<title>
+    Dúo Agnus Praise | Piano y Violín | Colombia
+</title>
 
-<meta name="description" content="Dúo Agnus Praise es un dúo colombiano de piano y violín conformado por Samuel Manyoma y Andrés Orozco. Una propuesta musical cristiana caracterizada por arreglos originales, complejidad musical, expresión y excelencia interpretativa.">
+<meta
+    name="description"
+    content="Dúo Agnus Praise es un dúo colombiano de piano y violín conformado por Samuel Manyoma y Andrés Orozco. Una propuesta musical cristiana caracterizada por arreglos originales, complejidad musical, expresión y excelencia interpretativa."
+>
 
-<meta name="keywords" content="Dúo Agnus Praise, Agnus Praise, piano y violín, dúo piano violín Colombia, Samuel Manyoma, Andrés Orozco, música cristiana Colombia, música adventista Colombia, dúo musical colombiano">
+<meta
+    name="keywords"
+    content="Dúo Agnus Praise, Agnus Praise, piano y violín, dúo piano violín Colombia, Samuel Manyoma, Andrés Orozco, música cristiana Colombia, música adventista Colombia, dúo musical colombiano"
+>
 
-<meta name="author" content="Dúo Agnus Praise">
+<meta
+    name="author"
+    content="Dúo Agnus Praise"
+>
 
-<meta name="robots" content="index, follow">
+<meta
+    name="robots"
+    content="index, follow"
+>
 
-<link rel="canonical" href="https://duoagnuspraise.github.io/">
+<link
+    rel="canonical"
+    href="https://duoagnuspraise.github.io/"
+>
+
 
 <style>
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: Georgia, "Times New Roman", serif;
-    background: #080808;
-    color: #f5f5f5;
-    line-height: 1.7;
-}
-
-/* =========================
-   NAVBAR
-========================= */
-
-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 18px 6%;
-
-    background: rgba(0,0,0,0.88);
-    backdrop-filter: blur(12px);
-
-    border-bottom: 1px solid rgba(212,175,55,0.25);
-}
-
-.logo {
-    color: #d4af37;
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 3px;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 28px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    letter-spacing: 1px;
-    transition: .3s;
-}
-
-nav a:hover {
-    color: #d4af37;
-}
-
-/* =========================
-   HERO
-========================= */
-
-.hero {
-
-    height: 100vh;
-    min-height: 650px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-
-    position: relative;
-
-    background-image:
-        linear-gradient(
-            rgba(0,0,0,.48),
-            rgba(0,0,0,.78)
-        ),
-        url("ajustes 1-22.jpg");
-
-    background-size: cover;
-    background-position: center 15%;
-}
-
-.hero-content {
-    max-width: 950px;
-    padding: 30px;
-}
-
-.hero h1 {
-
-    font-size: clamp(45px,8vw,100px);
-
-    letter-spacing: 8px;
-
-    margin-bottom: 15px;
-
-    text-shadow:
-        0 4px 25px #000;
-}
-
-.hero h2 {
-
-    color: #d4af37;
-
-    letter-spacing: 6px;
-
-    font-size: clamp(18px,3vw,28px);
-
-    font-weight: normal;
-
-    margin-bottom: 25px;
-}
-
-.hero p {
-
-    max-width: 700px;
-
-    margin: auto;
-
-    font-size: 19px;
-
-    color: #eee;
-}
-
-.button {
-
-    display: inline-block;
-
-    margin-top: 35px;
-
-    padding: 14px 32px;
-
-    border: 1px solid #d4af37;
-
-    color: #d4af37;
-
-    text-decoration: none;
-
-    letter-spacing: 2px;
-
-    transition: .3s;
-}
-
-.button:hover {
-
-    background: #d4af37;
-
-    color: #080808;
-}
-
-/* =========================
-   GENERAL
-========================= */
-
-section {
-    padding: 100px 8%;
-}
-
-.section-title {
-
-    text-align: center;
-
-    margin-bottom: 60px;
-}
-
-.section-title h2 {
-
-    font-size: 42px;
-
-    color: #d4af37;
-
-    margin-bottom: 10px;
-}
-
-.section-title p {
-
-    color: #aaa;
-}
-
-/* =========================
-   ABOUT
-========================= */
-
-.about {
-
-    max-width: 950px;
-
-    margin: auto;
-
-    text-align: center;
-}
-
-.about p {
-
-    font-size: 18px;
-
-    color: #ddd;
-
-    margin-bottom: 22px;
-}
-
-.gold {
-    color: #d4af37;
-}
-
-/* =========================
-   LOGO
-========================= */
-
-.logo-section {
-
-    background: #101010;
-
-    text-align: center;
-}
-
-.logo-section img {
-
-    width: 180px;
-
-    max-width: 60%;
-
-    margin-bottom: 30px;
-
-    filter: drop-shadow(0 10px 30px rgba(0,0,0,.5));
-}
-
-/* =========================
-   MUSICIANS
-========================= */
-
-.musicians {
-
-    background: #101010;
-}
-
-.musician-grid {
-
-    max-width: 1100px;
-
-    margin: auto;
-
-    display: grid;
-
-    grid-template-columns: repeat(2,1fr);
-
-    gap: 45px;
-}
-
-.musician {
-    background: #151515;
-    border: 1px solid #292929;
-    padding-bottom: 30px;
-    text-align: center;
-    transition: .4s;
-    overflow: hidden;
-}
-
-.musician:hover {
-    transform: scale(1.03);
-    border-color: #d4af37;
-    box-shadow: 0 15px 40px rgba(212, 175, 55, .15);
-}
-
-.musician img {
-    width: 100%;
-    height: 520px;
-    display: block;
-    object-fit: contain;
-    object-position: center;
-    background: #080808;
-    transition: transform .5s ease;
-}
-.musician h3 {
-
-    color: #d4af37;
-
-    font-size: 28px;
-
-    margin-top: 25px;
-}
-
-.instrument {
-
-    color: #aaa;
-
-    letter-spacing: 3px;
-
-    font-size: 13px;
-
-    text-transform: uppercase;
-}
-
-.musician p {
-
-    color: #ccc;
-
-    padding: 20px 35px 0;
-}
-
-/* =========================
-   MUSIC
-========================= */
-
-.music-section {
-
-    text-align: center;
-
-    background: #080808;
-}
-
-.music-content {
-
-    max-width: 900px;
-
-    margin: auto;
-}
-
-.music-content p {
-
-    color: #ddd;
-
-    font-size: 19px;
-
-    margin-bottom: 40px;
-}
-
-.features {
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(3,1fr);
-
-    gap: 25px;
-}
-
-.feature {
-    padding: 35px 25px;
-    background: #101010;
-    border: 1px solid #292929;
-    transition: .4s ease;
-    position: relative;
-    overflow: hidden;
-}
-.feature:hover {
-    transform: translateY(-8px);
-    border-color: #d4af37;
-    box-shadow: 0 15px 40px rgba(212, 175, 55, .12);
-}
-
-.feature h3 {
-    color: #d4af37;
-    margin-bottom: 15px;
-    font-size: 22px;
-    letter-spacing: 1px;
-}
-
-.feature p {
-
-    color: #aaa;
-
-    font-size: 15px;
-}
-
-/* =========================
-   TRAJECTORY
-========================= */
-
-.trajectory {
-
-    background: #101010;
-}
-
-.timeline {
-
-    max-width: 850px;
-
-    margin: auto;
-}
-
-.event {
-
-    border-left:
-        2px solid #d4af37;
-
-    padding:
-        0 0 35px 30px;
-
-    margin-bottom: 25px;
-}
-
-.event h3 {
-
-    color: #d4af37;
-
-    margin-bottom: 8px;
-}
-
-.event p {
-
-    color: #ccc;
-}
-
-/* =========================
-   GALLERY
-========================= */
-
-.gallery {
-
-    max-width: 1100px;
-
-    margin: auto;
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(2,1fr);
-
-    gap: 18px;
-}
-
-.gallery img {
-
-    width: 100%;
-
-    height: 480px;
-
-    object-fit: cover;
-    background: #080808;
-
-    transition: .4s;
-}
-
-.gallery img:hover {
-
-    transform: scale(1.02);
-
-    opacity: .85;
-}
-
-/* =========================
-   CONTACT
-========================= */
-
-.contact {
-
-    text-align: center;
-
-    background:
-        linear-gradient(
-            rgba(0,0,0,.75),
-            rgba(0,0,0,.9)
-        ),
-        url("MG-20250210-WA0093.jpg");
-
-    background-size: cover;
-
-    background-position: center;
-}
-
-.contact h2 {
-
-    font-size: 48px;
-
-    color: #d4af37;
-
-    margin-bottom: 20px;
-}
-
-.contact p {
-
-    color: #ddd;
-
-    font-size: 18px;
-}
-
-.socials {
-
-    display: flex;
-
-    justify-content: center;
-
-    flex-wrap: wrap;
-
-    gap: 18px;
-
-    margin-top: 35px;
-}
-
-.socials a {
-
-    padding: 12px 24px;
-
-    border: 1px solid #555;
-
-    color: white;
-
-    text-decoration: none;
-
-    transition: .3s;
-}
-
-.socials a:hover {
-
-    color: #d4af37;
-
-    border-color: #d4af37;
-}
-
-/* =========================
-   FOOTER
-========================= */
-
-footer {
-
-    text-align: center;
-
-    padding: 35px;
-
-    background: #050505;
-
-    color: #777;
-
-    font-size: 14px;
-}
-
-footer strong {
-
-    color: #d4af37;
-}
-
-/* =========================
-   MOBILE
-========================= */
-
-@media(max-width:800px) {
-
-    nav ul {
-        display: none;
+    /* =========================
+       RESET
+    ========================= */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
 
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+
+    body {
+        font-family:
+            Arial,
+            Helvetica,
+            sans-serif;
+
+        background: #080808;
+
+        color: white;
+
+        line-height: 1.7;
+    }
+
+
+    a {
+        color: inherit;
+    }
+
+
+    img {
+        max-width: 100%;
+    }
+
+
+    /* =========================
+       NAVEGACIÓN
+    ========================= */
+
+    nav {
+        position: fixed;
+
+        top: 0;
+        left: 0;
+
+        width: 100%;
+
+        z-index: 1000;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: space-between;
+
+        padding: 20px 6%;
+
+        background:
+            rgba(5,5,5,.88);
+
+        backdrop-filter:
+            blur(10px);
+
+        border-bottom:
+            1px solid
+            rgba(212,175,55,.15);
+    }
+
+
+    .logo {
+        color: #d4af37;
+
+        font-size: 20px;
+
+        font-weight: bold;
+
+        letter-spacing: 4px;
+    }
+
+
+    nav ul {
+        display: flex;
+
+        gap: 28px;
+
+        list-style: none;
+    }
+
+
+    nav ul li a {
+        color: #eee;
+
+        text-decoration: none;
+
+        font-size: 13px;
+
+        letter-spacing: 1px;
+
+        transition: .3s ease;
+    }
+
+
+    nav ul li a:hover {
+        color: #d4af37;
+    }
+
+
+    /* =========================
+       HERO
+    ========================= */
+
     .hero {
+
+        height: 100vh;
+
+        min-height: 650px;
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        text-align: center;
+
+        position: relative;
+
+        background-image:
+
+            linear-gradient(
+                rgba(0,0,0,.48),
+                rgba(0,0,0,.78)
+            ),
+
+            url("ajustes 1-22.jpg");
+
+        background-size: cover;
+
+        background-position:
+            center 15%;
+    }
+
+
+    .hero-content {
+
+        max-width: 950px;
+
+        padding: 30px;
+
+        animation:
+            heroAppear
+            1.2s
+            ease
+            forwards;
+    }
+
+
+    .hero h1 {
+
+        font-size:
+            clamp(
+                45px,
+                8vw,
+                100px
+            );
+
+        letter-spacing: 8px;
+
+        margin-bottom: 15px;
+
+        text-shadow:
+            0 4px 25px #000;
+    }
+
+
+    .hero h2 {
+
+        color: #d4af37;
+
+        letter-spacing: 6px;
+
+        font-size:
+            clamp(
+                18px,
+                3vw,
+                28px
+            );
+
+        font-weight: normal;
+
+        margin-bottom: 25px;
+    }
+
+
+    .hero p {
+
+        max-width: 700px;
+
+        margin: auto;
+
+        font-size: 19px;
+
+        color: #eee;
+    }
+
+
+    .button {
+
+        display: inline-block;
+
+        margin-top: 35px;
+
+        padding: 14px 32px;
+
+        border:
+            1px solid
+            #d4af37;
+
+        color: #d4af37;
+
+        text-decoration: none;
+
+        letter-spacing: 2px;
+
+        transition: .3s ease;
+    }
+
+
+    .button:hover {
+
+        background:
+            #d4af37;
+
+        color:
+            #080808;
+
+        box-shadow:
+            0 10px 30px
+            rgba(212,175,55,.2);
+
+        transform:
+            translateY(-3px);
+    }
+
+
+    /* =========================
+       ANIMACIÓN HERO
+    ========================= */
+
+    @keyframes heroAppear {
+
+        from {
+
+            opacity: 0;
+
+            transform:
+                translateY(25px);
+        }
+
+        to {
+
+            opacity: 1;
+
+            transform:
+                translateY(0);
+        }
+
+    }
+
+
+    /* =========================
+       GENERAL
+    ========================= */
+
+    section {
+
+        padding:
+            100px 8%;
+    }
+
+
+    .section-title {
+
+        text-align: center;
+
+        margin-bottom: 60px;
+    }
+
+
+    .section-title h2 {
+
+        font-size: 42px;
+
+        color: #d4af37;
+
+        margin-bottom: 10px;
+
+        letter-spacing: 1px;
+    }
+
+
+    .section-title p {
+
+        color: #aaa;
+
+        font-size: 15px;
+
+        letter-spacing: 1px;
+    }
+
+
+    /* =========================
+       HISTORIA
+    ========================= */
+
+    .about {
+
+        max-width: 950px;
+
+        margin: auto;
+
+        text-align: center;
+    }
+
+
+    .about p {
+
+        font-size: 18px;
+
+        color: #ddd;
+
+        margin-bottom: 22px;
+    }
+
+
+    .about p:last-child {
+
+        margin-bottom: 0;
+    }
+
+
+    .gold {
+
+        color: #d4af37;
+    }
+
+
+    /* =========================
+       IDENTIDAD
+    ========================= */
+
+    .logo-section {
+
+        background:
+            #101010;
+
+        text-align: center;
+    }
+
+
+    .logo-section img {
+
+        width: 180px;
+
+        max-width: 60%;
+
+        margin-bottom: 30px;
+
+        filter:
+            drop-shadow(
+                0 10px 30px
+                rgba(0,0,0,.5)
+            );
+    }
+
+
+    /* =========================
+       MÚSICOS
+    ========================= */
+
+    .musicians {
+
+        background:
+            #101010;
+    }
+
+
+    .musician-grid {
+
+        max-width: 1100px;
+
+        margin: auto;
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+        gap: 45px;
+    }
+
+
+    .musician {
+
+        background:
+            #151515;
+
+        border:
+            1px solid
+            #292929;
+
+        padding-bottom: 30px;
+
+        text-align: center;
+
+        transition:
+            .4s ease;
+
+        overflow: hidden;
+    }
+
+
+    .musician:hover {
+
+        transform:
+            translateY(-8px);
+
+        border-color:
+            #d4af37;
+
+        box-shadow:
+            0 15px 40px
+            rgba(212,175,55,.15);
+    }
+
+
+    .musician img {
+
+        width: 100%;
+
+        height: 520px;
+
+        display: block;
+
+        object-fit:
+            contain;
+
+        object-position:
+            center;
+
+        background:
+            #080808;
+
+        transition:
+            transform
+            .5s ease;
+    }
+
+
+    .musician:hover img {
+
+        transform:
+            scale(1.03);
+    }
+
+
+    .musician h3 {
+
+        color:
+            #d4af37;
+
+        font-size:
+            28px;
+
+        margin-top:
+            25px;
+
+        margin-bottom:
+            4px;
+    }
+
+
+    .instrument {
+
+        color:
+            #aaa;
+
+        letter-spacing:
+            3px;
+
+        font-size:
+            13px;
+
+        text-transform:
+            uppercase;
+    }
+
+
+    .musician p {
+
+        color:
+            #ccc;
+
+        padding:
+            20px 35px 0;
+
+        font-size:
+            16px;
+    }
+
+
+    /* =========================
+       NUESTRA MÚSICA
+    ========================= */
+
+    .music-section {
+
+        text-align:
+            center;
+
+        background:
+            #080808;
+    }
+
+
+    .music-content {
+
+        max-width:
+            950px;
+
+        margin:
+            auto;
+    }
+
+
+    .music-content > p {
+
+        color:
+            #ddd;
+
+        font-size:
+            19px;
+
+        margin-bottom:
+            50px;
+
+        max-width:
+            850px;
+
+        margin-left:
+            auto;
+
+        margin-right:
+            auto;
+    }
+
+
+    .features {
+
+        display:
+            grid;
+
+        grid-template-columns:
+            repeat(3,1fr);
+
+        gap:
+            25px;
+    }
+
+
+    .feature {
+
+        padding:
+            35px 25px;
+
+        background:
+            #101010;
+
+        border:
+            1px solid
+            #292929;
+
+        transition:
+            .4s ease;
+
+        position:
+            relative;
+
+        overflow:
+            hidden;
+    }
+
+
+    .feature::before {
+
+        content:
+            "";
+
+        position:
+            absolute;
+
+        top:
+            0;
+
+        left:
+            0;
+
+        width:
+            100%;
+
+        height:
+            2px;
+
+        background:
+            #d4af37;
+
+        transform:
+            scaleX(0);
+
+        transform-origin:
+            center;
+
+        transition:
+            .4s ease;
+    }
+
+
+    .feature:hover {
+
+        transform:
+            translateY(-8px);
+
+        border-color:
+            #d4af37;
+
+        box-shadow:
+            0 15px 40px
+            rgba(212,175,55,.12);
+    }
+
+
+    .feature:hover::before {
+
+        transform:
+            scaleX(1);
+    }
+
+
+    .feature h3 {
+
+        color:
+            #d4af37;
+
+        margin-bottom:
+            15px;
+
+        font-size:
+            22px;
+
+        letter-spacing:
+            1px;
+    }
+
+
+    .feature p {
+
+        color:
+            #aaa;
+
+        font-size:
+            15px;
+    }
+
+
+    /* =========================
+       TRAYECTORIA
+    ========================= */
+
+    .trajectory {
+
+        background:
+            #101010;
+    }
+
+
+    .timeline {
+
+        max-width:
+            850px;
+
+        margin:
+            auto;
+    }
+
+
+    .event {
+
+        border-left:
+            2px solid
+            #d4af37;
+
+        padding:
+            0 0 35px 30px;
+
+        margin-bottom:
+            25px;
+
+        position:
+            relative;
+    }
+
+
+    .event::before {
+
+        content:
+            "";
+
+        position:
+            absolute;
+
+        left:
+            -7px;
+
+        top:
+            4px;
+
+        width:
+            12px;
+
+        height:
+            12px;
+
+        border-radius:
+            50%;
+
+        background:
+            #d4af37;
+
+        box-shadow:
+            0 0 15px
+            rgba(212,175,55,.4);
+    }
+
+
+    .event h3 {
+
+        color:
+            #d4af37;
+
+        margin-bottom:
+            8px;
+
+        font-size:
+            23px;
+    }
+
+
+    .event p {
+
+        color:
+            #ccc;
+    }
+
+
+    /* =========================
+       GALERÍA
+    ========================= */
+
+    .gallery-section {
+
+        background:
+            #080808;
+    }
+
+
+    .gallery {
+
+        max-width:
+            1100px;
+
+        margin:
+            auto;
+
+        display:
+            grid;
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+        gap:
+            18px;
+    }
+
+
+    .gallery img {
+
+        width:
+            100%;
+
+        height:
+            480px;
+
+        object-fit:
+            contain;
+
+        background:
+            #101010;
+
+        border:
+            1px solid
+            #222;
+
+        transition:
+            .4s ease;
+    }
+
+
+    .gallery img:hover {
+
+        transform:
+            scale(1.02);
+
+        opacity:
+            .9;
+
+        border-color:
+            #d4af37;
+
+        box-shadow:
+            0 10px 30px
+            rgba(212,175,55,.12);
+    }
+
+
+    /* =========================
+       CONTACTO
+    ========================= */
+
+    .contact {
+
+        text-align:
+            center;
+
+        background:
+
+            linear-gradient(
+                rgba(0,0,0,.75),
+                rgba(0,0,0,.9)
+            ),
+
+            url(
+                "MG-20250210-WA0093.jpg"
+            );
+
+        background-size:
+            cover;
 
         background-position:
             center;
     }
 
-    section {
-        padding: 75px 6%;
+
+    .contact h2 {
+
+        font-size:
+            48px;
+
+        color:
+            #d4af37;
+
+        margin-bottom:
+            20px;
     }
 
-    .musician-grid,
-    .features,
-    .gallery {
 
-        grid-template-columns: 1fr;
+    .contact p {
+
+        color:
+            #ddd;
+
+        font-size:
+            18px;
     }
 
- .musician img {
-    height: 450px;
-    object-fit: contain;
-}
 
-    .gallery img {
+    .socials {
 
-        height: 450px;
+        display:
+            flex;
+
+        justify-content:
+            center;
+
+        flex-wrap:
+            wrap;
+
+        gap:
+            18px;
+
+        margin-top:
+            35px;
     }
 
-    .section-title h2 {
 
-        font-size: 34px;
+    .socials a {
+
+        padding:
+            12px 24px;
+
+        border:
+            1px solid
+            #555;
+
+        color:
+            white;
+
+        text-decoration:
+            none;
+
+        transition:
+            .3s ease;
     }
 
-    .hero h1 {
 
-        font-size: 45px;
+    .socials a:hover {
 
-        letter-spacing: 4px;
+        color:
+            #d4af37;
+
+        border-color:
+            #d4af37;
+
+        transform:
+            translateY(-3px);
+
+        box-shadow:
+            0 8px 20px
+            rgba(212,175,55,.12);
     }
 
-}
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+
+        text-align:
+            center;
+
+        padding:
+            35px;
+
+        background:
+            #050505;
+
+        color:
+            #777;
+
+        font-size:
+            14px;
+    }
+
+
+    footer strong {
+
+        color:
+            #d4af37;
+    }
+
+
+    /* =========================
+       MÓVIL
+    ========================= */
+
+    @media(max-width:800px) {
+
+        nav {
+
+            padding:
+                18px 5%;
+        }
+
+
+        .logo {
+
+            font-size:
+                16px;
+
+            letter-spacing:
+                3px;
+        }
+
+
+        nav ul {
+
+            display:
+                none;
+        }
+
+
+        .hero {
+
+            min-height:
+                650px;
+
+            background-position:
+                center 15%;
+        }
+
+
+        .hero-content {
+
+            padding:
+                25px 20px;
+        }
+
+
+        .hero h1 {
+
+            font-size:
+                45px;
+
+            letter-spacing:
+                4px;
+        }
+
+
+        .hero h2 {
+
+            font-size:
+                18px;
+
+            letter-spacing:
+                4px;
+        }
+
+
+        .hero p {
+
+            font-size:
+                16px;
+        }
+
+
+        section {
+
+            padding:
+                75px 6%;
+        }
+
+
+        .section-title {
+
+            margin-bottom:
+                45px;
+        }
+
+
+        .section-title h2 {
+
+            font-size:
+                34px;
+        }
+
+
+        .about p {
+
+            font-size:
+                16px;
+        }
+
+
+        .musician-grid,
+        .features,
+        .gallery {
+
+            grid-template-columns:
+                1fr;
+        }
+
+
+        .musician img {
+
+            height:
+                450px;
+
+            object-fit:
+                contain;
+
+            object-position:
+                center;
+        }
+
+
+        .musician p {
+
+            padding:
+                18px 25px 0;
+        }
+
+
+        .music-content > p {
+
+            font-size:
+                17px;
+        }
+
+
+        .gallery img {
+
+            height:
+                450px;
+        }
+
+
+        .contact h2 {
+
+            font-size:
+                38px;
+        }
+
+
+        .socials a {
+
+            width:
+                100%;
+
+            max-width:
+                300px;
+        }
+
+    }
 
 </style>
+```
 
 </head>
 
-
 <body>
 
-
-<!-- NAV -->
+```
+<!-- =========================
+     NAVEGACIÓN
+========================= -->
 
 <nav>
 
@@ -628,30 +1201,43 @@ footer strong {
         AGNUS PRAISE
     </div>
 
+
     <ul>
 
         <li>
-            <a href="#inicio">Inicio</a>
+            <a href="#inicio">
+                Inicio
+            </a>
         </li>
 
         <li>
-            <a href="#nosotros">Nosotros</a>
+            <a href="#nosotros">
+                Nosotros
+            </a>
         </li>
 
         <li>
-            <a href="#musicos">Músicos</a>
+            <a href="#musicos">
+                Músicos
+            </a>
         </li>
 
         <li>
-            <a href="#musica">Nuestra música</a>
+            <a href="#musica">
+                Nuestra música
+            </a>
         </li>
 
         <li>
-            <a href="#galeria">Galería</a>
+            <a href="#galeria">
+                Galería
+            </a>
         </li>
 
         <li>
-            <a href="#contacto">Contacto</a>
+            <a href="#contacto">
+                Contacto
+            </a>
         </li>
 
     </ul>
@@ -659,9 +1245,14 @@ footer strong {
 </nav>
 
 
-<!-- HERO -->
+<!-- =========================
+     INICIO
+========================= -->
 
-<header class="hero" id="inicio">
+<section
+    class="hero"
+    id="inicio"
+>
 
     <div class="hero-content">
 
@@ -669,18 +1260,21 @@ footer strong {
             DÚO AGNUS PRAISE
         </h1>
 
+
         <h2>
-            PIANO & VIOLÍN
+            PIANO &amp; VIOLÍN
         </h2>
+
 
         <p>
 
-            Una propuesta musical colombiana que une
-            la riqueza del piano y la expresividad del
-            violín para crear experiencias de fe,
-            belleza y emoción.
+            Una propuesta musical colombiana
+            que une la riqueza del piano y la
+            expresividad del violín para crear
+            experiencias de fe, belleza y emoción.
 
         </p>
+
 
         <a
             href="#nosotros"
@@ -691,10 +1285,12 @@ footer strong {
 
     </div>
 
-</header>
+</section>
 
 
-<!-- NOSOTROS -->
+<!-- =========================
+     NUESTRA HISTORIA
+========================= -->
 
 <section id="nosotros">
 
@@ -703,6 +1299,7 @@ footer strong {
         <h2>
             Nuestra historia
         </h2>
+
 
         <p>
             Dúo Agnus Praise · Cali, Colombia
@@ -719,8 +1316,8 @@ footer strong {
                 Dúo Agnus Praise
             </span>
 
-            es un dúo colombiano de piano y violín
-            conformado por
+            es un dúo colombiano de piano
+            y violín conformado por
 
             <strong>
                 Samuel Manyoma
@@ -737,18 +1334,20 @@ footer strong {
 
         <p>
 
-            Nuestra historia musical nace desde una
-            temprana edad y se consolida posteriormente
-            alrededor de una misma pasión:
-            utilizar la música como una herramienta
-            para transmitir fe, esperanza y belleza.
+            Nuestra historia musical nace desde
+            una temprana edad y se consolida
+            posteriormente alrededor de una misma
+            pasión: utilizar la música como una
+            herramienta para transmitir fe,
+            esperanza y belleza.
 
         </p>
 
 
         <p>
 
-            Nuestra propuesta se caracteriza por combinar
+            Nuestra propuesta se caracteriza
+            por combinar
 
             <span class="gold">
                 complejidad musical,
@@ -763,22 +1362,24 @@ footer strong {
 
         <p>
 
-            Cada arreglo busca encontrar un equilibrio
-            entre la exigencia técnica y la profundidad
-            musical, permitiendo que el piano y el violín
-            dialoguen y construyan una experiencia
-            artística propia.
+            Cada arreglo busca encontrar un
+            equilibrio entre la exigencia técnica
+            y la profundidad musical, permitiendo
+            que el piano y el violín dialoguen
+            y construyan una experiencia artística
+            propia.
 
         </p>
 
 
         <p>
 
-            Dúo Agnus Praise se ha consolidado como
-            una propuesta destacada dentro del ámbito
-            musical de la Iglesia Adventista en Colombia,
-            llevando una identidad artística que busca
-            unir excelencia musical y propósito espiritual.
+            Dúo Agnus Praise se ha consolidado
+            como una propuesta destacada dentro
+            del ámbito musical de la Iglesia
+            Adventista en Colombia, llevando una
+            identidad artística que busca unir
+            excelencia musical y propósito espiritual.
 
         </p>
 
@@ -787,7 +1388,9 @@ footer strong {
 </section>
 
 
-<!-- LOGO -->
+<!-- =========================
+     IDENTIDAD
+========================= -->
 
 <section class="logo-section">
 
@@ -797,8 +1400,10 @@ footer strong {
             Nuestra identidad
         </h2>
 
+
         <p>
-            Una propuesta construida desde la música y la fe.
+            Una propuesta construida desde la
+            música y la fe.
         </p>
 
     </div>
@@ -812,7 +1417,9 @@ footer strong {
 </section>
 
 
-<!-- MÚSICOS -->
+<!-- =========================
+     MÚSICOS
+========================= -->
 
 <section
     class="musicians"
@@ -825,6 +1432,7 @@ footer strong {
             Nuestros músicos
         </h2>
 
+
         <p>
             Dos instrumentos. Una misma visión.
         </p>
@@ -835,7 +1443,7 @@ footer strong {
     <div class="musician-grid">
 
 
-        <!-- ANDRÉS -->
+        <!-- ANDRÉS - VIOLÍN -->
 
         <article class="musician">
 
@@ -844,27 +1452,33 @@ footer strong {
                 alt="Andrés Orozco violinista de Dúo Agnus Praise"
             >
 
+
             <h3>
                 Andrés Orozco
             </h3>
+
 
             <div class="instrument">
                 Violín
             </div>
 
+
             <p>
 
-                Violinista y cofundador de Dúo Agnus Praise.
-                Su interpretación busca explorar la capacidad
-                expresiva del violín, combinando sensibilidad,
-                técnica y musicalidad.
+                Violinista y cofundador de
+                Dúo Agnus Praise.
+
+                Su interpretación busca explorar
+                la capacidad expresiva del violín,
+                combinando sensibilidad, técnica
+                y musicalidad.
 
             </p>
 
         </article>
 
 
-        <!-- SAMUEL -->
+        <!-- SAMUEL - PIANO -->
 
         <article class="musician">
 
@@ -873,20 +1487,26 @@ footer strong {
                 alt="Samuel Manyoma pianista de Dúo Agnus Praise"
             >
 
+
             <h3>
                 Samuel Manyoma
             </h3>
+
 
             <div class="instrument">
                 Piano
             </div>
 
+
             <p>
 
-                Pianista y cofundador de Dúo Agnus Praise.
-                Su propuesta combina riqueza armónica,
-                sensibilidad y una sólida visión del
-                acompañamiento y los arreglos musicales.
+                Pianista y cofundador de
+                Dúo Agnus Praise.
+
+                Su propuesta combina riqueza
+                armónica, sensibilidad y una sólida
+                visión del acompañamiento y los
+                arreglos musicales.
 
             </p>
 
@@ -897,7 +1517,9 @@ footer strong {
 </section>
 
 
-<!-- NUESTRA MÚSICA -->
+<!-- =========================
+     NUESTRA MÚSICA
+========================= -->
 
 <section
     class="music-section"
@@ -910,8 +1532,10 @@ footer strong {
             Nuestra música
         </h2>
 
+
         <p>
-            Más que interpretar: construir una experiencia.
+            Más que interpretar:
+            construir una experiencia.
         </p>
 
     </div>
@@ -921,13 +1545,14 @@ footer strong {
 
         <p>
 
-            En Dúo Agnus Praise entendemos cada arreglo
-            como una oportunidad para explorar nuevas
-            posibilidades sonoras.
+            En Dúo Agnus Praise entendemos cada
+            arreglo como una oportunidad para
+            explorar nuevas posibilidades sonoras.
 
             Nuestro trabajo busca integrar recursos
-            armónicos, dinámicos e interpretativos para
-            construir una identidad musical propia.
+            armónicos, dinámicos e interpretativos
+            para construir una identidad musical
+            propia.
 
         </p>
 
@@ -941,12 +1566,14 @@ footer strong {
                     Complejidad musical
                 </h3>
 
+
                 <p>
 
                     Arreglos cuidadosamente elaborados,
                     con riqueza armónica y recursos
                     musicales que permiten explorar
-                    las posibilidades del piano y el violín.
+                    las posibilidades del piano
+                    y el violín.
 
                 </p>
 
@@ -958,6 +1585,7 @@ footer strong {
                 <h3>
                     Expresión
                 </h3>
+
 
                 <p>
 
@@ -975,6 +1603,7 @@ footer strong {
                 <h3>
                     Excelencia
                 </h3>
+
 
                 <p>
 
@@ -994,17 +1623,18 @@ footer strong {
 </section>
 
 
-<!-- TRAYECTORIA -->
+<!-- =========================
+     TRAYECTORIA
+========================= -->
 
-<section
-    class="trajectory"
->
+<section class="trajectory">
 
     <div class="section-title">
 
         <h2>
             Trayectoria
         </h2>
+
 
         <p>
             Una historia que continúa creciendo.
@@ -1022,12 +1652,13 @@ footer strong {
                 Los comienzos
             </h3>
 
+
             <p>
 
                 La historia musical de Andrés Orozco
-                y Samuel Manyoma comienza desde la infancia,
-                desarrollando desde temprana edad una
-                relación profunda con la música.
+                y Samuel Manyoma comienza desde la
+                infancia, desarrollando desde temprana
+                edad una relación profunda con la música.
 
             </p>
 
@@ -1040,12 +1671,13 @@ footer strong {
                 Dúo Agnus Praise
             </h3>
 
+
             <p>
 
-                El proyecto se consolida como una propuesta
-                de piano y violín enfocada en desarrollar
-                arreglos propios y una identidad musical
-                diferenciada.
+                El proyecto se consolida como una
+                propuesta de piano y violín enfocada
+                en desarrollar arreglos propios y una
+                identidad musical diferenciada.
 
             </p>
 
@@ -1058,11 +1690,12 @@ footer strong {
                 Escenarios y festivales
             </h3>
 
+
             <p>
 
-                El dúo ha llevado su propuesta a diferentes
-                espacios musicales y eventos cristianos
-                en Colombia.
+                El dúo ha llevado su propuesta a
+                diferentes espacios musicales y eventos
+                cristianos en Colombia.
 
             </p>
 
@@ -1075,12 +1708,13 @@ footer strong {
                 Nuevos proyectos
             </h3>
 
+
             <p>
 
-                Actualmente continúa desarrollando nuevos
-                arreglos, repertorio y proyectos musicales
-                con la visión de llevar su propuesta a
-                nuevos escenarios.
+                Actualmente continúa desarrollando
+                nuevos arreglos, repertorio y proyectos
+                musicales con la visión de llevar su
+                propuesta a nuevos escenarios.
 
             </p>
 
@@ -1092,15 +1726,21 @@ footer strong {
 </section>
 
 
-<!-- GALERÍA -->
+<!-- =========================
+     GALERÍA
+========================= -->
 
-<section id="galeria">
+<section
+    class="gallery-section"
+    id="galeria"
+>
 
     <div class="section-title">
 
         <h2>
             Galería
         </h2>
+
 
         <p>
             Momentos de nuestra historia.
@@ -1141,7 +1781,9 @@ footer strong {
 </section>
 
 
-<!-- CONTACTO -->
+<!-- =========================
+     CONTACTO
+========================= -->
 
 <section
     class="contact"
@@ -1152,20 +1794,25 @@ footer strong {
         Dúo Agnus Praise
     </h2>
 
-    <p>
-        Piano & Violín · Cali, Colombia
-    </p>
 
     <p>
-        Presentaciones · Eventos · Proyectos musicales
+        Piano &amp; Violín · Cali, Colombia
+    </p>
+
+
+    <p>
+        Presentaciones · Eventos ·
+        Proyectos musicales
     </p>
 
 
     <div class="socials">
 
+
         <a
             href="#"
             target="_blank"
+            rel="noopener noreferrer"
         >
             Instagram
         </a>
@@ -1174,6 +1821,7 @@ footer strong {
         <a
             href="#"
             target="_blank"
+            rel="noopener noreferrer"
         >
             YouTube
         </a>
@@ -1182,6 +1830,7 @@ footer strong {
         <a
             href="#"
             target="_blank"
+            rel="noopener noreferrer"
         >
             Facebook
         </a>
@@ -1190,16 +1839,20 @@ footer strong {
         <a
             href="#"
             target="_blank"
+            rel="noopener noreferrer"
         >
             Spotify
         </a>
+
 
     </div>
 
 </section>
 
 
-<!-- FOOTER -->
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
@@ -1215,12 +1868,14 @@ footer strong {
 
     </p>
 
+
     <p>
-        Piano & Violín · Colombia
+        Piano &amp; Violín · Colombia
     </p>
 
 </footer>
-
+```
 
 </body>
+
 </html>
