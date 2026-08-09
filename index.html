@@ -367,19 +367,24 @@ section {
 }
 
 .feature {
-
-    padding: 30px 20px;
-
+    padding: 35px 25px;
     background: #101010;
-
     border: 1px solid #292929;
+    transition: .4s ease;
+    position: relative;
+    overflow: hidden;
+}
+.feature:hover {
+    transform: translateY(-8px);
+    border-color: #d4af37;
+    box-shadow: 0 15px 40px rgba(212, 175, 55, .12);
 }
 
 .feature h3 {
-
     color: #d4af37;
-
-    margin-bottom: 12px;
+    margin-bottom: 15px;
+    font-size: 22px;
+    letter-spacing: 1px;
 }
 
 .feature p {
