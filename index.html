@@ -294,10 +294,6 @@
     }
 
 
-    /* =========================
-       ANIMACIÓN HERO
-    ========================= */
-
     @keyframes heroAppear {
 
         from {
@@ -385,13 +381,11 @@
 
 
     .about p:last-child {
-
         margin-bottom: 0;
     }
 
 
     .gold {
-
         color: #d4af37;
     }
 
@@ -691,9 +685,7 @@
 
 
     .feature:hover::before {
-
-        transform:
-            scaleX(1);
+        transform: scaleX(1);
     }
 
 
@@ -720,6 +712,355 @@
 
         font-size:
             15px;
+    }
+
+
+    /* =========================
+       REPERTORIO
+    ========================= */
+
+    .repertoire {
+
+        background:
+            #080808;
+
+        text-align:
+            center;
+    }
+
+
+    .repertoire-intro {
+
+        max-width:
+            850px;
+
+        margin:
+            -20px auto 55px;
+
+        color:
+            #ccc;
+
+        font-size:
+            18px;
+    }
+
+
+    .repertoire-grid {
+
+        max-width:
+            1100px;
+
+        margin:
+            auto;
+
+        display:
+            grid;
+
+        grid-template-columns:
+            repeat(4,1fr);
+
+        gap:
+            22px;
+    }
+
+
+    .repertoire-card {
+
+        background:
+            #101010;
+
+        border:
+            1px solid
+            #292929;
+
+        padding:
+            35px 25px;
+
+        min-height:
+            280px;
+
+        display:
+            flex;
+
+        flex-direction:
+            column;
+
+        align-items:
+            center;
+
+        justify-content:
+            flex-start;
+
+        transition:
+            .4s ease;
+
+        position:
+            relative;
+
+        overflow:
+            hidden;
+    }
+
+
+    .repertoire-card::before {
+
+        content:
+            "";
+
+        position:
+            absolute;
+
+        top:
+            0;
+
+        left:
+            0;
+
+        width:
+            100%;
+
+        height:
+            2px;
+
+        background:
+            #d4af37;
+
+        transform:
+            scaleX(0);
+
+        transition:
+            .4s ease;
+    }
+
+
+    .repertoire-card:hover {
+
+        transform:
+            translateY(-8px);
+
+        border-color:
+            #d4af37;
+
+        box-shadow:
+            0 15px 40px
+            rgba(212,175,55,.12);
+    }
+
+
+    .repertoire-card:hover::before {
+        transform: scaleX(1);
+    }
+
+
+    .repertoire-icon {
+
+        color:
+            #d4af37;
+
+        font-size:
+            38px;
+
+        margin-bottom:
+            18px;
+
+        line-height:
+            1;
+    }
+
+
+    .repertoire-card h3 {
+
+        color:
+            #d4af37;
+
+        font-size:
+            20px;
+
+        margin-bottom:
+            15px;
+    }
+
+
+    .repertoire-card p {
+
+        color:
+            #aaa;
+
+        font-size:
+            15px;
+
+        line-height:
+            1.7;
+    }
+
+
+    /* =========================
+       ESCÚCHANOS
+    ========================= */
+
+    .listen-section {
+
+        background:
+            #101010;
+
+        text-align:
+            center;
+    }
+
+
+    .listen-content {
+
+        max-width:
+            950px;
+
+        margin:
+            auto;
+
+        padding:
+            45px;
+
+        border:
+            1px solid
+            #292929;
+
+        background:
+            #080808;
+
+        display:
+            flex;
+
+        align-items:
+            center;
+
+        justify-content:
+            space-between;
+
+        gap:
+            50px;
+
+        text-align:
+            left;
+
+        transition:
+            .4s ease;
+    }
+
+
+    .listen-content:hover {
+
+        border-color:
+            rgba(212,175,55,.6);
+
+        box-shadow:
+            0 20px 50px
+            rgba(0,0,0,.35);
+    }
+
+
+    .listen-text {
+
+        max-width:
+            550px;
+    }
+
+
+    .listen-text h3 {
+
+        color:
+            #d4af37;
+
+        font-size:
+            30px;
+
+        margin-bottom:
+            15px;
+    }
+
+
+    .listen-text p {
+
+        color:
+            #ccc;
+
+        font-size:
+            16px;
+
+        margin-bottom:
+            12px;
+    }
+
+
+    .listen-buttons {
+
+        display:
+            flex;
+
+        flex-direction:
+            column;
+
+        gap:
+            15px;
+
+        min-width:
+            230px;
+    }
+
+
+    .listen-button {
+
+        display:
+            flex;
+
+        align-items:
+            center;
+
+        justify-content:
+            center;
+
+        gap:
+            10px;
+
+        padding:
+            14px 22px;
+
+        border:
+            1px solid
+            #555;
+
+        color:
+            white;
+
+        text-decoration:
+            none;
+
+        letter-spacing:
+            1px;
+
+        transition:
+            .3s ease;
+    }
+
+
+    .listen-button span {
+
+        color:
+            #d4af37;
+
+        font-size:
+            22px;
+    }
+
+
+    .listen-button:hover {
+
+        border-color:
+            #d4af37;
+
+        color:
+            #d4af37;
+
+        transform:
+            translateY(-3px);
     }
 
 
@@ -956,7 +1297,7 @@
     .socials a {
 
         padding:
-            12px 24px;
+            12px 30px;
 
         border:
             1px solid
@@ -1025,6 +1366,7 @@
     ========================= */
 
     @media(max-width:800px) {
+
 
         nav {
 
@@ -1124,7 +1466,8 @@
 
         .musician-grid,
         .features,
-        .gallery {
+        .gallery,
+        .repertoire-grid {
 
             grid-template-columns:
                 1fr;
@@ -1155,6 +1498,66 @@
 
             font-size:
                 17px;
+        }
+
+
+        .repertoire-intro {
+
+            font-size:
+                16px;
+
+            margin-bottom:
+                40px;
+        }
+
+
+        .repertoire-card {
+
+            min-height:
+                auto;
+
+            padding:
+                30px 25px;
+        }
+
+
+        .listen-content {
+
+            flex-direction:
+                column;
+
+            padding:
+                30px 22px;
+
+            text-align:
+                center;
+
+            gap:
+                30px;
+        }
+
+
+        .listen-text {
+
+            max-width:
+                100%;
+        }
+
+
+        .listen-text h3 {
+
+            font-size:
+                26px;
+        }
+
+
+        .listen-buttons {
+
+            width:
+                100%;
+
+            max-width:
+                320px;
         }
 
 
@@ -1210,11 +1613,13 @@
             </a>
         </li>
 
+
         <li>
             <a href="#nosotros">
                 Nosotros
             </a>
         </li>
+
 
         <li>
             <a href="#musicos">
@@ -1222,17 +1627,20 @@
             </a>
         </li>
 
+
         <li>
             <a href="#musica">
                 Nuestra música
             </a>
         </li>
 
+
         <li>
             <a href="#galeria">
                 Galería
             </a>
         </li>
+
 
         <li>
             <a href="#contacto">
@@ -1440,70 +1848,80 @@
     </div>
 
 
- <div class="musician-grid">
+    <div class="musician-grid">
 
-```
-<!-- ANDRÉS - IZQUIERDA -->
 
-<article class="musician">
+        <!-- ANDRÉS - IZQUIERDA -->
 
-    <img
-        src="WhatsApp Image 2026-08-09 at 2.06.05 PM.jpg"
-        alt="Andrés Orozco violinista de Dúo Agnus Praise"
-    >
+        <article class="musician">
 
-    <h3>
-        Andrés Orozco
-    </h3>
+            <img
+                src="WhatsApp Image 2026-08-09 at 2.06.05 PM.jpg"
+                alt="Andrés Orozco violinista de Dúo Agnus Praise"
+            >
 
-    <div class="instrument">
-        Violín
+
+            <h3>
+                Andrés Orozco
+            </h3>
+
+
+            <div class="instrument">
+                Violín
+            </div>
+
+
+            <p>
+
+                Violinista y cofundador de
+                Dúo Agnus Praise.
+
+                Su interpretación busca explorar
+                la capacidad expresiva del violín,
+                combinando sensibilidad, técnica
+                y musicalidad.
+
+            </p>
+
+        </article>
+
+
+        <!-- SAMUEL - DERECHA -->
+
+        <article class="musician">
+
+            <img
+                src="WhatsApp Image 2026-08-09 at 2.06.05 PM (1).jpg"
+                alt="Samuel Manyoma pianista de Dúo Agnus Praise"
+            >
+
+
+            <h3>
+                Samuel Manyoma
+            </h3>
+
+
+            <div class="instrument">
+                Piano
+            </div>
+
+
+            <p>
+
+                Pianista y cofundador de
+                Dúo Agnus Praise.
+
+                Su propuesta combina riqueza
+                armónica, sensibilidad y una sólida
+                visión del acompañamiento y los
+                arreglos musicales.
+
+            </p>
+
+        </article>
+
+
     </div>
-
-    <p>
-        Violinista y cofundador de
-        Dúo Agnus Praise.
-
-        Su interpretación busca explorar
-        la capacidad expresiva del violín,
-        combinando sensibilidad, técnica
-        y musicalidad.
-    </p>
-
-</article>
-
-
-<!-- SAMUEL - DERECHA -->
-
-<article class="musician">
-
-    <img
-        src="WhatsApp Image 2026-08-09 at 2.06.05 PM (1).jpg"
-        alt="Samuel Manyoma pianista de Dúo Agnus Praise"
-    >
-
-    <h3>
-        Samuel Manyoma
-    </h3>
-
-    <div class="instrument">
-        Piano
-    </div>
-
-    <p>
-        Pianista y cofundador de
-        Dúo Agnus Praise.
-
-        Su propuesta combina riqueza
-        armónica, sensibilidad y una sólida
-        visión del acompañamiento y los
-        arreglos musicales.
-    </p>
-
-</article>
-```
-
-</div>
 
 </section>
 
@@ -1605,6 +2023,238 @@
                 </p>
 
             </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     REPERTORIO
+========================= -->
+
+<section class="repertoire">
+
+    <div class="section-title">
+
+        <h2>
+            Nuestro repertorio
+        </h2>
+
+
+        <p>
+            Música seleccionada, arreglada y
+            reinterpretada para piano y violín.
+        </p>
+
+    </div>
+
+
+    <div class="repertoire-intro">
+
+        <p>
+
+            El repertorio de Dúo Agnus Praise nace
+            de una búsqueda constante por encontrar
+            nuevas formas de interpretar la música.
+
+            Seleccionamos y desarrollamos obras que
+            permiten aprovechar al máximo las
+            posibilidades expresivas del piano y
+            el violín.
+
+        </p>
+
+    </div>
+
+
+    <div class="repertoire-grid">
+
+
+        <div class="repertoire-card">
+
+            <div class="repertoire-icon">
+                ♪
+            </div>
+
+
+            <h3>
+                Himnos y música cristiana
+            </h3>
+
+
+            <p>
+
+                Himnos tradicionales y música cristiana
+                reinterpretados mediante arreglos
+                propios para piano y violín.
+
+            </p>
+
+        </div>
+
+
+        <div class="repertoire-card">
+
+            <div class="repertoire-icon">
+                ♫
+            </div>
+
+
+            <h3>
+                Arreglos propios
+            </h3>
+
+
+            <p>
+
+                Adaptaciones y arreglos musicales
+                desarrollados buscando profundidad,
+                riqueza armónica y expresión.
+
+            </p>
+
+        </div>
+
+
+        <div class="repertoire-card">
+
+            <div class="repertoire-icon">
+                ✦
+            </div>
+
+
+            <h3>
+                Música para eventos
+            </h3>
+
+
+            <p>
+
+                Una selección musical pensada para
+                conciertos, ceremonias, bodas,
+                celebraciones y eventos especiales.
+
+            </p>
+
+        </div>
+
+
+        <div class="repertoire-card">
+
+            <div class="repertoire-icon">
+                ♬
+            </div>
+
+
+            <h3>
+                Repertorio contemporáneo
+            </h3>
+
+
+            <p>
+
+                Una combinación de obras contemporáneas
+                y propuestas musicales que amplían
+                las posibilidades del formato.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ESCÚCHANOS
+========================= -->
+
+<section class="listen-section">
+
+    <div class="section-title">
+
+        <h2>
+            Escúchanos
+        </h2>
+
+
+        <p>
+            Nuestra música también continúa
+            viviendo fuera del escenario.
+        </p>
+
+    </div>
+
+
+    <div class="listen-content">
+
+
+        <div class="listen-text">
+
+            <h3>
+                Dúo Agnus Praise
+            </h3>
+
+
+            <p>
+
+                Descubre nuestra música, nuestros
+                arreglos y la esencia sonora que
+                caracteriza al piano y al violín
+                de Agnus Praise.
+
+            </p>
+
+
+            <p>
+
+                Encuéntranos en nuestras plataformas
+                y acompáñanos en este proyecto musical.
+
+            </p>
+
+        </div>
+
+
+        <div class="listen-buttons">
+
+
+            <a
+                href="https://open.spotify.com/intl-es/album/4NsqTjm6NhE20BlnY6fRPA"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="listen-button"
+            >
+
+                <span>
+                    ♫
+                </span>
+
+                Escuchar en Spotify
+
+            </a>
+
+
+            <a
+                href="https://www.instagram.com/agnus_praise/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="listen-button"
+            >
+
+                <span>
+                    ◎
+                </span>
+
+                Seguir en Instagram
+
+            </a>
 
 
         </div>
@@ -1801,7 +2451,7 @@
 
 
         <a
-            href="#"
+            href="https://www.instagram.com/agnus_praise/"
             target="_blank"
             rel="noopener noreferrer"
         >
@@ -1810,25 +2460,7 @@
 
 
         <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            YouTube
-        </a>
-
-
-        <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            Facebook
-        </a>
-
-
-        <a
-            href="#"
+            href="https://open.spotify.com/intl-es/album/4NsqTjm6NhE20BlnY6fRPA"
             target="_blank"
             rel="noopener noreferrer"
         >
