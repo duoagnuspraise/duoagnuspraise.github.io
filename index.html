@@ -1,615 +1,1225 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Dúo Agnus Praise | Piano & Violín | Cali, Colombia</title>
-
-    <meta name="description" content="Dúo Agnus Praise es un dúo colombiano de piano y violín conformado por Andrés Orozco y Samuel Manyoma. Música cristiana, arreglos originales, expresión y excelencia artística desde Cali, Colombia.">
-
-    <meta name="keywords" content="Dúo Agnus Praise, Agnus Praise, Andrés Orozco, Samuel Manyoma, piano y violín, dúo de piano y violín, música cristiana, música adventista, Colombia, Cali">
-
-    <meta name="author" content="Dúo Agnus Praise">
-
-    <meta property="og:title" content="Dúo Agnus Praise | Piano & Violín">
-    <meta property="og:description" content="Dúo colombiano de piano y violín. Fe, excelencia, expresión y arte.">
-    <meta property="og:type" content="website">
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: Georgia, 'Times New Roman', serif;
-            background: #0b0b0d;
-            color: #f5f1e8;
-            line-height: 1.7;
-        }
-
-        /* NAVEGACIÓN */
-
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-            padding: 18px 7%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: rgba(11, 11, 13, 0.92);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(255,255,255,0.08);
-        }
-
-        .logo {
-            font-size: 1.25rem;
-            letter-spacing: 3px;
-            font-weight: bold;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 28px;
-        }
-
-        nav a {
-            color: #f5f1e8;
-            text-decoration: none;
-            font-size: 0.9rem;
-            letter-spacing: 1px;
-            transition: 0.3s;
-        }
-
-        nav a:hover {
-            color: #d6b46a;
-        }
-
-        /* HERO */
-
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 120px 20px 80px;
-
-            background:
-                radial-gradient(circle at center, rgba(125, 99, 49, 0.18), transparent 45%),
-                linear-gradient(135deg, #101014, #050506);
-        }
-
-        .hero-content {
-            max-width: 950px;
-        }
-
-        .eyebrow {
-            text-transform: uppercase;
-            letter-spacing: 6px;
-            font-size: 0.8rem;
-            color: #d6b46a;
-            margin-bottom: 25px;
-        }
-
-        .hero h1 {
-            font-size: clamp(3.2rem, 8vw, 7rem);
-            line-height: 0.95;
-            letter-spacing: 4px;
-            margin-bottom: 25px;
-        }
-
-        .hero h2 {
-            font-size: clamp(1.2rem, 3vw, 1.8rem);
-            font-weight: normal;
-            letter-spacing: 5px;
-            color: #d6b46a;
-            text-transform: uppercase;
-        }
-
-        .hero p {
-            max-width: 700px;
-            margin: 30px auto;
-            color: #c8c4bb;
-            font-size: 1.1rem;
-        }
-
-        .hero-button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 14px 30px;
-            border: 1px solid #d6b46a;
-            color: #d6b46a;
-            text-decoration: none;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            transition: 0.3s;
-        }
-
-        .hero-button:hover {
-            background: #d6b46a;
-            color: #0b0b0d;
-        }
-
-        /* SECCIONES */
-
-        section {
-            padding: 100px 8%;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        .section-title span {
-            color: #d6b46a;
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            font-size: 0.75rem;
-        }
-
-        .section-title h2 {
-            font-size: 2.8rem;
-            margin-top: 10px;
-        }
-
-        .about {
-            background: #111115;
-        }
-
-        .about-content {
-            max-width: 900px;
-            margin: auto;
-        }
-
-        .about-content p {
-            margin-bottom: 22px;
-            color: #d0ccc4;
-            font-size: 1.08rem;
-        }
-
-        .quote {
-            text-align: center;
-            font-size: 1.8rem;
-            font-style: italic;
-            color: #d6b46a;
-            margin: 60px auto;
-            max-width: 800px;
-        }
-
-        /* VALORES */
-
-        .values {
-            background: #0b0b0d;
-        }
-
-        .values-grid {
-            max-width: 1100px;
-            margin: auto;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-        }
-
-        .value {
-            padding: 35px 20px;
-            text-align: center;
-            border: 1px solid rgba(214,180,106,0.2);
-            background: rgba(255,255,255,0.02);
-        }
-
-        .value h3 {
-            color: #d6b46a;
-            margin-bottom: 10px;
-            font-size: 1rem;
-            letter-spacing: 1px;
-        }
-
-        .value p {
-            color: #aaa69e;
-            font-size: 0.9rem;
-        }
-
-        /* INTEGRANTES */
-
-        .members {
-            background: #111115;
-        }
-
-        .members-grid {
-            max-width: 900px;
-            margin: auto;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
-        }
-
-        .member {
-            text-align: center;
-            padding: 45px 25px;
-            border: 1px solid rgba(255,255,255,0.08);
-        }
-
-        .instrument {
-            color: #d6b46a;
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            font-size: 0.75rem;
-        }
-
-        .member h3 {
-            font-size: 2rem;
-            margin: 10px 0;
-        }
-
-        .member p {
-            color: #aaa69e;
-        }
-
-        /* REPERTORIO */
-
-        .repertoire {
-            background: #0b0b0d;
-            text-align: center;
-        }
-
-        .repertoire-list {
-            max-width: 800px;
-            margin: auto;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-        }
-
-        .tag {
-            border: 1px solid rgba(214,180,106,0.35);
-            padding: 12px 22px;
-            color: #d0ccc4;
-        }
-
-        /* CONTACTO */
-
-        .contact {
-            text-align: center;
-            background: #111115;
-        }
-
-        .contact p {
-            max-width: 650px;
-            margin: 0 auto 30px;
-            color: #aaa69e;
-        }
-
-        .contact-button {
-            display: inline-block;
-            padding: 15px 35px;
-            background: #d6b46a;
-            color: #0b0b0d;
-            text-decoration: none;
-            font-weight: bold;
-            letter-spacing: 2px;
-        }
-
-        /* FOOTER */
-
-        footer {
-            text-align: center;
-            padding: 35px 20px;
-            background: #070708;
-            color: #77736c;
-            font-size: 0.85rem;
-        }
-
-        footer strong {
-            color: #d6b46a;
-        }
-
-        /* RESPONSIVE */
-
-        @media (max-width: 800px) {
-
-            nav ul {
-                display: none;
-            }
-
-            .values-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .members-grid {
-                grid-template-columns: 1fr;
-            }
-
-            section {
-                padding: 80px 6%;
-            }
-        }
-
-        @media (max-width: 500px) {
-
-            .values-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .hero h1 {
-                font-size: 3.2rem;
-            }
-
-            .section-title h2 {
-                font-size: 2.2rem;
-            }
-        }
-    </style>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dúo Agnus Praise | Piano y Violín | Colombia</title>
+
+<meta name="description" content="Dúo Agnus Praise es un dúo colombiano de piano y violín conformado por Samuel Manyoma y Andrés Orozco. Una propuesta musical cristiana caracterizada por arreglos originales, complejidad musical, expresión y excelencia interpretativa.">
+
+<meta name="keywords" content="Dúo Agnus Praise, Agnus Praise, piano y violín, dúo piano violín Colombia, Samuel Manyoma, Andrés Orozco, música cristiana Colombia, música adventista Colombia, dúo musical colombiano">
+
+<meta name="author" content="Dúo Agnus Praise">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://duoagnuspraise.github.io/">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #080808;
+    color: #f5f5f5;
+    line-height: 1.7;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 6%;
+
+    background: rgba(0,0,0,0.88);
+    backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid rgba(212,175,55,0.25);
+}
+
+.logo {
+    color: #d4af37;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 28px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+    height: 100vh;
+    min-height: 650px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    position: relative;
+
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,.48),
+            rgba(0,0,0,.78)
+        ),
+        url("ajustes 1-22.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 950px;
+    padding: 30px;
+}
+
+.hero h1 {
+
+    font-size: clamp(45px,8vw,100px);
+
+    letter-spacing: 8px;
+
+    margin-bottom: 15px;
+
+    text-shadow:
+        0 4px 25px #000;
+}
+
+.hero h2 {
+
+    color: #d4af37;
+
+    letter-spacing: 6px;
+
+    font-size: clamp(18px,3vw,28px);
+
+    font-weight: normal;
+
+    margin-bottom: 25px;
+}
+
+.hero p {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    font-size: 19px;
+
+    color: #eee;
+}
+
+.button {
+
+    display: inline-block;
+
+    margin-top: 35px;
+
+    padding: 14px 32px;
+
+    border: 1px solid #d4af37;
+
+    color: #d4af37;
+
+    text-decoration: none;
+
+    letter-spacing: 2px;
+
+    transition: .3s;
+}
+
+.button:hover {
+
+    background: #d4af37;
+
+    color: #080808;
+}
+
+/* =========================
+   GENERAL
+========================= */
+
+section {
+    padding: 100px 8%;
+}
+
+.section-title {
+
+    text-align: center;
+
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+
+    font-size: 42px;
+
+    color: #d4af37;
+
+    margin-bottom: 10px;
+}
+
+.section-title p {
+
+    color: #aaa;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+
+    max-width: 950px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+.about p {
+
+    font-size: 18px;
+
+    color: #ddd;
+
+    margin-bottom: 22px;
+}
+
+.gold {
+    color: #d4af37;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.logo-section {
+
+    background: #101010;
+
+    text-align: center;
+}
+
+.logo-section img {
+
+    width: 180px;
+
+    max-width: 60%;
+
+    margin-bottom: 30px;
+
+    filter: drop-shadow(0 10px 30px rgba(0,0,0,.5));
+}
+
+/* =========================
+   MUSICIANS
+========================= */
+
+.musicians {
+
+    background: #101010;
+}
+
+.musician-grid {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2,1fr);
+
+    gap: 45px;
+}
+
+.musician {
+
+    background: #151515;
+
+    border: 1px solid #292929;
+
+    padding-bottom: 30px;
+
+    text-align: center;
+
+    transition: .4s;
+}
+
+.musician:hover {
+
+    transform: translateY(-8px);
+
+    border-color: #d4af37;
+}
+
+.musician img {
+
+    width: 100%;
+
+    height: 500px;
+
+    object-fit: cover;
+}
+
+.musician h3 {
+
+    color: #d4af37;
+
+    font-size: 28px;
+
+    margin-top: 25px;
+}
+
+.instrument {
+
+    color: #aaa;
+
+    letter-spacing: 3px;
+
+    font-size: 13px;
+
+    text-transform: uppercase;
+}
+
+.musician p {
+
+    color: #ccc;
+
+    padding: 20px 35px 0;
+}
+
+/* =========================
+   MUSIC
+========================= */
+
+.music-section {
+
+    text-align: center;
+
+    background: #080808;
+}
+
+.music-content {
+
+    max-width: 900px;
+
+    margin: auto;
+}
+
+.music-content p {
+
+    color: #ddd;
+
+    font-size: 19px;
+
+    margin-bottom: 40px;
+}
+
+.features {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 25px;
+}
+
+.feature {
+
+    padding: 30px 20px;
+
+    background: #101010;
+
+    border: 1px solid #292929;
+}
+
+.feature h3 {
+
+    color: #d4af37;
+
+    margin-bottom: 12px;
+}
+
+.feature p {
+
+    color: #aaa;
+
+    font-size: 15px;
+}
+
+/* =========================
+   TRAJECTORY
+========================= */
+
+.trajectory {
+
+    background: #101010;
+}
+
+.timeline {
+
+    max-width: 850px;
+
+    margin: auto;
+}
+
+.event {
+
+    border-left:
+        2px solid #d4af37;
+
+    padding:
+        0 0 35px 30px;
+
+    margin-bottom: 25px;
+}
+
+.event h3 {
+
+    color: #d4af37;
+
+    margin-bottom: 8px;
+}
+
+.event p {
+
+    color: #ccc;
+}
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 18px;
+}
+
+.gallery img {
+
+    width: 100%;
+
+    height: 480px;
+
+    object-fit: cover;
+
+    transition: .4s;
+}
+
+.gallery img:hover {
+
+    transform: scale(1.02);
+
+    opacity: .85;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.75),
+            rgba(0,0,0,.9)
+        ),
+        url("MG-20250210-WA0093.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.contact h2 {
+
+    font-size: 48px;
+
+    color: #d4af37;
+
+    margin-bottom: 20px;
+}
+
+.contact p {
+
+    color: #ddd;
+
+    font-size: 18px;
+}
+
+.socials {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 18px;
+
+    margin-top: 35px;
+}
+
+.socials a {
+
+    padding: 12px 24px;
+
+    border: 1px solid #555;
+
+    color: white;
+
+    text-decoration: none;
+
+    transition: .3s;
+}
+
+.socials a:hover {
+
+    color: #d4af37;
+
+    border-color: #d4af37;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    text-align: center;
+
+    padding: 35px;
+
+    background: #050505;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+footer strong {
+
+    color: #d4af37;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:800px) {
+
+    nav ul {
+        display: none;
+    }
+
+    .hero {
+
+        background-position:
+            center;
+    }
+
+    section {
+        padding: 75px 6%;
+    }
+
+    .musician-grid,
+    .features,
+    .gallery {
+
+        grid-template-columns: 1fr;
+    }
+
+    .musician img {
+
+        height: 500px;
+    }
+
+    .gallery img {
+
+        height: 450px;
+    }
+
+    .section-title h2 {
+
+        font-size: 34px;
+    }
+
+    .hero h1 {
+
+        font-size: 45px;
+
+        letter-spacing: 4px;
+    }
+
+}
+
+</style>
+
 </head>
+
 
 <body>
 
-    <!-- NAVEGACIÓN -->
 
-    <nav>
-        <div class="logo">AGNUS PRAISE</div>
+<!-- NAV -->
 
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#nosotros">Nosotros</a></li>
-            <li><a href="#integrantes">Integrantes</a></li>
-            <li><a href="#repertorio">Repertorio</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
+<nav>
 
+    <div class="logo">
+        AGNUS PRAISE
+    </div>
 
-    <!-- PORTADA -->
+    <ul>
 
-    <header class="hero" id="inicio">
+        <li>
+            <a href="#inicio">Inicio</a>
+        </li>
 
-        <div class="hero-content">
+        <li>
+            <a href="#nosotros">Nosotros</a>
+        </li>
 
-            <div class="eyebrow">
-                Piano & Violín · Cali, Colombia
-            </div>
+        <li>
+            <a href="#musicos">Músicos</a>
+        </li>
 
-            <h1>Dúo Agnus Praise</h1>
+        <li>
+            <a href="#musica">Nuestra música</a>
+        </li>
 
-            <h2>Faith · Excellence · Expression · Art</h2>
+        <li>
+            <a href="#galeria">Galería</a>
+        </li>
 
-            <p>
-                Una propuesta musical colombiana que une la elegancia del piano
-                y la expresividad del violín para crear experiencias de fe,
-                belleza y emoción.
-            </p>
+        <li>
+            <a href="#contacto">Contacto</a>
+        </li>
 
-            <a href="#nosotros" class="hero-button">
-                Conócenos
-            </a>
+    </ul>
 
-        </div>
+</nav>
 
-    </header>
 
+<!-- HERO -->
 
-    <!-- NOSOTROS -->
+<header class="hero" id="inicio">
 
-    <section class="about" id="nosotros">
+    <div class="hero-content">
 
-        <div class="section-title">
-            <span>La historia</span>
-            <h2>Sobre nosotros</h2>
-        </div>
+        <h1>
+            DÚO AGNUS PRAISE
+        </h1>
 
-        <div class="about-content">
-
-            <p>
-                <strong>Agnus Praise</strong> es un dúo colombiano de piano y
-                violín conformado por <strong>Samuel Manyoma</strong> y
-                <strong>Andrés Orozco</strong>, dos músicos cuya historia
-                comenzó desde la infancia y que, años más tarde, encontraron
-                nuevamente en la música un propósito compartido.
-            </p>
-
-            <p>
-                Desde Cali, Colombia, Agnus Praise ha desarrollado una identidad
-                artística caracterizada por la combinación de
-                <strong>complejidad musical, riqueza armónica, expresividad,
-                sensibilidad y excelencia interpretativa</strong>.
-            </p>
-
-            <p>
-                Su propuesta reúne himnos, música cristiana contemporánea,
-                piezas instrumentales y arreglos propios, explorando las
-                posibilidades sonoras del piano y el violín para transformar
-                cada interpretación en una experiencia.
-            </p>
-
-            <p>
-                Cada arreglo busca encontrar un equilibrio entre la exigencia
-                técnica, la belleza de la melodía y el mensaje que la música
-                desea transmitir. Para Agnus Praise, la excelencia musical y
-                la profundidad espiritual no son conceptos separados, sino
-                parte de una misma visión.
-            </p>
-
-            <p>
-                Su propósito es utilizar la música como un lenguaje capaz de
-                inspirar, emocionar y transmitir esperanza, llevando una
-                propuesta cristiana que pueda ser profundamente espiritual,
-                técnicamente exigente y artísticamente extraordinaria.
-            </p>
-
-        </div>
-
-        <div class="quote">
-            “Dos instrumentos. Una historia. Una misma pasión.”
-        </div>
-
-    </section>
-
-
-    <!-- VALORES -->
-
-    <section class="values">
-
-        <div class="section-title">
-            <span>Nuestra identidad</span>
-            <h2>Lo que define nuestro sonido</h2>
-        </div>
-
-        <div class="values-grid">
-
-            <div class="value">
-                <h3>COMPLEJIDAD</h3>
-                <p>
-                    Arreglos cuidadosamente construidos y musicalmente
-                    exigentes.
-                </p>
-            </div>
-
-            <div class="value">
-                <h3>EXPRESIÓN</h3>
-                <p>
-                    Cada interpretación busca comunicar más allá de las notas.
-                </p>
-            </div>
-
-            <div class="value">
-                <h3>EXCELENCIA</h3>
-                <p>
-                    Compromiso con la calidad artística y la interpretación.
-                </p>
-            </div>
-
-            <div class="value">
-                <h3>FE</h3>
-                <p>
-                    Música utilizada como instrumento de inspiración y
-                    adoración.
-                </p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- INTEGRANTES -->
-
-    <section class="members" id="integrantes">
-
-        <div class="section-title">
-            <span>Los músicos</span>
-            <h2>Integrantes</h2>
-        </div>
-
-        <div class="members-grid">
-
-            <div class="member">
-
-                <div class="instrument">
-                    Piano
-                </div>
-
-                <h3>Samuel Manyoma</h3>
-
-                <p>
-                    Pianista y arreglista. Su interpretación combina
-                    sensibilidad musical, riqueza armónica y una visión
-                    contemporánea del repertorio cristiano.
-                </p>
-
-            </div>
-
-
-            <div class="member">
-
-                <div class="instrument">
-                    Violín
-                </div>
-
-                <h3>Andrés Orozco</h3>
-
-                <p>
-                    Violinista e intérprete. Su estilo se caracteriza por la
-                    expresividad, sensibilidad y búsqueda constante de nuevas
-                    posibilidades sonoras.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- REPERTORIO -->
-
-    <section class="repertoire" id="repertorio">
-
-        <div class="section-title">
-            <span>Nuestra música</span>
-            <h2>Repertorio</h2>
-        </div>
-
-        <div class="repertoire-list">
-
-            <div class="tag">Himnos</div>
-            <div class="tag">Música cristiana contemporánea</div>
-            <div class="tag">Música instrumental</div>
-            <div class="tag">Arreglos originales</div>
-            <div class="tag">Música clásica</div>
-            <div class="tag">Eventos especiales</div>
-
-        </div>
-
-    </section>
-
-
-    <!-- CONTACTO -->
-
-    <section class="contact" id="contacto">
-
-        <div class="section-title">
-            <span>Conecta con nosotros</span>
-            <h2>Dúo Agnus Praise</h2>
-        </div>
+        <h2>
+            PIANO & VIOLÍN
+        </h2>
 
         <p>
-            Para presentaciones, eventos, colaboraciones o información sobre
-            nuestro proyecto musical, puedes ponerte en contacto con nosotros.
+
+            Una propuesta musical colombiana que une
+            la riqueza del piano y la expresividad del
+            violín para crear experiencias de fe,
+            belleza y emoción.
+
         </p>
 
-        <!-- Más adelante pondremos aquí sus enlaces reales -->
-
-        <a href="mailto:contacto@agnuspraise.com" class="contact-button">
-            CONTÁCTANOS
+        <a
+            href="#nosotros"
+            class="button"
+        >
+            CONÓCENOS
         </a>
 
-    </section>
+    </div>
+
+</header>
 
 
-    <!-- PIE DE PÁGINA -->
+<!-- NOSOTROS -->
 
-    <footer>
+<section id="nosotros">
+
+    <div class="section-title">
+
+        <h2>
+            Nuestra historia
+        </h2>
 
         <p>
-            © 2026 <strong>Dúo Agnus Praise</strong> · Cali, Colombia
+            Dúo Agnus Praise · Cali, Colombia
         </p>
+
+    </div>
+
+
+    <div class="about">
 
         <p>
-            Piano & Violín · Faith · Excellence · Expression · Art
+
+            <span class="gold">
+                Dúo Agnus Praise
+            </span>
+
+            es un dúo colombiano de piano y violín
+            conformado por
+
+            <strong>
+                Samuel Manyoma
+            </strong>
+
+            y
+
+            <strong>
+                Andrés Orozco
+            </strong>.
+
         </p>
 
-    </footer>
+
+        <p>
+
+            Nuestra historia musical nace desde una
+            temprana edad y se consolida posteriormente
+            alrededor de una misma pasión:
+            utilizar la música como una herramienta
+            para transmitir fe, esperanza y belleza.
+
+        </p>
+
+
+        <p>
+
+            Nuestra propuesta se caracteriza por combinar
+
+            <span class="gold">
+                complejidad musical,
+                riqueza armónica,
+                expresión,
+                sensibilidad
+                y excelencia interpretativa.
+            </span>
+
+        </p>
+
+
+        <p>
+
+            Cada arreglo busca encontrar un equilibrio
+            entre la exigencia técnica y la profundidad
+            musical, permitiendo que el piano y el violín
+            dialoguen y construyan una experiencia
+            artística propia.
+
+        </p>
+
+
+        <p>
+
+            Dúo Agnus Praise se ha consolidado como
+            una propuesta destacada dentro del ámbito
+            musical de la Iglesia Adventista en Colombia,
+            llevando una identidad artística que busca
+            unir excelencia musical y propósito espiritual.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- LOGO -->
+
+<section class="logo-section">
+
+    <div class="section-title">
+
+        <h2>
+            Nuestra identidad
+        </h2>
+
+        <p>
+            Una propuesta construida desde la música y la fe.
+        </p>
+
+    </div>
+
+
+    <img
+        src="MG-20250210-WA0093.jpg"
+        alt="Logo oficial de Dúo Agnus Praise"
+    >
+
+</section>
+
+
+<!-- MÚSICOS -->
+
+<section
+    class="musicians"
+    id="musicos"
+>
+
+    <div class="section-title">
+
+        <h2>
+            Nuestros músicos
+        </h2>
+
+        <p>
+            Dos instrumentos. Una misma visión.
+        </p>
+
+    </div>
+
+
+    <div class="musician-grid">
+
+
+        <!-- ANDRÉS -->
+
+        <article class="musician">
+
+            <img
+                src="WhatsApp Image 2026-08-09 at 2.06.05 PM.jpg"
+                alt="Andrés Orozco violinista de Dúo Agnus Praise"
+            >
+
+            <h3>
+                Andrés Orozco
+            </h3>
+
+            <div class="instrument">
+                Violín
+            </div>
+
+            <p>
+
+                Violinista y cofundador de Dúo Agnus Praise.
+                Su interpretación busca explorar la capacidad
+                expresiva del violín, combinando sensibilidad,
+                técnica y musicalidad.
+
+            </p>
+
+        </article>
+
+
+        <!-- SAMUEL -->
+
+        <article class="musician">
+
+            <img
+                src="WhatsApp Image 2026-08-09 at 2.06.05 PM (1).jpg"
+                alt="Samuel Manyoma pianista de Dúo Agnus Praise"
+            >
+
+            <h3>
+                Samuel Manyoma
+            </h3>
+
+            <div class="instrument">
+                Piano
+            </div>
+
+            <p>
+
+                Pianista y cofundador de Dúo Agnus Praise.
+                Su propuesta combina riqueza armónica,
+                sensibilidad y una sólida visión del
+                acompañamiento y los arreglos musicales.
+
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- NUESTRA MÚSICA -->
+
+<section
+    class="music-section"
+    id="musica"
+>
+
+    <div class="section-title">
+
+        <h2>
+            Nuestra música
+        </h2>
+
+        <p>
+            Más que interpretar: construir una experiencia.
+        </p>
+
+    </div>
+
+
+    <div class="music-content">
+
+        <p>
+
+            En Dúo Agnus Praise entendemos cada arreglo
+            como una oportunidad para explorar nuevas
+            posibilidades sonoras.
+
+            Nuestro trabajo busca integrar recursos
+            armónicos, dinámicos e interpretativos para
+            construir una identidad musical propia.
+
+        </p>
+
+
+        <div class="features">
+
+
+            <div class="feature">
+
+                <h3>
+                    Complejidad musical
+                </h3>
+
+                <p>
+
+                    Arreglos cuidadosamente elaborados,
+                    con riqueza armónica y recursos
+                    musicales que permiten explorar
+                    las posibilidades del piano y el violín.
+
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <h3>
+                    Expresión
+                </h3>
+
+                <p>
+
+                    Cada interpretación busca comunicar
+                    emociones y conectar profundamente
+                    con quienes escuchan.
+
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <h3>
+                    Excelencia
+                </h3>
+
+                <p>
+
+                    Un compromiso permanente con la
+                    preparación, la interpretación y
+                    el crecimiento artístico.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- TRAYECTORIA -->
+
+<section
+    class="trajectory"
+>
+
+    <div class="section-title">
+
+        <h2>
+            Trayectoria
+        </h2>
+
+        <p>
+            Una historia que continúa creciendo.
+        </p>
+
+    </div>
+
+
+    <div class="timeline">
+
+
+        <div class="event">
+
+            <h3>
+                Los comienzos
+            </h3>
+
+            <p>
+
+                La historia musical de Andrés Orozco
+                y Samuel Manyoma comienza desde la infancia,
+                desarrollando desde temprana edad una
+                relación profunda con la música.
+
+            </p>
+
+        </div>
+
+
+        <div class="event">
+
+            <h3>
+                Dúo Agnus Praise
+            </h3>
+
+            <p>
+
+                El proyecto se consolida como una propuesta
+                de piano y violín enfocada en desarrollar
+                arreglos propios y una identidad musical
+                diferenciada.
+
+            </p>
+
+        </div>
+
+
+        <div class="event">
+
+            <h3>
+                Escenarios y festivales
+            </h3>
+
+            <p>
+
+                El dúo ha llevado su propuesta a diferentes
+                espacios musicales y eventos cristianos
+                en Colombia.
+
+            </p>
+
+        </div>
+
+
+        <div class="event">
+
+            <h3>
+                Nuevos proyectos
+            </h3>
+
+            <p>
+
+                Actualmente continúa desarrollando nuevos
+                arreglos, repertorio y proyectos musicales
+                con la visión de llevar su propuesta a
+                nuevos escenarios.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- GALERÍA -->
+
+<section id="galeria">
+
+    <div class="section-title">
+
+        <h2>
+            Galería
+        </h2>
+
+        <p>
+            Momentos de nuestra historia.
+        </p>
+
+    </div>
+
+
+    <div class="gallery">
+
+
+        <img
+            src="ajustes 1-22.jpg"
+            alt="Dúo Agnus Praise piano y violín"
+        >
+
+
+        <img
+            src="WhatsApp Image 2026-08-09 at 2.07.49 PM.jpg"
+            alt="Dúo Agnus Praise presentación musical"
+        >
+
+
+        <img
+            src="WhatsApp Image 2026-08-09 at 2.12.25 PM.jpg"
+            alt="Dúo Agnus Praise músicos colombianos"
+        >
+
+
+        <img
+            src="MG-20250210-WA0093.jpg"
+            alt="Dúo Agnus Praise identidad visual"
+        >
+
+
+    </div>
+
+</section>
+
+
+<!-- CONTACTO -->
+
+<section
+    class="contact"
+    id="contacto"
+>
+
+    <h2>
+        Dúo Agnus Praise
+    </h2>
+
+    <p>
+        Piano & Violín · Cali, Colombia
+    </p>
+
+    <p>
+        Presentaciones · Eventos · Proyectos musicales
+    </p>
+
+
+    <div class="socials">
+
+        <a
+            href="#"
+            target="_blank"
+        >
+            Instagram
+        </a>
+
+
+        <a
+            href="#"
+            target="_blank"
+        >
+            YouTube
+        </a>
+
+
+        <a
+            href="#"
+            target="_blank"
+        >
+            Facebook
+        </a>
+
+
+        <a
+            href="#"
+            target="_blank"
+        >
+            Spotify
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+
+        © 2026
+
+        <strong>
+            Dúo Agnus Praise
+        </strong>
+
+        · Todos los derechos reservados.
+
+    </p>
+
+    <p>
+        Piano & Violín · Colombia
+    </p>
+
+</footer>
+
 
 </body>
 </html>
