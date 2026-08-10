@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-
 <html lang="es">
 
 <head>
 
-```
 <meta charset="UTF-8">
 
 <meta
@@ -44,148 +42,1920 @@
 
 <style>
 
-    /* =========================
-       RESET
-    ========================= */
+/* =========================================================
+   RESET
+========================================================= */
 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #080808;
+
+    color: white;
+
+    line-height: 1.7;
+}
+
+
+body.bio-open {
+    overflow: hidden;
+}
+
+
+a {
+    color: inherit;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+
+/* =========================================================
+   NAVEGACIÓN
+========================================================= */
+
+nav {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 1000;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 20px 6%;
+
+    background:
+        rgba(5,5,5,.88);
+
+    backdrop-filter:
+        blur(10px);
+
+    border-bottom:
+        1px solid
+        rgba(212,175,55,.15);
+}
+
+
+.logo {
+    color: #d4af37;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+}
+
+
+nav ul {
+    display: flex;
+
+    gap: 28px;
+
+    list-style: none;
+}
+
+
+nav ul li a {
+    color: #eee;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    letter-spacing: 1px;
+
+    transition: .3s ease;
+}
+
+
+nav ul li a:hover {
+    color: #d4af37;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+
+    height: 100vh;
+
+    min-height: 650px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    position: relative;
+
+    background-image:
+
+        linear-gradient(
+            rgba(0,0,0,.48),
+            rgba(0,0,0,.78)
+        ),
+
+        url("ajustes 1-22.jpg");
+
+    background-size: cover;
+
+    background-position:
+        center 15%;
+}
+
+
+.hero-content {
+
+    max-width: 950px;
+
+    padding: 30px;
+
+    animation:
+        heroAppear
+        1.2s
+        ease
+        forwards;
+}
+
+
+.hero h1 {
+
+    font-size:
+        clamp(
+            45px,
+            8vw,
+            100px
+        );
+
+    letter-spacing: 8px;
+
+    margin-bottom: 15px;
+
+    text-shadow:
+        0 4px 25px #000;
+}
+
+
+.hero h2 {
+
+    color: #d4af37;
+
+    letter-spacing: 6px;
+
+    font-size:
+        clamp(
+            18px,
+            3vw,
+            28px
+        );
+
+    font-weight: normal;
+
+    margin-bottom: 25px;
+}
+
+
+.hero p {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    font-size: 19px;
+
+    color: #eee;
+}
+
+
+.button {
+
+    display: inline-block;
+
+    margin-top: 35px;
+
+    padding: 14px 32px;
+
+    border:
+        1px solid
+        #d4af37;
+
+    color: #d4af37;
+
+    text-decoration: none;
+
+    letter-spacing: 2px;
+
+    transition: .3s ease;
+}
+
+
+.button:hover {
+
+    background:
+        #d4af37;
+
+    color:
+        #080808;
+
+    box-shadow:
+        0 10px 30px
+        rgba(212,175,55,.2);
+
+    transform:
+        translateY(-3px);
+}
+
+
+@keyframes heroAppear {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(25px);
     }
 
+    to {
 
-    html {
-        scroll-behavior: smooth;
+        opacity: 1;
+
+        transform:
+            translateY(0);
     }
 
-
-    body {
-        font-family:
-            Arial,
-            Helvetica,
-            sans-serif;
-
-        background: #080808;
-
-        color: white;
-
-        line-height: 1.7;
-    }
+}
 
 
-    a {
-        color: inherit;
-    }
+/* =========================================================
+   GENERAL
+========================================================= */
+
+section {
+
+    padding:
+        100px 8%;
+}
 
 
-    img {
-        max-width: 100%;
-    }
+.section-title {
+
+    text-align: center;
+
+    margin-bottom: 60px;
+}
 
 
-    /* =========================
-       NAVEGACIÓN
-    ========================= */
+.section-title h2 {
+
+    font-size: 42px;
+
+    color: #d4af37;
+
+    margin-bottom: 10px;
+
+    letter-spacing: 1px;
+}
+
+
+.section-title p {
+
+    color: #aaa;
+
+    font-size: 15px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   HISTORIA
+========================================================= */
+
+.about {
+
+    max-width: 950px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+
+.about p {
+
+    font-size: 18px;
+
+    color: #ddd;
+
+    margin-bottom: 22px;
+}
+
+
+.about p:last-child {
+    margin-bottom: 0;
+}
+
+
+.gold {
+    color: #d4af37;
+}
+
+
+/* =========================================================
+   IDENTIDAD
+========================================================= */
+
+.logo-section {
+
+    background:
+        #101010;
+
+    text-align: center;
+}
+
+
+.logo-section img {
+
+    width: 180px;
+
+    max-width: 60%;
+
+    margin-bottom: 30px;
+
+    filter:
+        drop-shadow(
+            0 10px 30px
+            rgba(0,0,0,.5)
+        );
+}
+
+
+/* =========================================================
+   MÚSICOS
+========================================================= */
+
+.musicians {
+
+    background:
+        #101010;
+}
+
+
+.musician-grid {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 45px;
+}
+
+
+/* =========================================================
+   TARJETAS DE MÚSICOS
+========================================================= */
+
+.musician {
+
+    background:
+        #151515;
+
+    border:
+        1px solid
+        #292929;
+
+    padding-bottom: 30px;
+
+    text-align: center;
+
+    transition:
+        .4s ease;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    position: relative;
+}
+
+
+.musician::after {
+
+    content:
+        "VER BIOGRAFÍA →";
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    padding: 10px;
+
+    background:
+        rgba(212,175,55,.95);
+
+    color:
+        #080808;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    font-weight: bold;
+
+    transform:
+        translateY(100%);
+
+    transition:
+        .4s ease;
+}
+
+
+.musician:hover {
+
+    transform:
+        translateY(-8px);
+
+    border-color:
+        #d4af37;
+
+    box-shadow:
+        0 15px 40px
+        rgba(212,175,55,.15);
+}
+
+
+.musician:hover::after {
+
+    transform:
+        translateY(0);
+}
+
+
+.musician img {
+
+    width: 100%;
+
+    height: 520px;
+
+    display: block;
+
+    object-fit:
+        contain;
+
+    object-position:
+        center;
+
+    background:
+        #080808;
+
+    transition:
+        transform
+        .5s ease;
+}
+
+
+.musician:hover img {
+
+    transform:
+        scale(1.03);
+}
+
+
+.musician h3 {
+
+    color:
+        #d4af37;
+
+    font-size:
+        28px;
+
+    margin-top:
+        25px;
+
+    margin-bottom:
+        4px;
+}
+
+
+.instrument {
+
+    color:
+        #aaa;
+
+    letter-spacing:
+        3px;
+
+    font-size:
+        13px;
+
+    text-transform:
+        uppercase;
+}
+
+
+.musician p {
+
+    color:
+        #ccc;
+
+    padding:
+        20px 35px 0;
+
+    font-size:
+        16px;
+}
+
+
+/* =========================================================
+   BIOGRAFÍAS - PANTALLA COMPLETA
+========================================================= */
+
+.biography-screen {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 5000;
+
+    background:
+        #080808;
+
+    overflow-y: auto;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform:
+        translateY(30px);
+
+    transition:
+        opacity .45s ease,
+        transform .45s ease,
+        visibility .45s ease;
+}
+
+
+.biography-screen.active {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transform:
+        translateY(0);
+}
+
+
+/* =========================================================
+   BOTÓN VOLVER
+========================================================= */
+
+.bio-back {
+
+    position: fixed;
+
+    top: 25px;
+
+    left: 30px;
+
+    z-index: 20;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding:
+        12px 20px;
+
+    background:
+        rgba(8,8,8,.88);
+
+    border:
+        1px solid
+        #d4af37;
+
+    color:
+        #d4af37;
+
+    font-size:
+        13px;
+
+    letter-spacing:
+        1px;
+
+    cursor: pointer;
+
+    transition:
+        .3s ease;
+
+    backdrop-filter:
+        blur(10px);
+}
+
+
+.bio-back:hover {
+
+    background:
+        #d4af37;
+
+    color:
+        #080808;
+
+    transform:
+        translateX(-3px);
+}
+
+
+/* =========================================================
+   CABECERA BIOGRAFÍA
+========================================================= */
+
+.bio-hero {
+
+    min-height:
+        620px;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    align-items:
+        center;
+
+    gap:
+        70px;
+
+    padding:
+        120px 9% 80px;
+
+    background:
+        radial-gradient(
+            circle at 70% 40%,
+            rgba(212,175,55,.08),
+            transparent 40%
+        );
+}
+
+
+.bio-photo {
+
+    height:
+        540px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+}
+
+
+.bio-photo img {
+
+    width:
+        100%;
+
+    height:
+        100%;
+
+    object-fit:
+        contain;
+
+    filter:
+        drop-shadow(
+            0 20px 40px
+            rgba(0,0,0,.55)
+        );
+}
+
+
+.bio-heading {
+
+    max-width:
+        650px;
+}
+
+
+.bio-label {
+
+    color:
+        #d4af37;
+
+    letter-spacing:
+        5px;
+
+    text-transform:
+        uppercase;
+
+    font-size:
+        13px;
+
+    margin-bottom:
+        15px;
+}
+
+
+.bio-heading h1 {
+
+    font-size:
+        clamp(
+            48px,
+            6vw,
+            78px
+        );
+
+    line-height:
+        1.05;
+
+    margin-bottom:
+        15px;
+}
+
+
+.bio-heading h2 {
+
+    color:
+        #d4af37;
+
+    font-size:
+        20px;
+
+    font-weight:
+        normal;
+
+    letter-spacing:
+        3px;
+
+    margin-bottom:
+        30px;
+}
+
+
+.bio-intro {
+
+    color:
+        #ccc;
+
+    font-size:
+        19px;
+
+    line-height:
+        1.9;
+}
+
+
+/* =========================================================
+   CONTENIDO BIOGRAFÍA
+========================================================= */
+
+.bio-content {
+
+    max-width:
+        1100px;
+
+    margin:
+        auto;
+
+    padding:
+        40px 8% 100px;
+}
+
+
+.bio-section {
+
+    margin-bottom:
+        65px;
+}
+
+
+.bio-section h3 {
+
+    color:
+        #d4af37;
+
+    font-size:
+        30px;
+
+    margin-bottom:
+        22px;
+
+    padding-bottom:
+        12px;
+
+    border-bottom:
+        1px solid
+        rgba(212,175,55,.25);
+}
+
+
+.bio-section p {
+
+    color:
+        #ccc;
+
+    font-size:
+        17px;
+
+    line-height:
+        1.9;
+
+    margin-bottom:
+        20px;
+}
+
+
+.bio-section strong {
+
+    color:
+        #eee;
+}
+
+
+/* =========================================================
+   DESTACADOS
+========================================================= */
+
+.bio-highlights {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:
+        20px;
+
+    margin:
+        50px 0;
+}
+
+
+.bio-highlight {
+
+    padding:
+        30px 25px;
+
+    background:
+        #101010;
+
+    border:
+        1px solid
+        #292929;
+
+    text-align:
+        center;
+
+    transition:
+        .3s ease;
+}
+
+
+.bio-highlight:hover {
+
+    border-color:
+        #d4af37;
+
+    transform:
+        translateY(-5px);
+}
+
+
+.bio-highlight .number {
+
+    display:
+        block;
+
+    color:
+        #d4af37;
+
+    font-size:
+        35px;
+
+    font-weight:
+        bold;
+
+    margin-bottom:
+        8px;
+}
+
+
+.bio-highlight span {
+
+    color:
+        #aaa;
+
+    font-size:
+        14px;
+
+    letter-spacing:
+        1px;
+}
+
+
+/* =========================================================
+   LISTAS DE TRAYECTORIA
+========================================================= */
+
+.bio-list {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:
+        18px;
+
+    list-style:
+        none;
+}
+
+
+.bio-list li {
+
+    background:
+        #101010;
+
+    border-left:
+        2px solid
+        #d4af37;
+
+    padding:
+        18px 22px;
+
+    color:
+        #ccc;
+}
+
+
+.bio-list li strong {
+
+    display:
+        block;
+
+    color:
+        #d4af37;
+
+    margin-bottom:
+        5px;
+}
+
+
+/* =========================================================
+   CIERRE BIOGRAFÍA
+========================================================= */
+
+.bio-quote {
+
+    max-width:
+        900px;
+
+    margin:
+        80px auto 0;
+
+    padding:
+        45px;
+
+    text-align:
+        center;
+
+    border:
+        1px solid
+        rgba(212,175,55,.35);
+
+    background:
+        #101010;
+}
+
+
+.bio-quote p {
+
+    color:
+        #ddd;
+
+    font-size:
+        21px;
+
+    font-style:
+        italic;
+
+    line-height:
+        1.8;
+}
+
+
+.bio-quote span {
+
+    display:
+        block;
+
+    margin-top:
+        20px;
+
+    color:
+        #d4af37;
+
+    font-size:
+        13px;
+
+    letter-spacing:
+        2px;
+}
+
+
+/* =========================================================
+   NUESTRA MÚSICA
+========================================================= */
+
+.music-section {
+
+    text-align:
+        center;
+
+    background:
+        #080808;
+}
+
+
+.music-content {
+
+    max-width:
+        950px;
+
+    margin:
+        auto;
+}
+
+
+.music-content > p {
+
+    color:
+        #ddd;
+
+    font-size:
+        19px;
+
+    margin-bottom:
+        50px;
+
+    max-width:
+        850px;
+
+    margin-left:
+        auto;
+
+    margin-right:
+        auto;
+}
+
+
+.features {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:
+        25px;
+}
+
+
+.feature {
+
+    padding:
+        35px 25px;
+
+    background:
+        #101010;
+
+    border:
+        1px solid
+        #292929;
+
+    transition:
+        .4s ease;
+
+    position:
+        relative;
+
+    overflow:
+        hidden;
+}
+
+
+.feature::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    top:
+        0;
+
+    left:
+        0;
+
+    width:
+        100%;
+
+    height:
+        2px;
+
+    background:
+        #d4af37;
+
+    transform:
+        scaleX(0);
+
+    transform-origin:
+        center;
+
+    transition:
+        .4s ease;
+}
+
+
+.feature:hover {
+
+    transform:
+        translateY(-8px);
+
+    border-color:
+        #d4af37;
+
+    box-shadow:
+        0 15px 40px
+        rgba(212,175,55,.12);
+}
+
+
+.feature:hover::before {
+    transform: scaleX(1);
+}
+
+
+.feature h3 {
+
+    color:
+        #d4af37;
+
+    margin-bottom:
+        15px;
+
+    font-size:
+        22px;
+
+    letter-spacing:
+        1px;
+}
+
+
+.feature p {
+
+    color:
+        #aaa;
+
+    font-size:
+        15px;
+}
+
+
+/* =========================================================
+   REPERTORIO
+========================================================= */
+
+.repertoire {
+
+    background:
+        #080808;
+
+    text-align:
+        center;
+}
+
+
+.repertoire-intro {
+
+    max-width:
+        850px;
+
+    margin:
+        -20px auto 55px;
+
+    color:
+        #ccc;
+
+    font-size:
+        18px;
+}
+
+
+.repertoire-grid {
+
+    max-width:
+        1100px;
+
+    margin:
+        auto;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:
+        22px;
+}
+
+
+.repertoire-card {
+
+    background:
+        #101010;
+
+    border:
+        1px solid
+        #292929;
+
+    padding:
+        35px 25px;
+
+    min-height:
+        280px;
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    align-items:
+        center;
+
+    justify-content:
+        flex-start;
+
+    transition:
+        .4s ease;
+
+    position:
+        relative;
+
+    overflow:
+        hidden;
+}
+
+
+.repertoire-card::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    top:
+        0;
+
+    left:
+        0;
+
+    width:
+        100%;
+
+    height:
+        2px;
+
+    background:
+        #d4af37;
+
+    transform:
+        scaleX(0);
+
+    transition:
+        .4s ease;
+}
+
+
+.repertoire-card:hover {
+
+    transform:
+        translateY(-8px);
+
+    border-color:
+        #d4af37;
+
+    box-shadow:
+        0 15px 40px
+        rgba(212,175,55,.12);
+}
+
+
+.repertoire-card:hover::before {
+    transform: scaleX(1);
+}
+
+
+.repertoire-icon {
+
+    color:
+        #d4af37;
+
+    font-size:
+        38px;
+
+    margin-bottom:
+        18px;
+
+    line-height:
+        1;
+}
+
+
+.repertoire-card h3 {
+
+    color:
+        #d4af37;
+
+    font-size:
+        20px;
+
+    margin-bottom:
+        15px;
+}
+
+
+.repertoire-card p {
+
+    color:
+        #aaa;
+
+    font-size:
+        15px;
+
+    line-height:
+        1.7;
+}
+
+
+/* =========================================================
+   ESCÚCHANOS
+========================================================= */
+
+.listen-section {
+
+    background:
+        #101010;
+
+    text-align:
+        center;
+}
+
+
+.listen-content {
+
+    max-width:
+        950px;
+
+    margin:
+        auto;
+
+    padding:
+        45px;
+
+    border:
+        1px solid
+        #292929;
+
+    background:
+        #080808;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        50px;
+
+    text-align:
+        left;
+
+    transition:
+        .4s ease;
+}
+
+
+.listen-content:hover {
+
+    border-color:
+        rgba(212,175,55,.6);
+
+    box-shadow:
+        0 20px 50px
+        rgba(0,0,0,.35);
+}
+
+
+.listen-text {
+
+    max-width:
+        550px;
+}
+
+
+.listen-text h3 {
+
+    color:
+        #d4af37;
+
+    font-size:
+        30px;
+
+    margin-bottom:
+        15px;
+}
+
+
+.listen-text p {
+
+    color:
+        #ccc;
+
+    font-size:
+        16px;
+
+    margin-bottom:
+        12px;
+}
+
+
+.listen-buttons {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        15px;
+
+    min-width:
+        230px;
+}
+
+
+.listen-button {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    gap:
+        10px;
+
+    padding:
+        14px 22px;
+
+    border:
+        1px solid
+        #555;
+
+    color:
+        white;
+
+    text-decoration:
+        none;
+
+    letter-spacing:
+        1px;
+
+    transition:
+        .3s ease;
+}
+
+
+.listen-button span {
+
+    color:
+        #d4af37;
+
+    font-size:
+        22px;
+}
+
+
+.listen-button:hover {
+
+    border-color:
+        #d4af37;
+
+    color:
+        #d4af37;
+
+    transform:
+        translateY(-3px);
+}
+
+
+/* =========================================================
+   TRAYECTORIA
+========================================================= */
+
+.trajectory {
+
+    background:
+        #101010;
+}
+
+
+.timeline {
+
+    max-width:
+        850px;
+
+    margin:
+        auto;
+}
+
+
+.event {
+
+    border-left:
+        2px solid
+        #d4af37;
+
+    padding:
+        0 0 35px 30px;
+
+    margin-bottom:
+        25px;
+
+    position:
+        relative;
+}
+
+
+.event::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    left:
+        -7px;
+
+    top:
+        4px;
+
+    width:
+        12px;
+
+    height:
+        12px;
+
+    border-radius:
+        50%;
+
+    background:
+        #d4af37;
+
+    box-shadow:
+        0 0 15px
+        rgba(212,175,55,.4);
+}
+
+
+.event h3 {
+
+    color:
+        #d4af37;
+
+    margin-bottom:
+        8px;
+
+    font-size:
+        23px;
+}
+
+
+.event p {
+
+    color:
+        #ccc;
+}
+
+
+/* =========================================================
+   GALERÍA
+========================================================= */
+
+.gallery-section {
+
+    background:
+        #080808;
+}
+
+
+.gallery {
+
+    max-width:
+        1100px;
+
+    margin:
+        auto;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:
+        18px;
+}
+
+
+.gallery img {
+
+    width:
+        100%;
+
+    height:
+        480px;
+
+    object-fit:
+        contain;
+
+    background:
+        #101010;
+
+    border:
+        1px solid
+        #222;
+
+    transition:
+        .4s ease;
+}
+
+
+.gallery img:hover {
+
+    transform:
+        scale(1.02);
+
+    opacity:
+        .9;
+
+    border-color:
+        #d4af37;
+
+    box-shadow:
+        0 10px 30px
+        rgba(212,175,55,.12);
+}
+
+
+/* =========================================================
+   CONTACTO
+========================================================= */
+
+.contact {
+
+    text-align:
+        center;
+
+    background:
+
+        linear-gradient(
+            rgba(0,0,0,.75),
+            rgba(0,0,0,.9)
+        ),
+
+        url(
+            "MG-20250210-WA0093.jpg"
+        );
+
+    background-size:
+        cover;
+
+    background-position:
+        center;
+}
+
+
+.contact h2 {
+
+    font-size:
+        48px;
+
+    color:
+        #d4af37;
+
+    margin-bottom:
+        20px;
+}
+
+
+.contact p {
+
+    color:
+        #ddd;
+
+    font-size:
+        18px;
+}
+
+
+.socials {
+
+    display:
+        flex;
+
+    justify-content:
+        center;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        18px;
+
+    margin-top:
+        35px;
+}
+
+
+.socials a {
+
+    padding:
+        12px 30px;
+
+    border:
+        1px solid
+        #555;
+
+    color:
+        white;
+
+    text-decoration:
+        none;
+
+    transition:
+        .3s ease;
+}
+
+
+.socials a:hover {
+
+    color:
+        #d4af37;
+
+    border-color:
+        #d4af37;
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(212,175,55,.12);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    text-align:
+        center;
+
+    padding:
+        35px;
+
+    background:
+        #050505;
+
+    color:
+        #777;
+
+    font-size:
+        14px;
+}
+
+
+footer strong {
+
+    color:
+        #d4af37;
+}
+
+
+/* =========================================================
+   MÓVIL
+========================================================= */
+
+@media(max-width:800px) {
 
     nav {
-        position: fixed;
 
-        top: 0;
-        left: 0;
-
-        width: 100%;
-
-        z-index: 1000;
-
-        display: flex;
-
-        align-items: center;
-
-        justify-content: space-between;
-
-        padding: 20px 6%;
-
-        background:
-            rgba(5,5,5,.88);
-
-        backdrop-filter:
-            blur(10px);
-
-        border-bottom:
-            1px solid
-            rgba(212,175,55,.15);
+        padding:
+            18px 5%;
     }
 
 
     .logo {
-        color: #d4af37;
 
-        font-size: 20px;
+        font-size:
+            16px;
 
-        font-weight: bold;
-
-        letter-spacing: 4px;
+        letter-spacing:
+            3px;
     }
 
 
     nav ul {
-        display: flex;
 
-        gap: 28px;
-
-        list-style: none;
+        display:
+            none;
     }
 
-
-    nav ul li a {
-        color: #eee;
-
-        text-decoration: none;
-
-        font-size: 13px;
-
-        letter-spacing: 1px;
-
-        transition: .3s ease;
-    }
-
-
-    nav ul li a:hover {
-        color: #d4af37;
-    }
-
-
-    /* =========================
-       HERO
-    ========================= */
 
     .hero {
 
-        height: 100vh;
-
-        min-height: 650px;
-
-        display: flex;
-
-        justify-content: center;
-
-        align-items: center;
-
-        text-align: center;
-
-        position: relative;
-
-        background-image:
-
-            linear-gradient(
-                rgba(0,0,0,.48),
-                rgba(0,0,0,.78)
-            ),
-
-            url("ajustes 1-22.jpg");
-
-        background-size: cover;
+        min-height:
+            650px;
 
         background-position:
             center 15%;
@@ -194,1409 +1964,346 @@
 
     .hero-content {
 
-        max-width: 950px;
-
-        padding: 30px;
-
-        animation:
-            heroAppear
-            1.2s
-            ease
-            forwards;
+        padding:
+            25px 20px;
     }
 
 
     .hero h1 {
 
         font-size:
-            clamp(
-                45px,
-                8vw,
-                100px
-            );
+            45px;
 
-        letter-spacing: 8px;
-
-        margin-bottom: 15px;
-
-        text-shadow:
-            0 4px 25px #000;
+        letter-spacing:
+            4px;
     }
 
 
     .hero h2 {
 
-        color: #d4af37;
-
-        letter-spacing: 6px;
-
         font-size:
-            clamp(
-                18px,
-                3vw,
-                28px
-            );
+            18px;
 
-        font-weight: normal;
-
-        margin-bottom: 25px;
+        letter-spacing:
+            4px;
     }
 
 
     .hero p {
 
-        max-width: 700px;
-
-        margin: auto;
-
-        font-size: 19px;
-
-        color: #eee;
+        font-size:
+            16px;
     }
 
-
-    .button {
-
-        display: inline-block;
-
-        margin-top: 35px;
-
-        padding: 14px 32px;
-
-        border:
-            1px solid
-            #d4af37;
-
-        color: #d4af37;
-
-        text-decoration: none;
-
-        letter-spacing: 2px;
-
-        transition: .3s ease;
-    }
-
-
-    .button:hover {
-
-        background:
-            #d4af37;
-
-        color:
-            #080808;
-
-        box-shadow:
-            0 10px 30px
-            rgba(212,175,55,.2);
-
-        transform:
-            translateY(-3px);
-    }
-
-
-    @keyframes heroAppear {
-
-        from {
-
-            opacity: 0;
-
-            transform:
-                translateY(25px);
-        }
-
-        to {
-
-            opacity: 1;
-
-            transform:
-                translateY(0);
-        }
-
-    }
-
-
-    /* =========================
-       GENERAL
-    ========================= */
 
     section {
 
         padding:
-            100px 8%;
+            75px 6%;
     }
 
 
     .section-title {
 
-        text-align: center;
-
-        margin-bottom: 60px;
+        margin-bottom:
+            45px;
     }
 
 
     .section-title h2 {
 
-        font-size: 42px;
-
-        color: #d4af37;
-
-        margin-bottom: 10px;
-
-        letter-spacing: 1px;
-    }
-
-
-    .section-title p {
-
-        color: #aaa;
-
-        font-size: 15px;
-
-        letter-spacing: 1px;
-    }
-
-
-    /* =========================
-       HISTORIA
-    ========================= */
-
-    .about {
-
-        max-width: 950px;
-
-        margin: auto;
-
-        text-align: center;
+        font-size:
+            34px;
     }
 
 
     .about p {
 
-        font-size: 18px;
-
-        color: #ddd;
-
-        margin-bottom: 22px;
+        font-size:
+            16px;
     }
 
 
-    .about p:last-child {
-        margin-bottom: 0;
-    }
-
-
-    .gold {
-        color: #d4af37;
-    }
-
-
-    /* =========================
-       IDENTIDAD
-    ========================= */
-
-    .logo-section {
-
-        background:
-            #101010;
-
-        text-align: center;
-    }
-
-
-    .logo-section img {
-
-        width: 180px;
-
-        max-width: 60%;
-
-        margin-bottom: 30px;
-
-        filter:
-            drop-shadow(
-                0 10px 30px
-                rgba(0,0,0,.5)
-            );
-    }
-
-
-    /* =========================
-       MÚSICOS
-    ========================= */
-
-    .musicians {
-
-        background:
-            #101010;
-    }
-
-
-    .musician-grid {
-
-        max-width: 1100px;
-
-        margin: auto;
-
-        display: grid;
+    .musician-grid,
+    .features,
+    .gallery,
+    .repertoire-grid {
 
         grid-template-columns:
-            repeat(2,1fr);
-
-        gap: 45px;
-    }
-
-
-    .musician {
-
-        background:
-            #151515;
-
-        border:
-            1px solid
-            #292929;
-
-        padding-bottom: 30px;
-
-        text-align: center;
-
-        transition:
-            .4s ease;
-
-        overflow: hidden;
-    }
-
-
-    .musician:hover {
-
-        transform:
-            translateY(-8px);
-
-        border-color:
-            #d4af37;
-
-        box-shadow:
-            0 15px 40px
-            rgba(212,175,55,.15);
+            1fr;
     }
 
 
     .musician img {
 
-        width: 100%;
-
-        height: 520px;
-
-        display: block;
+        height:
+            450px;
 
         object-fit:
             contain;
 
         object-position:
             center;
-
-        background:
-            #080808;
-
-        transition:
-            transform
-            .5s ease;
-    }
-
-
-    .musician:hover img {
-
-        transform:
-            scale(1.03);
-    }
-
-
-    .musician h3 {
-
-        color:
-            #d4af37;
-
-        font-size:
-            28px;
-
-        margin-top:
-            25px;
-
-        margin-bottom:
-            4px;
-    }
-
-
-    .instrument {
-
-        color:
-            #aaa;
-
-        letter-spacing:
-            3px;
-
-        font-size:
-            13px;
-
-        text-transform:
-            uppercase;
     }
 
 
     .musician p {
 
-        color:
-            #ccc;
-
         padding:
-            20px 35px 0;
-
-        font-size:
-            16px;
+            18px 25px 0;
     }
 
 
-    /* =========================
-       NUESTRA MÚSICA
-    ========================= */
+    .musician::after {
 
-    .music-section {
+        transform:
+            translateY(0);
 
-        text-align:
-            center;
-
-        background:
-            #080808;
-    }
-
-
-    .music-content {
-
-        max-width:
-            950px;
-
-        margin:
-            auto;
+        opacity:
+            .9;
     }
 
 
     .music-content > p {
 
-        color:
-            #ddd;
-
         font-size:
-            19px;
-
-        margin-bottom:
-            50px;
-
-        max-width:
-            850px;
-
-        margin-left:
-            auto;
-
-        margin-right:
-            auto;
-    }
-
-
-    .features {
-
-        display:
-            grid;
-
-        grid-template-columns:
-            repeat(3,1fr);
-
-        gap:
-            25px;
-    }
-
-
-    .feature {
-
-        padding:
-            35px 25px;
-
-        background:
-            #101010;
-
-        border:
-            1px solid
-            #292929;
-
-        transition:
-            .4s ease;
-
-        position:
-            relative;
-
-        overflow:
-            hidden;
-    }
-
-
-    .feature::before {
-
-        content:
-            "";
-
-        position:
-            absolute;
-
-        top:
-            0;
-
-        left:
-            0;
-
-        width:
-            100%;
-
-        height:
-            2px;
-
-        background:
-            #d4af37;
-
-        transform:
-            scaleX(0);
-
-        transform-origin:
-            center;
-
-        transition:
-            .4s ease;
-    }
-
-
-    .feature:hover {
-
-        transform:
-            translateY(-8px);
-
-        border-color:
-            #d4af37;
-
-        box-shadow:
-            0 15px 40px
-            rgba(212,175,55,.12);
-    }
-
-
-    .feature:hover::before {
-        transform: scaleX(1);
-    }
-
-
-    .feature h3 {
-
-        color:
-            #d4af37;
-
-        margin-bottom:
-            15px;
-
-        font-size:
-            22px;
-
-        letter-spacing:
-            1px;
-    }
-
-
-    .feature p {
-
-        color:
-            #aaa;
-
-        font-size:
-            15px;
-    }
-
-
-    /* =========================
-       REPERTORIO
-    ========================= */
-
-    .repertoire {
-
-        background:
-            #080808;
-
-        text-align:
-            center;
+            17px;
     }
 
 
     .repertoire-intro {
 
-        max-width:
-            850px;
-
-        margin:
-            -20px auto 55px;
-
-        color:
-            #ccc;
-
         font-size:
-            18px;
-    }
+            16px;
 
-
-    .repertoire-grid {
-
-        max-width:
-            1100px;
-
-        margin:
-            auto;
-
-        display:
-            grid;
-
-        grid-template-columns:
-            repeat(4,1fr);
-
-        gap:
-            22px;
+        margin-bottom:
+            40px;
     }
 
 
     .repertoire-card {
 
-        background:
-            #101010;
-
-        border:
-            1px solid
-            #292929;
+        min-height:
+            auto;
 
         padding:
-            35px 25px;
-
-        min-height:
-            280px;
-
-        display:
-            flex;
-
-        flex-direction:
-            column;
-
-        align-items:
-            center;
-
-        justify-content:
-            flex-start;
-
-        transition:
-            .4s ease;
-
-        position:
-            relative;
-
-        overflow:
-            hidden;
-    }
-
-
-    .repertoire-card::before {
-
-        content:
-            "";
-
-        position:
-            absolute;
-
-        top:
-            0;
-
-        left:
-            0;
-
-        width:
-            100%;
-
-        height:
-            2px;
-
-        background:
-            #d4af37;
-
-        transform:
-            scaleX(0);
-
-        transition:
-            .4s ease;
-    }
-
-
-    .repertoire-card:hover {
-
-        transform:
-            translateY(-8px);
-
-        border-color:
-            #d4af37;
-
-        box-shadow:
-            0 15px 40px
-            rgba(212,175,55,.12);
-    }
-
-
-    .repertoire-card:hover::before {
-        transform: scaleX(1);
-    }
-
-
-    .repertoire-icon {
-
-        color:
-            #d4af37;
-
-        font-size:
-            38px;
-
-        margin-bottom:
-            18px;
-
-        line-height:
-            1;
-    }
-
-
-    .repertoire-card h3 {
-
-        color:
-            #d4af37;
-
-        font-size:
-            20px;
-
-        margin-bottom:
-            15px;
-    }
-
-
-    .repertoire-card p {
-
-        color:
-            #aaa;
-
-        font-size:
-            15px;
-
-        line-height:
-            1.7;
-    }
-
-
-    /* =========================
-       ESCÚCHANOS
-    ========================= */
-
-    .listen-section {
-
-        background:
-            #101010;
-
-        text-align:
-            center;
+            30px 25px;
     }
 
 
     .listen-content {
 
-        max-width:
-            950px;
-
-        margin:
-            auto;
+        flex-direction:
+            column;
 
         padding:
-            45px;
-
-        border:
-            1px solid
-            #292929;
-
-        background:
-            #080808;
-
-        display:
-            flex;
-
-        align-items:
-            center;
-
-        justify-content:
-            space-between;
-
-        gap:
-            50px;
+            30px 22px;
 
         text-align:
-            left;
+            center;
 
-        transition:
-            .4s ease;
-    }
-
-
-    .listen-content:hover {
-
-        border-color:
-            rgba(212,175,55,.6);
-
-        box-shadow:
-            0 20px 50px
-            rgba(0,0,0,.35);
+        gap:
+            30px;
     }
 
 
     .listen-text {
 
         max-width:
-            550px;
+            100%;
     }
 
 
     .listen-text h3 {
 
-        color:
-            #d4af37;
-
         font-size:
-            30px;
-
-        margin-bottom:
-            15px;
-    }
-
-
-    .listen-text p {
-
-        color:
-            #ccc;
-
-        font-size:
-            16px;
-
-        margin-bottom:
-            12px;
+            26px;
     }
 
 
     .listen-buttons {
 
-        display:
-            flex;
-
-        flex-direction:
-            column;
-
-        gap:
-            15px;
-
-        min-width:
-            230px;
-    }
-
-
-    .listen-button {
-
-        display:
-            flex;
-
-        align-items:
-            center;
-
-        justify-content:
-            center;
-
-        gap:
-            10px;
-
-        padding:
-            14px 22px;
-
-        border:
-            1px solid
-            #555;
-
-        color:
-            white;
-
-        text-decoration:
-            none;
-
-        letter-spacing:
-            1px;
-
-        transition:
-            .3s ease;
-    }
-
-
-    .listen-button span {
-
-        color:
-            #d4af37;
-
-        font-size:
-            22px;
-    }
-
-
-    .listen-button:hover {
-
-        border-color:
-            #d4af37;
-
-        color:
-            #d4af37;
-
-        transform:
-            translateY(-3px);
-    }
-
-
-    /* =========================
-       TRAYECTORIA
-    ========================= */
-
-    .trajectory {
-
-        background:
-            #101010;
-    }
-
-
-    .timeline {
-
-        max-width:
-            850px;
-
-        margin:
-            auto;
-    }
-
-
-    .event {
-
-        border-left:
-            2px solid
-            #d4af37;
-
-        padding:
-            0 0 35px 30px;
-
-        margin-bottom:
-            25px;
-
-        position:
-            relative;
-    }
-
-
-    .event::before {
-
-        content:
-            "";
-
-        position:
-            absolute;
-
-        left:
-            -7px;
-
-        top:
-            4px;
-
         width:
-            12px;
-
-        height:
-            12px;
-
-        border-radius:
-            50%;
-
-        background:
-            #d4af37;
-
-        box-shadow:
-            0 0 15px
-            rgba(212,175,55,.4);
-    }
-
-
-    .event h3 {
-
-        color:
-            #d4af37;
-
-        margin-bottom:
-            8px;
-
-        font-size:
-            23px;
-    }
-
-
-    .event p {
-
-        color:
-            #ccc;
-    }
-
-
-    /* =========================
-       GALERÍA
-    ========================= */
-
-    .gallery-section {
-
-        background:
-            #080808;
-    }
-
-
-    .gallery {
+            100%;
 
         max-width:
-            1100px;
-
-        margin:
-            auto;
-
-        display:
-            grid;
-
-        grid-template-columns:
-            repeat(2,1fr);
-
-        gap:
-            18px;
+            320px;
     }
 
 
     .gallery img {
 
-        width:
-            100%;
-
         height:
-            480px;
-
-        object-fit:
-            contain;
-
-        background:
-            #101010;
-
-        border:
-            1px solid
-            #222;
-
-        transition:
-            .4s ease;
-    }
-
-
-    .gallery img:hover {
-
-        transform:
-            scale(1.02);
-
-        opacity:
-            .9;
-
-        border-color:
-            #d4af37;
-
-        box-shadow:
-            0 10px 30px
-            rgba(212,175,55,.12);
-    }
-
-
-    /* =========================
-       CONTACTO
-    ========================= */
-
-    .contact {
-
-        text-align:
-            center;
-
-        background:
-
-            linear-gradient(
-                rgba(0,0,0,.75),
-                rgba(0,0,0,.9)
-            ),
-
-            url(
-                "MG-20250210-WA0093.jpg"
-            );
-
-        background-size:
-            cover;
-
-        background-position:
-            center;
+            450px;
     }
 
 
     .contact h2 {
 
         font-size:
-            48px;
-
-        color:
-            #d4af37;
-
-        margin-bottom:
-            20px;
-    }
-
-
-    .contact p {
-
-        color:
-            #ddd;
-
-        font-size:
-            18px;
-    }
-
-
-    .socials {
-
-        display:
-            flex;
-
-        justify-content:
-            center;
-
-        flex-wrap:
-            wrap;
-
-        gap:
-            18px;
-
-        margin-top:
-            35px;
+            38px;
     }
 
 
     .socials a {
 
+        width:
+            100%;
+
+        max-width:
+            300px;
+    }
+
+
+    /* BIO MOBILE */
+
+    .bio-back {
+
+        top:
+            15px;
+
+        left:
+            15px;
+
         padding:
-            12px 30px;
+            10px 15px;
 
-        border:
-            1px solid
-            #555;
-
-        color:
-            white;
-
-        text-decoration:
-            none;
-
-        transition:
-            .3s ease;
+        font-size:
+            11px;
     }
 
 
-    .socials a:hover {
+    .bio-hero {
 
-        color:
-            #d4af37;
+        grid-template-columns:
+            1fr;
 
-        border-color:
-            #d4af37;
+        gap:
+            20px;
 
-        transform:
-            translateY(-3px);
-
-        box-shadow:
-            0 8px 20px
-            rgba(212,175,55,.12);
-    }
-
-
-    /* =========================
-       FOOTER
-    ========================= */
-
-    footer {
+        padding:
+            100px 7% 50px;
 
         text-align:
             center;
+    }
 
-        padding:
-            35px;
 
-        background:
-            #050505;
+    .bio-photo {
 
-        color:
-            #777;
+        height:
+            380px;
+
+        order:
+            1;
+    }
+
+
+    .bio-heading {
+
+        order:
+            2;
+    }
+
+
+    .bio-heading h1 {
 
         font-size:
-            14px;
+            43px;
     }
 
 
-    footer strong {
+    .bio-heading h2 {
 
-        color:
-            #d4af37;
+        font-size:
+            16px;
+
+        letter-spacing:
+            2px;
     }
 
 
-    /* =========================
-       MÓVIL
-    ========================= */
+    .bio-intro {
 
-    @media(max-width:800px) {
-
-
-        nav {
-
-            padding:
-                18px 5%;
-        }
-
-
-        .logo {
-
-            font-size:
-                16px;
-
-            letter-spacing:
-                3px;
-        }
-
-
-        nav ul {
-
-            display:
-                none;
-        }
-
-
-        .hero {
-
-            min-height:
-                650px;
-
-            background-position:
-                center 15%;
-        }
-
-
-        .hero-content {
-
-            padding:
-                25px 20px;
-        }
-
-
-        .hero h1 {
-
-            font-size:
-                45px;
-
-            letter-spacing:
-                4px;
-        }
-
-
-        .hero h2 {
-
-            font-size:
-                18px;
-
-            letter-spacing:
-                4px;
-        }
-
-
-        .hero p {
-
-            font-size:
-                16px;
-        }
-
-
-        section {
-
-            padding:
-                75px 6%;
-        }
-
-
-        .section-title {
-
-            margin-bottom:
-                45px;
-        }
-
-
-        .section-title h2 {
-
-            font-size:
-                34px;
-        }
-
-
-        .about p {
-
-            font-size:
-                16px;
-        }
-
-
-        .musician-grid,
-        .features,
-        .gallery,
-        .repertoire-grid {
-
-            grid-template-columns:
-                1fr;
-        }
-
-
-        .musician img {
-
-            height:
-                450px;
-
-            object-fit:
-                contain;
-
-            object-position:
-                center;
-        }
-
-
-        .musician p {
-
-            padding:
-                18px 25px 0;
-        }
-
-
-        .music-content > p {
-
-            font-size:
-                17px;
-        }
-
-
-        .repertoire-intro {
-
-            font-size:
-                16px;
-
-            margin-bottom:
-                40px;
-        }
-
-
-        .repertoire-card {
-
-            min-height:
-                auto;
-
-            padding:
-                30px 25px;
-        }
-
-
-        .listen-content {
-
-            flex-direction:
-                column;
-
-            padding:
-                30px 22px;
-
-            text-align:
-                center;
-
-            gap:
-                30px;
-        }
-
-
-        .listen-text {
-
-            max-width:
-                100%;
-        }
-
-
-        .listen-text h3 {
-
-            font-size:
-                26px;
-        }
-
-
-        .listen-buttons {
-
-            width:
-                100%;
-
-            max-width:
-                320px;
-        }
-
-
-        .gallery img {
-
-            height:
-                450px;
-        }
-
-
-        .contact h2 {
-
-            font-size:
-                38px;
-        }
-
-
-        .socials a {
-
-            width:
-                100%;
-
-            max-width:
-                300px;
-        }
-
+        font-size:
+            16px;
     }
+
+
+    .bio-content {
+
+        padding:
+            30px 7% 70px;
+    }
+
+
+    .bio-section {
+
+        margin-bottom:
+            45px;
+    }
+
+
+    .bio-section h3 {
+
+        font-size:
+            25px;
+    }
+
+
+    .bio-section p {
+
+        font-size:
+            16px;
+    }
+
+
+    .bio-highlights {
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            15px;
+    }
+
+
+    .bio-list {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .bio-quote {
+
+        padding:
+            30px 20px;
+
+        margin-top:
+            50px;
+    }
+
+
+    .bio-quote p {
+
+        font-size:
+            17px;
+    }
+
+}
 
 </style>
-```
 
 </head>
 
+
 <body>
 
-```
-<!-- =========================
+
+<!-- =====================================================
      NAVEGACIÓN
-========================= -->
+===================================================== -->
 
 <nav>
 
@@ -1653,9 +2360,9 @@
 </nav>
 
 
-<!-- =========================
+<!-- =====================================================
      INICIO
-========================= -->
+===================================================== -->
 
 <section
     class="hero"
@@ -1696,9 +2403,9 @@
 </section>
 
 
-<!-- =========================
+<!-- =====================================================
      NUESTRA HISTORIA
-========================= -->
+===================================================== -->
 
 <section id="nosotros">
 
@@ -1796,9 +2503,9 @@
 </section>
 
 
-<!-- =========================
+<!-- =====================================================
      IDENTIDAD
-========================= -->
+===================================================== -->
 
 <section class="logo-section">
 
@@ -1825,9 +2532,9 @@
 </section>
 
 
-<!-- =========================
+<!-- =====================================================
      MÚSICOS
-========================= -->
+===================================================== -->
 
 <section
     class="musicians"
@@ -1836,82 +2543,1308 @@
 
     <div class="section-title">
 
-    <h2>
-        Nuestros músicos
-    </h2>
-
-    <p>
-        Dos instrumentos. Una misma visión.
-    </p>
-
-</div>
-
-
-<div class="musician-grid">
-
-
-    <!-- ANDRÉS OROZCO — IZQUIERDA -->
-
-    <article class="musician">
-
-        <img
-            src="WhatsApp Image 2026-08-09 at 2.06.05 PM (1).jpg"
-            alt="Andrés Orozco, violinista de Dúo Agnus Praise"
-        >
-
-        <h3>
-            Andrés Orozco
-        </h3>
-
-        <div class="instrument">
-            Violín
-        </div>
+        <h2>
+            Nuestros músicos
+        </h2>
 
         <p>
-            Violinista y cofundador de Dúo Agnus Praise.
-            Su interpretación busca explorar la capacidad
-            expresiva del violín, combinando sensibilidad,
-            técnica y musicalidad.
+            Dos instrumentos. Una misma visión.
         </p>
 
-    </article>
+    </div>
 
 
-    <!-- SAMUEL MANYOMA — DERECHA -->
+    <div class="musician-grid">
 
-    <article class="musician">
 
-        <img
-            src="WhatsApp Image 2026-08-09 at 2.06.05 PM.jpg"
-            alt="Samuel Manyoma, pianista de Dúo Agnus Praise"
+        <!-- =============================================
+             ANDRÉS
+        ============================================== -->
+
+        <article
+            class="musician"
+            onclick="openBiography('andres')"
+            tabindex="0"
+            role="button"
+            aria-label="Ver biografía de Andrés Orozco"
         >
 
-        <h3>
-            Samuel Manyoma
-        </h3>
-
-        <div class="instrument">
-            Piano
-        </div>
-
-        <p>
-            Pianista y cofundador de Dúo Agnus Praise.
-            Su propuesta combina riqueza armónica,
-            sensibilidad y una sólida visión del
-            acompañamiento y los arreglos musicales.
-        </p>
-
-    </article>
+            <img
+                src="WhatsApp Image 2026-08-09 at 2.06.05 PM (1).jpg"
+                alt="Andrés Orozco, violinista de Dúo Agnus Praise"
+            >
 
 
-</div>
+            <h3>
+                Andrés Orozco
+            </h3>
+
+
+            <div class="instrument">
+                Violín
+            </div>
+
+
+            <p>
+
+                Violinista, docente y cofundador
+                de Dúo Agnus Praise. Su trayectoria
+                reúne formación orquestal, escenarios
+                nacionales e internacionales y una
+                profunda búsqueda de expresión musical.
+
+            </p>
+
+        </article>
+
+
+        <!-- =============================================
+             SAMUEL
+        ============================================== -->
+
+        <article
+            class="musician"
+            onclick="openBiography('samuel')"
+            tabindex="0"
+            role="button"
+            aria-label="Ver biografía de Samuel Manyoma"
+        >
+
+            <img
+                src="WhatsApp Image 2026-08-09 at 2.06.05 PM.jpg"
+                alt="Samuel Manyoma, pianista de Dúo Agnus Praise"
+            >
+
+
+            <h3>
+                Samuel Manyoma
+            </h3>
+
+
+            <div class="instrument">
+                Piano
+            </div>
+
+
+            <p>
+
+                Pianista, arreglista y músico.
+                Su trayectoria nace desde la música
+                de iglesia y se desarrolla a través
+                de la creatividad, la exploración,
+                los arreglos y el aprendizaje autodidacta.
+
+            </p>
+
+        </article>
+
+
+    </div>
 
 </section>
 
 
-<!-- =========================
+<!-- =====================================================
+     BIOGRAFÍA DE ANDRÉS
+===================================================== -->
+
+<div
+    class="biography-screen"
+    id="bio-andres"
+>
+
+    <button
+        class="bio-back"
+        onclick="closeBiography()"
+    >
+        ← VOLVER A MÚSICOS
+    </button>
+
+
+    <div class="bio-hero">
+
+
+        <div class="bio-photo">
+
+            <img
+                src="WhatsApp Image 2026-08-09 at 2.06.05 PM (1).jpg"
+                alt="Andrés Orozco violinista"
+            >
+
+        </div>
+
+
+        <div class="bio-heading">
+
+            <div class="bio-label">
+                Violinista · Docente · Músico
+            </div>
+
+
+            <h1>
+                Andrés Orozco
+            </h1>
+
+
+            <h2>
+                VIOLINISTA COLOMBIANO
+            </h2>
+
+
+            <p class="bio-intro">
+
+                Una trayectoria construida desde
+                la disciplina, la formación musical,
+                los escenarios y una profunda pasión
+                por el violín.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="bio-content">
+
+
+        <div class="bio-highlights">
+
+            <div class="bio-highlight">
+
+                <span class="number">
+                    7
+                </span>
+
+                <span>
+                    años cuando comenzó
+                    su camino con el violín
+                </span>
+
+            </div>
+
+
+            <div class="bio-highlight">
+
+                <span class="number">
+                    5
+                </span>
+
+                <span>
+                    años de formación
+                    en Fundación Batuta
+                </span>
+
+            </div>
+
+
+            <div class="bio-highlight">
+
+                <span class="number">
+                    +8
+                </span>
+
+                <span>
+                    ciudades colombianas
+                    en su trayectoria
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- HISTORIA -->
+
+        <div class="bio-section">
+
+            <h3>
+                El comienzo de una historia
+            </h3>
+
+
+            <p>
+
+                Andrés Orozco es un violinista
+                colombiano cuya trayectoria musical
+                comenzó a los siete años de edad,
+                cuando tuvo su primer acercamiento
+                al violín motivado por una escena
+                de la película <strong>Karate Kid</strong>.
+
+            </p>
+
+
+            <p>
+
+                En aquella escena, una joven interpreta
+                el <strong>Nocturno Op. 9 n.º 2 de
+                Frédéric Chopin</strong>. Aquella
+                experiencia despertó en Andrés el deseo
+                de aprender a tocar aquel instrumento
+                y marcó el inicio de un camino musical
+                que continúa desarrollando hasta hoy.
+
+            </p>
+
+        </div>
+
+
+        <!-- FORMACIÓN -->
+
+        <div class="bio-section">
+
+            <h3>
+                Formación musical
+            </h3>
+
+
+            <p>
+
+                Su formación musical comenzó en la
+                <strong>Fundación Nacional Batuta</strong>,
+                donde permaneció durante cinco años
+                y tuvo como uno de sus principales
+                maestros al maestro
+                <strong>Diego Felipe Rivera</strong>.
+
+            </p>
+
+
+            <p>
+
+                Esta etapa fue fundamental para
+                desarrollar sus bases técnicas,
+                musicales y de interpretación,
+                además de permitirle descubrir la
+                disciplina y el compromiso que exige
+                la formación de un músico.
+
+            </p>
+
+
+            <p>
+
+                Posteriormente continuó su preparación
+                durante cinco años en el
+                <strong>Conservatorio de Bellas Artes</strong>,
+                donde fortaleció sus conocimientos y
+                amplió sus capacidades como intérprete.
+
+            </p>
+
+
+            <p>
+
+                Como parte de su experiencia orquestal,
+                también integró durante un año la
+                <strong>Orquesta Sinfónica de la
+                Universidad del Valle</strong>,
+                experiencia que contribuyó
+                significativamente a su crecimiento
+                artístico y a su comprensión del
+                trabajo musical colectivo.
+
+            </p>
+
+        </div>
+
+
+        <!-- TRAYECTORIA -->
+
+        <div class="bio-section">
+
+            <h3>
+                Trayectoria y escenarios
+            </h3>
+
+
+            <p>
+
+                A lo largo de su trayectoria,
+                Andrés ha tenido la oportunidad
+                de presentarse en diferentes
+                escenarios de Colombia, llevando
+                su interpretación a distintas
+                ciudades y comunidades.
+
+            </p>
+
+
+            <ul class="bio-list">
+
+                <li>
+
+                    <strong>
+                        Colombia
+                    </strong>
+
+                    Bogotá, Medellín, Cali,
+                    Ibagué, Bucaramanga,
+                    Cartagena, Buenaventura
+                    y Pasto, entre otras.
+
+                </li>
+
+
+                <li>
+
+                    <strong>
+                        Estados Unidos
+                    </strong>
+
+                    Minnesota, Texas, Arkansas,
+                    Chicago, Iowa y Wisconsin.
+
+                </li>
+
+
+                <li>
+
+                    <strong>
+                        Academia Maplewood
+                    </strong>
+
+                    Participación en espacios
+                    musicales en Minnesota.
+
+                </li>
+
+
+                <li>
+
+                    <strong>
+                        Experiencia orquestal
+                    </strong>
+
+                    Participación en la Orquesta
+                    Sinfónica de la Universidad
+                    del Valle.
+
+                </li>
+
+            </ul>
+
+
+            <p style="margin-top:25px;">
+
+                Este recorrido ha contribuido a
+                consolidar a Andrés como un intérprete
+                con experiencia en diferentes
+                contextos musicales y escenarios,
+                llevando el violín a públicos
+                diversos.
+
+            </p>
+
+        </div>
+
+
+        <!-- AGNUS -->
+
+        <div class="bio-section">
+
+            <h3>
+                Agnus Praise
+            </h3>
+
+
+            <p>
+
+                Uno de los momentos más significativos
+                en la trayectoria de Andrés ha sido
+                la oportunidad de explorar una
+                perspectiva diferente de la
+                <strong>música cristiana instrumental</strong>
+                junto a su amigo de la infancia,
+                <strong>Samuel Manyoma</strong>.
+
+            </p>
+
+
+            <p>
+
+                Unidos por una amistad que se remonta
+                a sus primeros años y por una pasión
+                compartida por la música, ambos
+                encontraron en el piano y el violín
+                una forma de construir una propuesta
+                artística propia.
+
+            </p>
+
+
+            <p>
+
+                De esta experiencia nació
+                <strong>Agnus Praise</strong>, un
+                proyecto en el que han buscado llevar
+                la música cristiana instrumental a
+                nuevos espacios, combinando
+                sensibilidad, excelencia interpretativa
+                y una visión contemporánea sin perder
+                la esencia de su mensaje.
+
+            </p>
+
+
+            <p>
+
+                Para Andrés, este proyecto representa
+                no solo una etapa importante de su
+                crecimiento como violinista, sino
+                también la oportunidad de reencontrarse
+                musicalmente con alguien que ha formado
+                parte de su historia desde la infancia.
+
+            </p>
+
+        </div>
+
+
+        <!-- INFLUENCIAS -->
+
+        <div class="bio-section">
+
+            <h3>
+                Influencias musicales
+            </h3>
+
+
+            <p>
+
+                Su desarrollo artístico ha estado
+                influenciado por grandes referentes
+                de la interpretación del violín,
+                entre ellos:
+
+            </p>
+
+
+            <ul class="bio-list">
+
+                <li>
+                    <strong>Ray Chen</strong>
+                    Referente de la interpretación
+                    contemporánea del violín.
+                </li>
+
+
+                <li>
+                    <strong>André Rieu</strong>
+                    Inspiración por su capacidad
+                    de acercar la música a públicos
+                    diversos.
+                </li>
+
+
+                <li>
+                    <strong>David Garrett</strong>
+                    Referente de versatilidad y
+                    expresión instrumental.
+                </li>
+
+
+                <li>
+                    <strong>Jaime Jorge</strong>
+                    Influencia dentro de la música
+                    cristiana instrumental.
+                </li>
+
+
+                <li>
+                    <strong>Néstor Aponte</strong>
+                    Referente de interpretación
+                    y sensibilidad musical.
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- DOCENCIA -->
+
+        <div class="bio-section">
+
+            <h3>
+                Docencia y formación
+            </h3>
+
+
+            <p>
+
+                Actualmente, Andrés combina su
+                actividad como intérprete con la
+                <strong>enseñanza del violín</strong>,
+                compartiendo sus conocimientos y
+                experiencias con nuevas generaciones
+                de músicos.
+
+            </p>
+
+
+            <p>
+
+                Para él, la formación musical no se
+                limita al dominio técnico del
+                instrumento, sino que también
+                representa una oportunidad para
+                desarrollar disciplina, sensibilidad,
+                confianza y una identidad artística
+                propia.
+
+            </p>
+
+        </div>
+
+
+        <!-- VISIÓN -->
+
+        <div class="bio-section">
+
+            <h3>
+                Una visión más allá del escenario
+            </h3>
+
+
+            <p>
+
+                Más allá de los escenarios y los
+                reconocimientos, Andrés concibe
+                la música como una herramienta capaz
+                de inspirar, transformar y abrir
+                nuevas posibilidades.
+
+            </p>
+
+
+            <p>
+
+                Su propósito como violinista es
+                continuar creciendo artísticamente,
+                llevar la música a nuevos escenarios,
+                inspirar a las nuevas generaciones
+                y demostrar que una historia musical
+                puede comenzar con algo tan inesperado
+                como una escena de una película y
+                convertirse, con disciplina y pasión,
+                en un verdadero proyecto de vida.
+
+            </p>
+
+
+            <p>
+
+                Actualmente continúa desarrollándose
+                como intérprete y docente, con la
+                visión de seguir ampliando sus
+                horizontes musicales y contribuir
+                al crecimiento de nuevos talentos.
+
+            </p>
+
+        </div>
+
+
+        <div class="bio-quote">
+
+            <p>
+
+                “Una historia musical puede comenzar
+                con algo tan inesperado como una
+                escena de una película y convertirse,
+                con disciplina y pasión, en un verdadero
+                proyecto de vida.”
+
+            </p>
+
+
+            <span>
+                ANDRÉS OROZCO · VIOLINISTA
+            </span>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     BIOGRAFÍA DE SAMUEL
+===================================================== -->
+
+<div
+    class="biography-screen"
+    id="bio-samuel"
+>
+
+    <button
+        class="bio-back"
+        onclick="closeBiography()"
+    >
+        ← VOLVER A MÚSICOS
+    </button>
+
+
+    <div class="bio-hero">
+
+
+        <div class="bio-photo">
+
+            <img
+                src="WhatsApp Image 2026-08-09 at 2.06.05 PM.jpg"
+                alt="Samuel Manyoma pianista"
+            >
+
+        </div>
+
+
+        <div class="bio-heading">
+
+            <div class="bio-label">
+                Pianista · Arreglista · Músico
+            </div>
+
+
+            <h1>
+                Samuel Manyoma
+            </h1>
+
+
+            <h2>
+                PIANISTA Y ARREGLISTA COLOMBIANO
+            </h2>
+
+
+            <p class="bio-intro">
+
+                Un músico formado principalmente
+                desde la exploración, la creatividad,
+                la práctica y una profunda conexión
+                con la música de iglesia.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="bio-content">
+
+
+        <div class="bio-highlights">
+
+            <div class="bio-highlight">
+
+                <span class="number">
+                    5
+                </span>
+
+                <span>
+                    agrupaciones musicales
+                    bajo su dirección
+                </span>
+
+            </div>
+
+
+            <div class="bio-highlight">
+
+                <span class="number">
+                    🎹
+                </span>
+
+                <span>
+                    Pianista y
+                    arreglista
+                </span>
+
+            </div>
+
+
+            <div class="bio-highlight">
+
+                <span class="number">
+                    AP
+                </span>
+
+                <span>
+                    Cofundador de
+                    Agnus Praise
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- INICIO -->
+
+        <div class="bio-section">
+
+            <h3>
+                Los primeros años
+            </h3>
+
+
+            <p>
+
+                Samuel Manyoma Mallarino es pianista,
+                arreglista y músico colombiano, cuya
+                formación artística se ha construido
+                principalmente desde la exploración,
+                la creatividad, la práctica y una
+                profunda conexión con la música
+                de iglesia.
+
+            </p>
+
+
+            <p>
+
+                Su acercamiento a la música comenzó
+                desde muy temprana edad, creciendo
+                en un entorno familiar estrechamente
+                relacionado con la música y perteneciendo
+                a la familia Manyoma.
+
+            </p>
+
+
+            <p>
+
+                Desde niño tuvo la oportunidad de
+                estar rodeado de diferentes músicos,
+                quienes despertaron en él el interés
+                por aprender canciones y experimentar
+                con el piano.
+
+            </p>
+
+
+            <p>
+
+                Su primer escenario fue la
+                <strong>iglesia</strong>, donde comenzó
+                a tocar, equivocarse, aprender y
+                descubrir progresivamente su propio
+                lenguaje musical.
+
+            </p>
+
+        </div>
+
+
+        <!-- FORMACIÓN -->
+
+        <div class="bio-section">
+
+            <h3>
+                Un aprendizaje diferente
+            </h3>
+
+
+            <p>
+
+                A los 13 o 14 años aproximadamente,
+                Samuel inició algunas clases de piano.
+                Sin embargo, su formación académica
+                formal fue breve debido a su falta
+                de disciplina en aquella etapa.
+
+            </p>
+
+
+            <p>
+
+                Esto no detuvo su proceso musical.
+                Por el contrario, gran parte de su
+                desarrollo surgió de una formación
+                <strong>autodidacta</strong> basada
+                en escuchar a otros pianistas,
+                observarlos, estudiar sus formas
+                de tocar, experimentar y crear.
+
+            </p>
+
+
+            <p>
+
+                Su personalidad creativa y exploradora
+                le permitió desarrollar de manera
+                natural una facilidad para construir
+                ritmos, acompañamientos, ideas
+                musicales y propuestas diferentes.
+
+            </p>
+
+        </div>
+
+
+        <!-- PIANO IGLESIA -->
+
+        <div class="bio-section">
+
+            <h3>
+                El piano de la iglesia
+            </h3>
+
+
+            <p>
+
+                Durante sus primeros años, el acceso
+                a un instrumento propio era limitado.
+
+            </p>
+
+
+            <p>
+
+                Al no contar con un piano u organeta
+                en casa, esperaba cada sábado para
+                poder estudiar y practicar en el
+                piano de la iglesia.
+
+            </p>
+
+
+            <p>
+
+                Ese contexto fortaleció su disciplina
+                musical desde la práctica y convirtió
+                el instrumento en un espacio de
+                experimentación y descubrimiento.
+
+            </p>
+
+        </div>
+
+
+        <!-- AGRUPACIONES -->
+
+        <div class="bio-section">
+
+            <h3>
+                Agrupaciones y arreglos musicales
+            </h3>
+
+
+            <p>
+
+                Con el paso del tiempo, Samuel amplió
+                sus capacidades incorporándose al
+                aprendizaje de la técnica vocal y
+                participando en diferentes
+                agrupaciones musicales.
+
+            </p>
+
+
+            <p>
+
+                Llegó a trabajar bajo la dirección
+                de <strong>cinco grupos musicales</strong>,
+                desempeñándose principalmente como
+                pianista y asumiendo también el
+                montaje de arreglos musicales y voces.
+
+            </p>
+
+
+            <p>
+
+                En muchas ocasiones realizó estos
+                procesos sin contar previamente con
+                conocimientos formales de armonía
+                o arreglos, apoyándose en su oído,
+                creatividad e intuición musical.
+
+            </p>
+
+
+            <p>
+
+                Este proceso le permitió desarrollar
+                propuestas que destacaban por su
+                musicalidad, expresividad y capacidad
+                para encontrar soluciones musicales
+                desde la experimentación.
+
+            </p>
+
+        </div>
+
+
+        <!-- PRESENTACIONES -->
+
+        <div class="bio-section">
+
+            <h3>
+                Presentaciones y experiencia
+            </h3>
+
+
+            <p>
+
+                La experiencia de Samuel como músico
+                se ha desarrollado principalmente
+                dentro de espacios de iglesia,
+                agrupaciones musicales y proyectos
+                instrumentales.
+
+            </p>
+
+
+            <p>
+
+                Su trabajo como pianista y arreglista
+                le ha permitido participar en
+                diferentes escenarios y acompañar
+                procesos musicales en los que el
+                piano cumple un papel fundamental
+                tanto armónico como expresivo.
+
+            </p>
+
+
+            <ul class="bio-list">
+
+                <li>
+
+                    <strong>
+                        Música de iglesia
+                    </strong>
+
+                    Desarrollo de acompañamientos,
+                    arreglos y propuestas musicales.
+
+                </li>
+
+
+                <li>
+
+                    <strong>
+                        Agrupaciones
+                    </strong>
+
+                    Participación y dirección musical
+                    de diferentes grupos.
+
+                </li>
+
+
+                <li>
+
+                    <strong>
+                        Piano
+                    </strong>
+
+                    Interpretación, acompañamiento
+                    y construcción de ideas musicales.
+
+                </li>
+
+
+                <li>
+
+                    <strong>
+                        Arreglos
+                    </strong>
+
+                    Adaptación de canciones y
+                    construcción de propuestas
+                    para diferentes agrupaciones.
+
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- AGNUS -->
+
+        <div class="bio-section">
+
+            <h3>
+                El nacimiento de Agnus Praise
+            </h3>
+
+
+            <p>
+
+                Uno de los momentos más importantes
+                de su trayectoria llegó junto a
+                <strong>Andrés David Orozco</strong>,
+                violinista y amigo de infancia.
+
+            </p>
+
+
+            <p>
+
+                Ambos decidieron unir sus talentos
+                y explorar las posibilidades de la
+                música instrumental a través del
+                piano y el violín.
+
+            </p>
+
+
+            <p>
+
+                Su objetivo no era simplemente
+                interpretar canciones, sino crear
+                arreglos capaces de transmitir
+                emociones y llegar al corazón de
+                las personas.
+
+            </p>
+
+
+            <p>
+
+                De esta búsqueda nació una propuesta
+                diferente dentro de la música
+                instrumental del ámbito adventista.
+
+            </p>
+
+
+            <p>
+
+                Inicialmente eran conocidos
+                simplemente como
+
+                <strong>
+                    “Andrés y Samuel”
+                </strong>,
+
+                pero debido a la constante presencia
+                del dúo en diferentes espacios y a
+                la identidad musical que fueron
+                construyendo, decidieron formalizar
+                el proyecto y darle un nombre propio:
+
+                <strong>
+                    AGNUS PRAISE.
+                </strong>
+
+            </p>
+
+        </div>
+
+
+        <!-- PROYECTO -->
+
+        <div class="bio-section">
+
+            <h3>
+                Agnus Praise
+            </h3>
+
+
+            <p>
+
+                Desde entonces, el dúo ha tenido
+                participación en diferentes
+                escenarios y ciudades, alcanzando
+                oyentes no solamente en Colombia,
+                sino también en otros países.
+
+            </p>
+
+
+            <p>
+
+                Su propuesta combina la sensibilidad
+                del violín con la versatilidad del
+                piano y se caracteriza por la búsqueda
+                constante de arreglos originales,
+                expresivos y con un propósito
+                espiritual.
+
+            </p>
+
+
+            <p>
+
+                Para Samuel, Agnus Praise representa
+                una oportunidad de unir su creatividad
+                como pianista y arreglista con una
+                propuesta artística capaz de transmitir
+                un mensaje y conectar con las personas.
+
+            </p>
+
+        </div>
+
+
+        <!-- RECONOCIMIENTOS Y EXPERIENCIAS -->
+
+        <div class="bio-section">
+
+            <h3>
+                Experiencias y reconocimientos
+            </h3>
+
+
+            <p>
+
+                La trayectoria de Samuel se ha
+                construido principalmente a través
+                de la participación activa en
+                agrupaciones, proyectos musicales
+                y espacios de servicio dentro de
+                la iglesia.
+
+            </p>
+
+
+            <p>
+
+                Su experiencia al frente de diferentes
+                grupos y su participación en proyectos
+                instrumentales le han permitido
+                consolidar una identidad propia
+                como pianista y arreglista.
+
+            </p>
+
+
+            <ul class="bio-list">
+
+                <li>
+
+                    <strong>
+                        Dirección musical
+                    </strong>
+
+                    Experiencia trabajando bajo la
+                    dirección de diferentes agrupaciones
+                    y liderando procesos musicales.
+
+                </li>
+
+
+                <li>
+
+                    <strong>
+                        Arreglos musicales
+                    </strong>
+
+                    Creación y montaje de arreglos
+                    para instrumentos y voces.
+
+                </li>
+
+
+                <li>
+
+                    <strong>
+                        Música instrumental
+                    </strong>
+
+                    Desarrollo del formato de piano
+                    y violín junto a Andrés Orozco.
+
+                </li>
+
+
+                <li>
+
+                    <strong>
+                        Agnus Praise
+                    </strong>
+
+                    Cofundador y pianista del proyecto
+                    musical.
+
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- IDENTIDAD -->
+
+        <div class="bio-section">
+
+            <h3>
+                Su identidad como músico
+            </h3>
+
+
+            <p>
+
+                Más que definirse únicamente por una
+                formación académica, Samuel Manyoma
+                Mallarino representa un proceso de
+                aprendizaje continuo.
+
+            </p>
+
+
+            <p>
+
+                Su formación ha sido construida a
+                través de la experiencia, la observación,
+                la escucha, la creatividad y el servicio
+                musical.
+
+            </p>
+
+
+            <p>
+
+                Su historia refleja la de un músico
+                que comenzó aprendiendo en el piano
+                de una iglesia, que encontró en la
+                exploración su propia manera de
+                expresarse y que continúa formándose
+                con el propósito de utilizar sus
+                talentos para crear música que
+                conecte con las personas y
+                glorifique a Dios.
+
+            </p>
+
+        </div>
+
+
+        <div class="bio-quote">
+
+            <p>
+
+                “La música no se trata solamente
+                de tocar notas; se trata de encontrar
+                una manera de transmitir algo que
+                pueda llegar al corazón de quien
+                escucha.”
+
+            </p>
+
+
+            <span>
+                SAMUEL MANYOMA · PIANISTA Y ARREGLISTA
+            </span>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
      NUESTRA MÚSICA
-========================= -->
+===================================================== -->
 
 <section
     class="music-section"
@@ -2015,9 +3948,9 @@
 </section>
 
 
-<!-- =========================
+<!-- =====================================================
      REPERTORIO
-========================= -->
+===================================================== -->
 
 <section class="repertoire">
 
@@ -2154,9 +4087,9 @@
 </section>
 
 
-<!-- =========================
+<!-- =====================================================
      ESCÚCHANOS
-========================= -->
+===================================================== -->
 
 <section class="listen-section">
 
@@ -2247,9 +4180,9 @@
 </section>
 
 
-<!-- =========================
+<!-- =====================================================
      TRAYECTORIA
-========================= -->
+===================================================== -->
 
 <section class="trajectory">
 
@@ -2350,9 +4283,9 @@
 </section>
 
 
-<!-- =========================
+<!-- =====================================================
      GALERÍA
-========================= -->
+===================================================== -->
 
 <section
     class="gallery-section"
@@ -2405,9 +4338,9 @@
 </section>
 
 
-<!-- =========================
+<!-- =====================================================
      CONTACTO
-========================= -->
+===================================================== -->
 
 <section
     class="contact"
@@ -2456,9 +4389,9 @@
 </section>
 
 
-<!-- =========================
+<!-- =====================================================
      FOOTER
-========================= -->
+===================================================== -->
 
 <footer>
 
@@ -2480,7 +4413,147 @@
     </p>
 
 </footer>
-```
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+/* =========================================================
+   ABRIR BIOGRAFÍA
+========================================================= */
+
+function openBiography(person) {
+
+    const biography =
+        document.getElementById(
+            "bio-" + person
+        );
+
+
+    if (!biography) {
+        return;
+    }
+
+
+    biography.classList.add("active");
+
+
+    document.body.classList.add("bio-open");
+
+
+    biography.scrollTop = 0;
+
+}
+
+
+/* =========================================================
+   CERRAR BIOGRAFÍA
+========================================================= */
+
+function closeBiography() {
+
+    const biographies =
+        document.querySelectorAll(
+            ".biography-screen"
+        );
+
+
+    biographies.forEach(function(biography) {
+
+        biography.classList.remove("active");
+
+    });
+
+
+    document.body.classList.remove("bio-open");
+
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+}
+
+
+/* =========================================================
+   TECLADO
+========================================================= */
+
+document
+    .querySelectorAll(".musician")
+    .forEach(function(card) {
+
+        card.addEventListener(
+            "keydown",
+            function(event) {
+
+                if (
+                    event.key === "Enter" ||
+                    event.key === " "
+                ) {
+
+                    event.preventDefault();
+
+                    const label =
+                        card.getAttribute(
+                            "aria-label"
+                        );
+
+                    if (
+                        label.includes(
+                            "Andrés"
+                        )
+                    ) {
+
+                        openBiography(
+                            "andres"
+                        );
+
+                    }
+
+                    if (
+                        label.includes(
+                            "Samuel"
+                        )
+                    ) {
+
+                        openBiography(
+                            "samuel"
+                        );
+
+                    }
+
+                }
+
+            }
+        );
+
+    });
+
+
+/* =========================================================
+   ESC PARA CERRAR
+========================================================= */
+
+document.addEventListener(
+    "keydown",
+    function(event) {
+
+        if (event.key === "Escape") {
+
+            closeBiography();
+
+        }
+
+    }
+);
+
+</script>
+
 
 </body>
 
