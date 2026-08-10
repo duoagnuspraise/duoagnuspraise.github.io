@@ -16,12 +16,12 @@
 
 <meta
     name="description"
-    content="Dúo Agnus Praise es un dúo colombiano de piano y violín conformado por Samuel Manyoma y Andrés Orozco."
+    content="Dúo Agnus Praise es un dúo colombiano de piano y violín conformado por Samuel Manyoma y Andrés Orozco. Una propuesta musical cristiana caracterizada por arreglos originales, complejidad musical, expresión y excelencia interpretativa."
 >
 
 <meta
     name="keywords"
-    content="Dúo Agnus Praise, Agnus Praise, piano y violín, Samuel Manyoma, Andrés Orozco, música cristiana Colombia"
+    content="Dúo Agnus Praise, Agnus Praise, piano y violín, dúo piano violín Colombia, Samuel Manyoma, Andrés Orozco, música cristiana Colombia, música adventista Colombia, dúo musical colombiano"
 >
 
 <meta
@@ -42,9 +42,9 @@
 
 <style>
 
-/* =====================================================
+/* =========================================================
    RESET
-===================================================== */
+========================================================= */
 
 * {
     margin: 0;
@@ -52,178 +52,105 @@
     box-sizing: border-box;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
 
-
 body {
-
-    font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+    font-family: Arial, Helvetica, sans-serif;
     background: #080808;
-
     color: white;
-
     line-height: 1.7;
 }
-
 
 a {
     color: inherit;
 }
-
 
 img {
     max-width: 100%;
 }
 
 
-/* =====================================================
+/* =========================================================
    NAVEGACIÓN
-===================================================== */
+========================================================= */
 
 nav {
-
     position: fixed;
-
     top: 0;
     left: 0;
-
     width: 100%;
-
     z-index: 1000;
 
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
 
     padding: 20px 6%;
 
-    background:
-        rgba(5,5,5,.88);
+    background: rgba(5,5,5,.88);
+    backdrop-filter: blur(10px);
 
-    backdrop-filter:
-        blur(10px);
-
-    border-bottom:
-        1px solid
-        rgba(212,175,55,.15);
+    border-bottom: 1px solid rgba(212,175,55,.15);
 }
-
 
 .logo {
-
-    color:
-        #d4af37;
-
-    font-size:
-        20px;
-
-    font-weight:
-        bold;
-
-    letter-spacing:
-        4px;
+    color: #d4af37;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 4px;
 }
-
 
 nav ul {
-
-    display:
-        flex;
-
-    gap:
-        28px;
-
-    list-style:
-        none;
+    display: flex;
+    gap: 28px;
+    list-style: none;
 }
-
 
 nav ul li a {
-
-    color:
-        #eee;
-
-    text-decoration:
-        none;
-
-    font-size:
-        13px;
-
-    letter-spacing:
-        1px;
-
-    transition:
-        .3s ease;
+    color: #eee;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: .3s ease;
 }
-
 
 nav ul li a:hover {
-
-    color:
-        #d4af37;
+    color: #d4af37;
 }
 
 
-/* =====================================================
+/* =========================================================
    HERO
-===================================================== */
+========================================================= */
 
 .hero {
+    height: 100vh;
+    min-height: 650px;
 
-    height:
-        100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    min-height:
-        650px;
+    text-align: center;
 
-    display:
-        flex;
-
-    justify-content:
-        center;
-
-    align-items:
-        center;
-
-    text-align:
-        center;
-
-    position:
-        relative;
+    position: relative;
 
     background-image:
-
         linear-gradient(
             rgba(0,0,0,.48),
             rgba(0,0,0,.78)
         ),
-
         url("ajustes 1-22.jpg");
 
-    background-size:
-        cover;
-
-    background-position:
-        center 15%;
+    background-size: cover;
+    background-position: center 15%;
 }
 
-
 .hero-content {
-
-    max-width:
-        950px;
-
-    padding:
-        30px;
+    max-width: 950px;
+    padding: 30px;
 
     animation:
         heroAppear
@@ -232,250 +159,141 @@ nav ul li a:hover {
         forwards;
 }
 
-
 .hero h1 {
-
-    font-size:
-        clamp(
-            45px,
-            8vw,
-            100px
-        );
-
-    letter-spacing:
-        8px;
-
-    margin-bottom:
-        15px;
+    font-size: clamp(45px, 8vw, 100px);
+    letter-spacing: 8px;
+    margin-bottom: 15px;
 
     text-shadow:
         0 4px 25px #000;
 }
 
-
 .hero h2 {
+    color: #d4af37;
+    letter-spacing: 6px;
 
-    color:
-        #d4af37;
+    font-size: clamp(18px, 3vw, 28px);
 
-    letter-spacing:
-        6px;
-
-    font-size:
-        clamp(
-            18px,
-            3vw,
-            28px
-        );
-
-    font-weight:
-        normal;
-
-    margin-bottom:
-        25px;
+    font-weight: normal;
+    margin-bottom: 25px;
 }
-
 
 .hero p {
+    max-width: 700px;
+    margin: auto;
 
-    max-width:
-        700px;
-
-    margin:
-        auto;
-
-    font-size:
-        19px;
-
-    color:
-        #eee;
+    font-size: 19px;
+    color: #eee;
 }
-
 
 .button {
+    display: inline-block;
 
-    display:
-        inline-block;
+    margin-top: 35px;
+    padding: 14px 32px;
 
-    margin-top:
-        35px;
+    border: 1px solid #d4af37;
 
-    padding:
-        14px 32px;
+    color: #d4af37;
+    text-decoration: none;
 
-    border:
-        1px solid
-        #d4af37;
+    letter-spacing: 2px;
 
-    color:
-        #d4af37;
-
-    text-decoration:
-        none;
-
-    letter-spacing:
-        2px;
-
-    transition:
-        .3s ease;
+    transition: .3s ease;
 }
 
-
 .button:hover {
-
-    background:
-        #d4af37;
-
-    color:
-        #080808;
+    background: #d4af37;
+    color: #080808;
 
     box-shadow:
         0 10px 30px
         rgba(212,175,55,.2);
 
-    transform:
-        translateY(-3px);
+    transform: translateY(-3px);
 }
-
 
 @keyframes heroAppear {
 
     from {
-
-        opacity:
-            0;
-
-        transform:
-            translateY(25px);
+        opacity: 0;
+        transform: translateY(25px);
     }
 
     to {
-
-        opacity:
-            1;
-
-        transform:
-            translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
+
 }
 
 
-/* =====================================================
+/* =========================================================
    GENERAL
-===================================================== */
+========================================================= */
 
 section {
-
-    padding:
-        100px 8%;
+    padding: 100px 8%;
 }
-
 
 .section-title {
-
-    text-align:
-        center;
-
-    margin-bottom:
-        60px;
+    text-align: center;
+    margin-bottom: 60px;
 }
-
 
 .section-title h2 {
+    font-size: 42px;
+    color: #d4af37;
 
-    font-size:
-        42px;
-
-    color:
-        #d4af37;
-
-    margin-bottom:
-        10px;
-
-    letter-spacing:
-        1px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
 }
-
 
 .section-title p {
-
-    color:
-        #aaa;
-
-    font-size:
-        15px;
-
-    letter-spacing:
-        1px;
+    color: #aaa;
+    font-size: 15px;
+    letter-spacing: 1px;
 }
-
 
 .gold {
-    color:
-        #d4af37;
+    color: #d4af37;
 }
 
 
-/* =====================================================
+/* =========================================================
    HISTORIA
-===================================================== */
+========================================================= */
 
 .about {
-
-    max-width:
-        950px;
-
-    margin:
-        auto;
-
-    text-align:
-        center;
+    max-width: 950px;
+    margin: auto;
+    text-align: center;
 }
-
 
 .about p {
-
-    font-size:
-        18px;
-
-    color:
-        #ddd;
-
-    margin-bottom:
-        22px;
+    font-size: 18px;
+    color: #ddd;
+    margin-bottom: 22px;
 }
-
 
 .about p:last-child {
-    margin-bottom:
-        0;
+    margin-bottom: 0;
 }
 
 
-/* =====================================================
+/* =========================================================
    IDENTIDAD
-===================================================== */
+========================================================= */
 
 .logo-section {
-
-    background:
-        #101010;
-
-    text-align:
-        center;
+    background: #101010;
+    text-align: center;
 }
 
-
 .logo-section img {
-
-    width:
-        180px;
-
-    max-width:
-        60%;
-
-    margin-bottom:
-        30px;
+    width: 180px;
+    max-width: 60%;
+    margin-bottom: 30px;
 
     filter:
         drop-shadow(
@@ -485,1043 +303,189 @@ section {
 }
 
 
-/* =====================================================
+/* =========================================================
    MÚSICOS
-===================================================== */
+========================================================= */
 
 .musicians {
-
-    background:
-        #101010;
+    background: #101010;
 }
 
-
 .musician-grid {
+    max-width: 1100px;
+    margin: auto;
 
-    max-width:
-        1100px;
-
-    margin:
-        auto;
-
-    display:
-        grid;
+    display: grid;
 
     grid-template-columns:
         repeat(2,1fr);
 
-    gap:
-        45px;
+    gap: 45px;
 }
-
 
 .musician {
+    background: #151515;
 
-    background:
-        #151515;
+    border: 1px solid #292929;
 
-    border:
-        1px solid
-        #292929;
+    padding-bottom: 30px;
 
-    padding-bottom:
-        30px;
+    text-align: center;
 
-    text-align:
-        center;
+    transition: .4s ease;
 
-    transition:
-        .4s ease;
+    overflow: hidden;
 
-    overflow:
-        hidden;
-
-    cursor:
-        pointer;
+    cursor: pointer;
 }
 
-
 .musician:hover {
+    transform: translateY(-8px);
 
-    transform:
-        translateY(-8px);
-
-    border-color:
-        #d4af37;
+    border-color: #d4af37;
 
     box-shadow:
         0 15px 40px
         rgba(212,175,55,.15);
 }
 
-
 .musician img {
+    width: 100%;
+    height: 520px;
 
-    width:
-        100%;
+    display: block;
 
-    height:
-        520px;
+    object-fit: contain;
+    object-position: center;
 
-    display:
-        block;
-
-    object-fit:
-        contain;
-
-    object-position:
-        center;
-
-    background:
-        #080808;
+    background: #080808;
 
     transition:
         transform
-        .5s ease;
+        .5s
+        ease;
 }
-
 
 .musician:hover img {
-
-    transform:
-        scale(1.03);
+    transform: scale(1.03);
 }
-
 
 .musician h3 {
+    color: #d4af37;
 
-    color:
-        #d4af37;
+    font-size: 28px;
 
-    font-size:
-        28px;
-
-    margin-top:
-        25px;
-
-    margin-bottom:
-        4px;
+    margin-top: 25px;
+    margin-bottom: 4px;
 }
-
 
 .instrument {
+    color: #aaa;
 
-    color:
-        #aaa;
+    letter-spacing: 3px;
 
-    letter-spacing:
-        3px;
+    font-size: 13px;
 
-    font-size:
-        13px;
-
-    text-transform:
-        uppercase;
+    text-transform: uppercase;
 }
 
-
 .musician p {
-
-    color:
-        #ccc;
+    color: #ccc;
 
     padding:
         20px 35px 0;
 
-    font-size:
-        16px;
+    font-size: 16px;
 }
 
 
-/* =====================================================
-   INDICADOR DE CLICK
-===================================================== */
+/* =========================================================
+   PANTALLA DE BIOGRAFÍA
+========================================================= */
 
-.profile-link {
+.bio-page {
 
-    display:
-        inline-block;
+    position: fixed;
 
-    margin-top:
-        20px;
+    top: 0;
+    left: 0;
 
-    color:
-        #d4af37;
-
-    font-size:
-        13px;
-
-    letter-spacing:
-        2px;
-
-    text-transform:
-        uppercase;
-}
-
-
-/* =====================================================
-   NUESTRA MÚSICA
-===================================================== */
-
-.music-section {
-
-    text-align:
-        center;
-
-    background:
-        #080808;
-}
-
-
-.music-content {
-
-    max-width:
-        950px;
-
-    margin:
-        auto;
-}
-
-
-.music-content > p {
-
-    color:
-        #ddd;
-
-    font-size:
-        19px;
-
-    margin-bottom:
-        50px;
-
-    max-width:
-        850px;
-
-    margin-left:
-        auto;
-
-    margin-right:
-        auto;
-}
-
-
-.features {
-
-    display:
-        grid;
-
-    grid-template-columns:
-        repeat(3,1fr);
-
-    gap:
-        25px;
-}
-
-
-.feature {
-
-    padding:
-        35px 25px;
-
-    background:
-        #101010;
-
-    border:
-        1px solid
-        #292929;
-
-    transition:
-        .4s ease;
-
-    position:
-        relative;
-
-    overflow:
-        hidden;
-}
-
-
-.feature::before {
-
-    content:
-        "";
-
-    position:
-        absolute;
-
-    top:
-        0;
-
-    left:
-        0;
-
-    width:
-        100%;
-
-    height:
-        2px;
-
-    background:
-        #d4af37;
-
-    transform:
-        scaleX(0);
-
-    transform-origin:
-        center;
-
-    transition:
-        .4s ease;
-}
-
-
-.feature:hover {
-
-    transform:
-        translateY(-8px);
-
-    border-color:
-        #d4af37;
-
-    box-shadow:
-        0 15px 40px
-        rgba(212,175,55,.12);
-}
-
-
-.feature:hover::before {
-    transform:
-        scaleX(1);
-}
-
-
-.feature h3 {
-
-    color:
-        #d4af37;
-
-    margin-bottom:
-        15px;
-
-    font-size:
-        22px;
-
-    letter-spacing:
-        1px;
-}
-
-
-.feature p {
-
-    color:
-        #aaa;
-
-    font-size:
-        15px;
-}
-
-
-/* =====================================================
-   REPERTORIO
-===================================================== */
-
-.repertoire {
+    width: 100%;
+    height: 100vh;
 
     background:
         #080808;
 
-    text-align:
-        center;
+    z-index: 5000;
+
+    overflow-y: auto;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform:
+        translateY(30px);
+
+    transition:
+        opacity .4s ease,
+        transform .4s ease,
+        visibility .4s ease;
 }
 
+.bio-page.active {
 
-.repertoire-intro {
+    opacity: 1;
+    visibility: visible;
 
-    max-width:
-        850px;
-
-    margin:
-        -20px auto 55px;
-
-    color:
-        #ccc;
-
-    font-size:
-        18px;
+    transform:
+        translateY(0);
 }
 
+.bio-header {
 
-.repertoire-grid {
+    position: sticky;
 
-    max-width:
-        1100px;
+    top: 0;
 
-    margin:
-        auto;
+    z-index: 10;
 
-    display:
-        grid;
+    display: flex;
 
-    grid-template-columns:
-        repeat(4,1fr);
+    align-items: center;
 
-    gap:
-        22px;
-}
+    justify-content: space-between;
 
-
-.repertoire-card {
+    padding:
+        20px 7%;
 
     background:
-        #101010;
+        rgba(5,5,5,.95);
+
+    backdrop-filter:
+        blur(12px);
+
+    border-bottom:
+        1px solid
+        rgba(212,175,55,.2);
+}
+
+.bio-back {
 
     border:
         1px solid
-        #292929;
-
-    padding:
-        35px 25px;
-
-    min-height:
-        280px;
-
-    display:
-        flex;
-
-    flex-direction:
-        column;
-
-    align-items:
-        center;
-
-    justify-content:
-        flex-start;
-
-    transition:
-        .4s ease;
-
-    position:
-        relative;
-
-    overflow:
-        hidden;
-}
-
-
-.repertoire-card::before {
-
-    content:
-        "";
-
-    position:
-        absolute;
-
-    top:
-        0;
-
-    left:
-        0;
-
-    width:
-        100%;
-
-    height:
-        2px;
-
-    background:
-        #d4af37;
-
-    transform:
-        scaleX(0);
-
-    transition:
-        .4s ease;
-}
-
-
-.repertoire-card:hover {
-
-    transform:
-        translateY(-8px);
-
-    border-color:
-        #d4af37;
-
-    box-shadow:
-        0 15px 40px
-        rgba(212,175,55,.12);
-}
-
-
-.repertoire-card:hover::before {
-    transform:
-        scaleX(1);
-}
-
-
-.repertoire-icon {
-
-    color:
-        #d4af37;
-
-    font-size:
-        38px;
-
-    margin-bottom:
-        18px;
-
-    line-height:
-        1;
-}
-
-
-.repertoire-card h3 {
-
-    color:
-        #d4af37;
-
-    font-size:
-        20px;
-
-    margin-bottom:
-        15px;
-}
-
-
-.repertoire-card p {
-
-    color:
-        #aaa;
-
-    font-size:
-        15px;
-
-    line-height:
-        1.7;
-}
-
-
-/* =====================================================
-   ESCÚCHANOS
-===================================================== */
-
-.listen-section {
-
-    background:
-        #101010;
-
-    text-align:
-        center;
-}
-
-
-.listen-content {
-
-    max-width:
-        950px;
-
-    margin:
-        auto;
-
-    padding:
-        45px;
-
-    border:
-        1px solid
-        #292929;
-
-    background:
-        #080808;
-
-    display:
-        flex;
-
-    align-items:
-        center;
-
-    justify-content:
-        space-between;
-
-    gap:
-        50px;
-
-    text-align:
-        left;
-
-    transition:
-        .4s ease;
-}
-
-
-.listen-content:hover {
-
-    border-color:
-        rgba(212,175,55,.6);
-
-    box-shadow:
-        0 20px 50px
-        rgba(0,0,0,.35);
-}
-
-
-.listen-text {
-
-    max-width:
-        550px;
-}
-
-
-.listen-text h3 {
-
-    color:
-        #d4af37;
-
-    font-size:
-        30px;
-
-    margin-bottom:
-        15px;
-}
-
-
-.listen-text p {
-
-    color:
-        #ccc;
-
-    font-size:
-        16px;
-
-    margin-bottom:
-        12px;
-}
-
-
-.listen-buttons {
-
-    display:
-        flex;
-
-    flex-direction:
-        column;
-
-    gap:
-        15px;
-
-    min-width:
-        230px;
-}
-
-
-.listen-button {
-
-    display:
-        flex;
-
-    align-items:
-        center;
-
-    justify-content:
-        center;
-
-    gap:
-        10px;
-
-    padding:
-        14px 22px;
-
-    border:
-        1px solid
-        #555;
-
-    color:
-        white;
-
-    text-decoration:
-        none;
-
-    letter-spacing:
-        1px;
-
-    transition:
-        .3s ease;
-}
-
-
-.listen-button span {
-
-    color:
-        #d4af37;
-
-    font-size:
-        22px;
-}
-
-
-.listen-button:hover {
-
-    border-color:
-        #d4af37;
-
-    color:
-        #d4af37;
-
-    transform:
-        translateY(-3px);
-}
-
-
-/* =====================================================
-   TRAYECTORIA
-===================================================== */
-
-.trajectory {
-
-    background:
-        #101010;
-}
-
-
-.timeline {
-
-    max-width:
-        850px;
-
-    margin:
-        auto;
-}
-
-
-.event {
-
-    border-left:
-        2px solid
-        #d4af37;
-
-    padding:
-        0 0 35px 30px;
-
-    margin-bottom:
-        25px;
-
-    position:
-        relative;
-}
-
-
-.event::before {
-
-    content:
-        "";
-
-    position:
-        absolute;
-
-    left:
-        -7px;
-
-    top:
-        4px;
-
-    width:
-        12px;
-
-    height:
-        12px;
-
-    border-radius:
-        50%;
-
-    background:
-        #d4af37;
-
-    box-shadow:
-        0 0 15px
-        rgba(212,175,55,.4);
-}
-
-
-.event h3 {
-
-    color:
-        #d4af37;
-
-    margin-bottom:
-        8px;
-
-    font-size:
-        23px;
-}
-
-
-.event p {
-
-    color:
-        #ccc;
-}
-
-
-/* =====================================================
-   GALERÍA
-===================================================== */
-
-.gallery-section {
-
-    background:
-        #080808;
-}
-
-
-.gallery {
-
-    max-width:
-        1100px;
-
-    margin:
-        auto;
-
-    display:
-        grid;
-
-    grid-template-columns:
-        repeat(2,1fr);
-
-    gap:
-        18px;
-}
-
-
-.gallery img {
-
-    width:
-        100%;
-
-    height:
-        480px;
-
-    object-fit:
-        contain;
-
-    background:
-        #101010;
-
-    border:
-        1px solid
-        #222;
-
-    transition:
-        .4s ease;
-}
-
-
-.gallery img:hover {
-
-    transform:
-        scale(1.02);
-
-    opacity:
-        .9;
-
-    border-color:
-        #d4af37;
-
-    box-shadow:
-        0 10px 30px
-        rgba(212,175,55,.12);
-}
-
-
-/* =====================================================
-   CONTACTO
-===================================================== */
-
-.contact {
-
-    text-align:
-        center;
-
-    background:
-
-        linear-gradient(
-            rgba(0,0,0,.75),
-            rgba(0,0,0,.9)
-        ),
-
-        url(
-            "MG-20250210-WA0093.jpg"
-        );
-
-    background-size:
-        cover;
-
-    background-position:
-        center;
-}
-
-
-.contact h2 {
-
-    font-size:
-        48px;
-
-    color:
-        #d4af37;
-
-    margin-bottom:
-        20px;
-}
-
-
-.contact p {
-
-    color:
-        #ddd;
-
-    font-size:
-        18px;
-}
-
-
-.socials {
-
-    display:
-        flex;
-
-    justify-content:
-        center;
-
-    flex-wrap:
-        wrap;
-
-    gap:
-        18px;
-
-    margin-top:
-        35px;
-}
-
-
-.socials a {
-
-    padding:
-        12px 30px;
-
-    border:
-        1px solid
-        #555;
-
-    color:
-        white;
-
-    text-decoration:
-        none;
-
-    transition:
-        .3s ease;
-}
-
-
-.socials a:hover {
-
-    color:
-        #d4af37;
-
-    border-color:
-        #d4af37;
-
-    transform:
-        translateY(-3px);
-
-    box-shadow:
-        0 8px 20px
-        rgba(212,175,55,.12);
-}
-
-
-/* =====================================================
-   BIOGRAFÍAS
-===================================================== */
-
-.biography-page {
-
-    display:
-        none;
-
-    min-height:
-        100vh;
-
-    background:
-        #080808;
-
-    padding:
-        120px 7% 80px;
-
-    animation:
-        biographyAppear
-        .6s
-        ease;
-}
-
-
-.biography-page.active {
-    display:
-        block;
-}
-
-
-@keyframes biographyAppear {
-
-    from {
-
-        opacity:
-            0;
-
-        transform:
-            translateY(25px);
-    }
-
-    to {
-
-        opacity:
-            1;
-
-        transform:
-            translateY(0);
-    }
-}
-
-
-/* Botón volver */
-
-.back-button {
-
-    display:
-        inline-flex;
-
-    align-items:
-        center;
-
-    gap:
-        10px;
-
-    padding:
-        12px 22px;
-
-    margin-bottom:
-        45px;
-
-    border:
-        1px solid
-        #555;
-
-    color:
         #d4af37;
 
     background:
         transparent;
 
+    color:
+        #d4af37;
+
+    padding:
+        10px 20px;
+
     font-size:
-        14px;
+        13px;
 
     letter-spacing:
         1px;
@@ -1533,81 +497,62 @@ section {
         .3s ease;
 }
 
-
-.back-button:hover {
+.bio-back:hover {
 
     background:
         #d4af37;
 
     color:
         #080808;
-
-    border-color:
-        #d4af37;
-
-    transform:
-        translateX(-4px);
 }
 
+.bio-label {
 
-/* Cabecera */
+    color:
+        #888;
 
-.biography-header {
+    font-size:
+        12px;
+
+    letter-spacing:
+        3px;
+
+    text-transform:
+        uppercase;
+}
+
+.bio-container {
 
     max-width:
-        1100px;
+        1050px;
 
     margin:
-        auto auto 70px;
-
-    display:
-        grid;
-
-    grid-template-columns:
-        380px 1fr;
-
-    gap:
-        60px;
-
-    align-items:
-        center;
-}
-
-
-.biography-main-image {
-
-    width:
-        100%;
-
-    height:
-        500px;
-
-    object-fit:
-        contain;
-
-    background:
-        #101010;
-
-    border:
-        1px solid
-        #292929;
+        auto;
 
     padding:
-        15px;
+        80px 6% 100px;
 }
 
+.bio-title {
 
-.biography-header-text h1 {
+    text-align:
+        center;
+
+    margin-bottom:
+        70px;
+}
+
+.bio-title h1 {
+
+    color:
+        #d4af37;
 
     font-size:
         clamp(
             42px,
             6vw,
-            70px
+            72px
         );
-
-    color:
-        #d4af37;
 
     line-height:
         1.1;
@@ -1616,8 +561,7 @@ section {
         15px;
 }
 
-
-.biography-role {
+.bio-title h2 {
 
     color:
         #aaa;
@@ -1628,40 +572,23 @@ section {
     letter-spacing:
         4px;
 
+    font-weight:
+        normal;
+
     text-transform:
         uppercase;
 }
 
-
-.biography-intro {
-
-    color:
-        #ddd;
-
-    font-size:
-        20px;
-
-    margin-top:
-        30px;
+.bio-text {
 
     max-width:
-        700px;
-}
-
-
-/* Texto */
-
-.biography-content {
-
-    max-width:
-        1000px;
+        900px;
 
     margin:
         auto;
 }
 
-
-.biography-content p {
+.bio-text p {
 
     color:
         #ddd;
@@ -1673,40 +600,37 @@ section {
         1.9;
 
     margin-bottom:
-        30px;
+        28px;
 }
 
-
-.biography-content strong {
+.bio-text strong {
 
     color:
         #fff;
 }
 
-
-.biography-content .gold {
+.bio-text .highlight {
 
     color:
         #d4af37;
 }
 
+.bio-photo {
 
-/* Imagen dentro de la biografía */
-
-.bio-photo-block {
-
-    margin:
-        55px auto;
+    width:
+        100%;
 
     max-width:
         850px;
+
+    margin:
+        50px auto;
 
     text-align:
         center;
 }
 
-
-.bio-photo-block img {
+.bio-photo img {
 
     width:
         100%;
@@ -1717,6 +641,12 @@ section {
     object-fit:
         contain;
 
+    display:
+        block;
+
+    margin:
+        auto;
+
     background:
         #101010;
 
@@ -1724,33 +654,28 @@ section {
         1px solid
         #292929;
 
-    padding:
-        10px;
+    box-shadow:
+        0 20px 60px
+        rgba(0,0,0,.45);
 
     transition:
-        .5s ease;
-
-    box-shadow:
-        0 20px 50px
-        rgba(0,0,0,.35);
+        .4s ease;
 }
 
-
-.bio-photo-block img:hover {
-
-    transform:
-        scale(1.015);
+.bio-photo img:hover {
 
     border-color:
         #d4af37;
 
+    transform:
+        scale(1.01);
+
     box-shadow:
-        0 20px 60px
+        0 20px 70px
         rgba(212,175,55,.12);
 }
 
-
-.bio-photo-caption {
+.bio-photo figcaption {
 
     color:
         #777;
@@ -1764,9 +689,6 @@ section {
     letter-spacing:
         1px;
 }
-
-
-/* Separador */
 
 .bio-divider {
 
@@ -1780,374 +702,761 @@ section {
         #d4af37;
 
     margin:
-        55px auto;
+        60px auto;
 }
 
+.bio-end {
 
-/* Cierre */
+    text-align:
+        center;
 
-.biography-closing {
-
-    max-width:
-        850px;
-
-    margin:
-        60px auto 0;
+    margin-top:
+        70px;
 
     padding:
-        40px;
+        50px 20px;
 
-    border:
+    border-top:
         1px solid
         #292929;
 
-    background:
-        #101010;
-
-    text-align:
-        center;
+    border-bottom:
+        1px solid
+        #292929;
 }
 
+.bio-end h3 {
 
-.biography-closing p {
+    color:
+        #d4af37;
+
+    font-size:
+        25px;
+
+    margin-bottom:
+        15px;
+}
+
+.bio-end p {
+
+    color:
+        #aaa;
+
+    max-width:
+        700px;
 
     margin:
-        0;
-
-    color:
-        #ddd;
+        auto;
 
     font-size:
-        19px;
+        16px;
 }
 
 
-.biography-closing strong {
+/* =========================================================
+   NUESTRA MÚSICA
+========================================================= */
 
-    color:
+.music-section {
+    text-align: center;
+    background: #080808;
+}
+
+.music-content {
+    max-width: 950px;
+    margin: auto;
+}
+
+.music-content > p {
+    color: #ddd;
+
+    font-size: 19px;
+
+    margin-bottom: 50px;
+
+    max-width: 850px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.features {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 25px;
+}
+
+.feature {
+    padding: 35px 25px;
+
+    background: #101010;
+
+    border: 1px solid #292929;
+
+    transition: .4s ease;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.feature::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background: #d4af37;
+
+    transform: scaleX(0);
+
+    transform-origin: center;
+
+    transition: .4s ease;
+}
+
+.feature:hover {
+    transform: translateY(-8px);
+
+    border-color: #d4af37;
+
+    box-shadow:
+        0 15px 40px
+        rgba(212,175,55,.12);
+}
+
+.feature:hover::before {
+    transform: scaleX(1);
+}
+
+.feature h3 {
+    color: #d4af37;
+
+    margin-bottom: 15px;
+
+    font-size: 22px;
+
+    letter-spacing: 1px;
+}
+
+.feature p {
+    color: #aaa;
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   REPERTORIO
+========================================================= */
+
+.repertoire {
+    background: #080808;
+    text-align: center;
+}
+
+.repertoire-intro {
+    max-width: 850px;
+
+    margin:
+        -20px auto 55px;
+
+    color: #ccc;
+
+    font-size: 18px;
+}
+
+.repertoire-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 22px;
+}
+
+.repertoire-card {
+    background: #101010;
+
+    border: 1px solid #292929;
+
+    padding: 35px 25px;
+
+    min-height: 280px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    transition: .4s ease;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.repertoire-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background: #d4af37;
+
+    transform: scaleX(0);
+
+    transition: .4s ease;
+}
+
+.repertoire-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #d4af37;
+
+    box-shadow:
+        0 15px 40px
+        rgba(212,175,55,.12);
+}
+
+.repertoire-card:hover::before {
+    transform: scaleX(1);
+}
+
+.repertoire-icon {
+    color: #d4af37;
+
+    font-size: 38px;
+
+    margin-bottom: 18px;
+
+    line-height: 1;
+}
+
+.repertoire-card h3 {
+    color: #d4af37;
+
+    font-size: 20px;
+
+    margin-bottom: 15px;
+}
+
+.repertoire-card p {
+    color: #aaa;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   ESCÚCHANOS
+========================================================= */
+
+.listen-section {
+    background: #101010;
+    text-align: center;
+}
+
+.listen-content {
+    max-width: 950px;
+
+    margin: auto;
+
+    padding: 45px;
+
+    border: 1px solid #292929;
+
+    background: #080808;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 50px;
+
+    text-align: left;
+
+    transition: .4s ease;
+}
+
+.listen-content:hover {
+    border-color:
+        rgba(212,175,55,.6);
+
+    box-shadow:
+        0 20px 50px
+        rgba(0,0,0,.35);
+}
+
+.listen-text {
+    max-width: 550px;
+}
+
+.listen-text h3 {
+    color: #d4af37;
+
+    font-size: 30px;
+
+    margin-bottom: 15px;
+}
+
+.listen-text p {
+    color: #ccc;
+
+    font-size: 16px;
+
+    margin-bottom: 12px;
+}
+
+.listen-buttons {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    min-width: 230px;
+}
+
+.listen-button {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 14px 22px;
+
+    border: 1px solid #555;
+
+    color: white;
+
+    text-decoration: none;
+
+    letter-spacing: 1px;
+
+    transition: .3s ease;
+}
+
+.listen-button span {
+    color: #d4af37;
+    font-size: 22px;
+}
+
+.listen-button:hover {
+    border-color: #d4af37;
+
+    color: #d4af37;
+
+    transform:
+        translateY(-3px);
+}
+
+
+/* =========================================================
+   TRAYECTORIA
+========================================================= */
+
+.trajectory {
+    background: #101010;
+}
+
+.timeline {
+    max-width: 850px;
+    margin: auto;
+}
+
+.event {
+    border-left:
+        2px solid
         #d4af37;
-}
-
-
-/* =====================================================
-   FOOTER
-===================================================== */
-
-footer {
-
-    text-align:
-        center;
 
     padding:
-        35px;
+        0 0 35px 30px;
+
+    margin-bottom:
+        25px;
+
+    position: relative;
+}
+
+.event::before {
+    content: "";
+
+    position: absolute;
+
+    left: -7px;
+    top: 4px;
+
+    width: 12px;
+    height: 12px;
+
+    border-radius: 50%;
+
+    background: #d4af37;
+
+    box-shadow:
+        0 0 15px
+        rgba(212,175,55,.4);
+}
+
+.event h3 {
+    color: #d4af37;
+
+    margin-bottom: 8px;
+
+    font-size: 23px;
+}
+
+.event p {
+    color: #ccc;
+}
+
+
+/* =========================================================
+   GALERÍA
+========================================================= */
+
+.gallery-section {
+    background: #080808;
+}
+
+.gallery {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 18px;
+}
+
+.gallery img {
+    width: 100%;
+
+    height: 480px;
+
+    object-fit: contain;
+
+    background: #101010;
+
+    border: 1px solid #222;
+
+    transition: .4s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.02);
+
+    opacity: .9;
+
+    border-color: #d4af37;
+
+    box-shadow:
+        0 10px 30px
+        rgba(212,175,55,.12);
+}
+
+
+/* =========================================================
+   CONTACTO
+========================================================= */
+
+.contact {
+    text-align: center;
 
     background:
-        #050505;
 
-    color:
-        #777;
+        linear-gradient(
+            rgba(0,0,0,.75),
+            rgba(0,0,0,.9)
+        ),
 
-    font-size:
-        14px;
+        url(
+            "MG-20250210-WA0093.jpg"
+        );
+
+    background-size: cover;
+
+    background-position: center;
 }
 
+.contact h2 {
+    font-size: 48px;
+
+    color: #d4af37;
+
+    margin-bottom: 20px;
+}
+
+.contact p {
+    color: #ddd;
+
+    font-size: 18px;
+}
+
+.socials {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 18px;
+
+    margin-top: 35px;
+}
+
+.socials a {
+    padding: 12px 30px;
+
+    border: 1px solid #555;
+
+    color: white;
+
+    text-decoration: none;
+
+    transition: .3s ease;
+}
+
+.socials a:hover {
+    color: #d4af37;
+
+    border-color: #d4af37;
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(212,175,55,.12);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    text-align: center;
+
+    padding: 35px;
+
+    background: #050505;
+
+    color: #777;
+
+    font-size: 14px;
+}
 
 footer strong {
-
-    color:
-        #d4af37;
+    color: #d4af37;
 }
 
 
-/* =====================================================
-   OCULTAR SITIO PRINCIPAL CUANDO BIOGRAFÍA ESTÁ ABIERTA
-===================================================== */
-
-body.biography-open {
-
-    overflow:
-        hidden;
-}
-
-
-body.biography-open > nav,
-body.biography-open > main,
-body.biography-open > footer {
-
-    display:
-        none;
-}
-
-
-/* =====================================================
+/* =========================================================
    MÓVIL
-===================================================== */
+========================================================= */
 
 @media(max-width:800px) {
 
-
     nav {
-
-        padding:
-            18px 5%;
+        padding: 18px 5%;
     }
-
 
     .logo {
-
-        font-size:
-            16px;
-
-        letter-spacing:
-            3px;
+        font-size: 16px;
+        letter-spacing: 3px;
     }
-
 
     nav ul {
-
-        display:
-            none;
+        display: none;
     }
 
-
     .hero {
-
-        min-height:
-            650px;
+        min-height: 650px;
 
         background-position:
             center 15%;
     }
 
-
     .hero-content {
-
         padding:
             25px 20px;
     }
 
-
     .hero h1 {
+        font-size: 45px;
 
-        font-size:
-            45px;
-
-        letter-spacing:
-            4px;
+        letter-spacing: 4px;
     }
-
 
     .hero h2 {
+        font-size: 18px;
 
-        font-size:
-            18px;
-
-        letter-spacing:
-            4px;
+        letter-spacing: 4px;
     }
-
 
     .hero p {
-
-        font-size:
-            16px;
+        font-size: 16px;
     }
-
 
     section {
-
-        padding:
-            75px 6%;
+        padding: 75px 6%;
     }
-
 
     .section-title {
-
-        margin-bottom:
-            45px;
+        margin-bottom: 45px;
     }
-
 
     .section-title h2 {
-
-        font-size:
-            34px;
+        font-size: 34px;
     }
-
 
     .about p {
-
-        font-size:
-            16px;
+        font-size: 16px;
     }
-
 
     .musician-grid,
     .features,
     .gallery,
     .repertoire-grid {
-
-        grid-template-columns:
-            1fr;
+        grid-template-columns: 1fr;
     }
-
 
     .musician img {
+        height: 450px;
 
-        height:
-            450px;
+        object-fit: contain;
 
-        object-fit:
-            contain;
-
-        object-position:
-            center;
+        object-position: center;
     }
 
-
     .musician p {
-
         padding:
             18px 25px 0;
     }
 
-
     .music-content > p {
-
-        font-size:
-            17px;
+        font-size: 17px;
     }
-
 
     .repertoire-intro {
+        font-size: 16px;
 
-        font-size:
-            16px;
-
-        margin-bottom:
-            40px;
+        margin-bottom: 40px;
     }
 
-
     .repertoire-card {
-
-        min-height:
-            auto;
+        min-height: auto;
 
         padding:
             30px 25px;
     }
 
-
     .listen-content {
-
-        flex-direction:
-            column;
+        flex-direction: column;
 
         padding:
             30px 22px;
 
-        text-align:
-            center;
+        text-align: center;
 
-        gap:
-            30px;
+        gap: 30px;
     }
-
 
     .listen-text {
-
-        max-width:
-            100%;
+        max-width: 100%;
     }
-
 
     .listen-text h3 {
-
-        font-size:
-            26px;
+        font-size: 26px;
     }
-
 
     .listen-buttons {
+        width: 100%;
 
-        width:
-            100%;
-
-        max-width:
-            320px;
+        max-width: 320px;
     }
-
 
     .gallery img {
-
-        height:
-            450px;
+        height: 450px;
     }
-
 
     .contact h2 {
-
-        font-size:
-            38px;
+        font-size: 38px;
     }
-
 
     .socials a {
+        width: 100%;
 
-        width:
-            100%;
-
-        max-width:
-            300px;
+        max-width: 300px;
     }
-
 
     /* BIOGRAFÍA EN MÓVIL */
 
-    .biography-page {
-
+    .bio-header {
         padding:
-            100px 6% 60px;
+            15px 5%;
     }
 
+    .bio-label {
+        font-size: 9px;
 
-    .biography-header {
+        letter-spacing: 2px;
+    }
 
-        grid-template-columns:
-            1fr;
+    .bio-back {
+        padding:
+            8px 13px;
 
-        gap:
-            30px;
+        font-size: 11px;
+    }
 
+    .bio-container {
+        padding:
+            55px 6% 80px;
+    }
+
+    .bio-title {
         margin-bottom:
-            50px;
+            45px;
     }
 
-
-    .biography-main-image {
-
-        height:
-            400px;
-    }
-
-
-    .biography-header-text {
-
-        text-align:
-            center;
-    }
-
-
-    .biography-header-text h1 {
-
+    .bio-title h1 {
         font-size:
-            42px;
+            40px;
     }
 
-
-    .biography-role {
-
+    .bio-title h2 {
         font-size:
             12px;
 
@@ -2155,16 +1464,7 @@ body.biography-open > footer {
             3px;
     }
 
-
-    .biography-intro {
-
-        font-size:
-            17px;
-    }
-
-
-    .biography-content p {
-
+    .bio-text p {
         font-size:
             16px;
 
@@ -2172,37 +1472,25 @@ body.biography-open > footer {
             1.85;
     }
 
-
-    .bio-photo-block {
-
+    .bio-photo {
         margin:
             40px auto;
     }
 
-
-    .bio-photo-block img {
-
+    .bio-photo img {
         max-height:
             500px;
-
-        padding:
-            6px;
     }
 
-
-    .biography-closing {
-
-        padding:
-            25px 20px;
-    }
+}
 
 
-    .biography-closing p {
+/* =========================================================
+   EVITAR SCROLL DEL SITIO CUANDO LA BIOGRAFÍA ESTÁ ABIERTA
+========================================================= */
 
-        font-size:
-            16px;
-    }
-
+body.bio-open {
+    overflow: hidden;
 }
 
 </style>
@@ -2213,16 +1501,15 @@ body.biography-open > footer {
 <body>
 
 
-<!-- =====================================================
+<!-- =======================================================
      NAVEGACIÓN
-===================================================== -->
+======================================================= -->
 
 <nav>
 
     <div class="logo">
         AGNUS PRAISE
     </div>
-
 
     <ul>
 
@@ -2232,13 +1519,11 @@ body.biography-open > footer {
             </a>
         </li>
 
-
         <li>
             <a href="#nosotros">
                 Nosotros
             </a>
         </li>
-
 
         <li>
             <a href="#musicos">
@@ -2246,20 +1531,17 @@ body.biography-open > footer {
             </a>
         </li>
 
-
         <li>
             <a href="#musica">
                 Nuestra música
             </a>
         </li>
 
-
         <li>
             <a href="#galeria">
                 Galería
             </a>
         </li>
-
 
         <li>
             <a href="#contacto">
@@ -2272,16 +1554,9 @@ body.biography-open > footer {
 </nav>
 
 
-<!-- =====================================================
-     SITIO PRINCIPAL
-===================================================== -->
-
-<main id="main-site">
-
-
-<!-- =====================================================
+<!-- =======================================================
      INICIO
-===================================================== -->
+======================================================= -->
 
 <section
     class="hero"
@@ -2294,11 +1569,9 @@ body.biography-open > footer {
             DÚO AGNUS PRAISE
         </h1>
 
-
         <h2>
             PIANO &amp; VIOLÍN
         </h2>
-
 
         <p>
 
@@ -2308,7 +1581,6 @@ body.biography-open > footer {
             experiencias de fe, belleza y emoción.
 
         </p>
-
 
         <a
             href="#nosotros"
@@ -2322,9 +1594,9 @@ body.biography-open > footer {
 </section>
 
 
-<!-- =====================================================
+<!-- =======================================================
      NUESTRA HISTORIA
-===================================================== -->
+======================================================= -->
 
 <section id="nosotros">
 
@@ -2333,7 +1605,6 @@ body.biography-open > footer {
         <h2>
             Nuestra historia
         </h2>
-
 
         <p>
             Dúo Agnus Praise · Cali, Colombia
@@ -2422,9 +1693,9 @@ body.biography-open > footer {
 </section>
 
 
-<!-- =====================================================
+<!-- =======================================================
      IDENTIDAD
-===================================================== -->
+======================================================= -->
 
 <section class="logo-section">
 
@@ -2433,7 +1704,6 @@ body.biography-open > footer {
         <h2>
             Nuestra identidad
         </h2>
-
 
         <p>
             Una propuesta construida desde la
@@ -2451,9 +1721,9 @@ body.biography-open > footer {
 </section>
 
 
-<!-- =====================================================
+<!-- =======================================================
      MÚSICOS
-===================================================== -->
+======================================================= -->
 
 <section
     class="musicians"
@@ -2476,89 +1746,62 @@ body.biography-open > footer {
     <div class="musician-grid">
 
 
-        <!-- =========================
+        <!-- =================================================
              ANDRÉS
-        ========================= -->
+        ================================================== -->
 
         <article
             class="musician"
-            onclick="openBiography('andres')"
+            onclick="openBio('andresBio')"
         >
 
             <img
-                src="WhatsApp Image 2026-08-09 at 2.06.05 PM (1).jpg"
-                alt="Andrés Orozco, violinista"
+                src="Fotos Andrés/andres1.jpeg"
+                alt="Andrés Orozco, violinista de Dúo Agnus Praise"
             >
-
 
             <h3>
                 Andrés Orozco
             </h3>
 
-
             <div class="instrument">
                 Violín
             </div>
 
-
             <p>
-
-                Violinista, docente y cofundador
-                de Dúo Agnus Praise. Su trayectoria
-                se caracteriza por la formación
-                orquestal, la interpretación y la
-                exploración de la música cristiana
-                instrumental.
-
+                Violinista, docente y cofundador de
+                Dúo Agnus Praise.
             </p>
-
-
-            <div class="profile-link">
-                Ver trayectoria →
-            </div>
 
         </article>
 
 
-        <!-- =========================
+        <!-- =================================================
              SAMUEL
-        ========================= -->
+        ================================================== -->
 
         <article
             class="musician"
-            onclick="openBiography('samuel')"
+            onclick="openBio('samuelBio')"
         >
 
             <img
-                src="WhatsApp Image 2026-08-09 at 2.06.05 PM.jpg"
-                alt="Samuel Manyoma, pianista"
+                src="Fotos manyoma/manyo1.jpeg"
+                alt="Samuel Manyoma, pianista de Dúo Agnus Praise"
             >
-
 
             <h3>
                 Samuel Manyoma
             </h3>
 
-
             <div class="instrument">
                 Piano
             </div>
 
-
             <p>
-
-                Pianista, arreglista y cofundador
-                de Dúo Agnus Praise. Su desarrollo
-                musical se ha construido desde la
-                creatividad, la práctica, el oído
-                y la exploración.
-
+                Pianista, arreglista y cofundador de
+                Dúo Agnus Praise.
             </p>
-
-
-            <div class="profile-link">
-                Ver trayectoria →
-            </div>
 
         </article>
 
@@ -2568,9 +1811,789 @@ body.biography-open > footer {
 </section>
 
 
-<!-- =====================================================
+<!-- =======================================================
+     BIOGRAFÍA ANDRÉS
+======================================================= -->
+
+<div
+    class="bio-page"
+    id="andresBio"
+>
+
+    <div class="bio-header">
+
+        <button
+            class="bio-back"
+            onclick="closeBio('andresBio')"
+        >
+            ← Volver a músicos
+        </button>
+
+        <div class="bio-label">
+            Dúo Agnus Praise
+        </div>
+
+    </div>
+
+
+    <div class="bio-container">
+
+
+        <div class="bio-title">
+
+            <h1>
+                Andrés Orozco
+            </h1>
+
+            <h2>
+                Violinista · Docente · Músico
+            </h2>
+
+        </div>
+
+
+        <div class="bio-text">
+
+
+            <p>
+
+                Andrés Orozco es un violinista colombiano
+                cuya trayectoria musical comenzó a los
+                <span class="highlight">
+                    siete años de edad
+                </span>,
+                cuando tuvo su primer acercamiento al
+                violín motivado por una escena de la
+                película <em>Karate Kid</em>.
+
+                En ella, una joven interpreta el
+
+                <strong>
+                    Nocturno Op. 9 n.º 2 de Frédéric Chopin
+                </strong>,
+
+                una experiencia que despertó en Andrés
+                el deseo de aprender a tocar aquel
+                instrumento y marcó el inicio de un
+                camino que continúa desarrollando
+                hasta hoy.
+
+            </p>
+
+
+            <!-- FOTO ANDRÉS 1 -->
+
+            <figure class="bio-photo">
+
+                <img
+                    src="Fotos Andrés/andres1.jpeg"
+                    alt="Andrés Orozco"
+                >
+
+                <figcaption>
+                    Andrés Orozco · Violinista
+                </figcaption>
+
+            </figure>
+
+
+            <p>
+
+                Su formación musical comenzó en la
+
+                <strong>
+                    Fundación Nacional Batuta
+                </strong>,
+
+                donde permaneció durante cinco años
+                y tuvo como uno de sus principales
+                maestros al
+
+                <strong>
+                    maestro Diego Felipe Rivera
+                </strong>.
+
+                Esta etapa fue fundamental para
+                desarrollar sus bases técnicas,
+                musicales y de interpretación,
+                además de permitirle descubrir la
+                disciplina y el compromiso que exige
+                la formación de un músico.
+
+            </p>
+
+
+            <p>
+
+                Posteriormente, continuó su preparación
+                durante cinco años en el
+
+                <strong>
+                    Conservatorio de Bellas Artes
+                </strong>,
+
+                donde fortaleció sus conocimientos
+                y amplió sus capacidades como intérprete.
+
+                Como parte de su experiencia orquestal,
+                también integró durante un año la
+
+                <strong>
+                    Orquesta Sinfónica de la Universidad
+                    del Valle
+                </strong>,
+
+                experiencia que contribuyó
+                significativamente a su crecimiento
+                artístico y a su comprensión del
+                trabajo musical colectivo.
+
+            </p>
+
+
+            <!-- FOTO ANDRÉS 2 -->
+
+            <figure class="bio-photo">
+
+                <img
+                    src="Fotos Andrés/andres2.jpeg"
+                    alt="Andrés Orozco en actividad musical"
+                >
+
+                <figcaption>
+                    Formación y trayectoria musical
+                </figcaption>
+
+            </figure>
+
+
+            <p>
+
+                A lo largo de su trayectoria, Andrés
+                ha tenido la oportunidad de presentarse
+                en diferentes escenarios de Colombia,
+                llevando su interpretación a ciudades
+                como
+
+                <strong>
+                    Bogotá, Medellín, Cali, Ibagué,
+                    Bucaramanga, Cartagena, Buenaventura
+                    y Pasto
+                </strong>,
+
+                entre otras, consolidándose como uno
+                de los violinistas destacados dentro
+                de la Iglesia Adventista de Colombia.
+
+            </p>
+
+
+            <p>
+
+                Su recorrido musical también ha
+                trascendido las fronteras de Colombia,
+                realizando presentaciones y actividades
+                musicales en diferentes lugares de
+                Estados Unidos, incluyendo
+
+                <strong>
+                    Minnesota, Texas, Arkansas,
+                    Chicago, Iowa y Wisconsin
+                </strong>,
+
+                además de participar en espacios como
+                la
+
+                <strong>
+                    Academia Maplewood, en Minnesota
+                </strong>.
+
+            </p>
+
+
+            <!-- FOTO ANDRÉS 3 -->
+
+            <figure class="bio-photo">
+
+                <img
+                    src="Fotos Andrés/andres3.jpeg"
+                    alt="Andrés Orozco durante su trayectoria musical"
+                >
+
+                <figcaption>
+                    Andrés Orozco · Escenarios musicales
+                </figcaption>
+
+            </figure>
+
+
+            <p>
+
+                Uno de los momentos más significativos
+                en la trayectoria de Andrés ha sido la
+                oportunidad de explorar una perspectiva
+                diferente de la
+
+                <span class="highlight">
+                    música cristiana instrumental
+                </span>
+
+                junto a su amigo de la infancia,
+
+                <strong>
+                    Samuel Manyoma
+                </strong>.
+
+                Unidos por una amistad que se remonta
+                a sus primeros años y por una pasión
+                compartida por la música, ambos
+                encontraron en el piano y el violín
+                una forma de construir una propuesta
+                artística propia.
+
+            </p>
+
+
+            <p>
+
+                De esta experiencia nació
+
+                <strong class="highlight">
+                    Agnus Praise
+                </strong>,
+
+                un proyecto en el que han buscado
+                llevar la música cristiana instrumental
+                a nuevos espacios, combinando
+                sensibilidad, excelencia interpretativa
+                y una visión contemporánea sin perder
+                la esencia de su mensaje.
+
+            </p>
+
+
+            <!-- FOTO ANDRÉS 4 -->
+
+            <figure class="bio-photo">
+
+                <img
+                    src="Fotos Andrés/andres4.jpeg"
+                    alt="Andrés Orozco y Dúo Agnus Praise"
+                >
+
+                <figcaption>
+                    Dúo Agnus Praise · Piano y Violín
+                </figcaption>
+
+            </figure>
+
+
+            <p>
+
+                Para Andrés, este proyecto representa
+                no solo una etapa importante de su
+                crecimiento como violinista, sino también
+                la oportunidad de reencontrarse
+                musicalmente con alguien que ha formado
+                parte de su historia desde la infancia.
+
+            </p>
+
+
+            <p>
+
+                Su desarrollo artístico ha estado
+                influenciado por grandes referentes de
+                la interpretación del violín, entre ellos
+
+                <strong>
+                    Ray Chen, André Rieu, David Garrett,
+                    Jaime Jorge y Néstor Aponte
+                </strong>,
+
+                músicos que han contribuido a enriquecer
+                su visión sobre las posibilidades
+                expresivas del instrumento y sobre la
+                manera de acercar la música a públicos
+                diversos.
+
+            </p>
+
+
+            <!-- FOTO ANDRÉS 5 -->
+
+            <figure class="bio-photo">
+
+                <img
+                    src="Fotos Andrés/andres5.jpeg"
+                    alt="Andrés Orozco violinista"
+                >
+
+                <figcaption>
+                    Andrés Orozco · Interpretación del violín
+                </figcaption>
+
+            </figure>
+
+
+            <p>
+
+                Actualmente, Andrés combina su actividad
+                como intérprete con la
+
+                <strong>
+                    enseñanza del violín
+                </strong>,
+
+                compartiendo sus conocimientos y
+                experiencias con nuevas generaciones
+                de músicos.
+
+                Para él, la formación musical no se limita
+                al dominio técnico del instrumento,
+                sino que también representa una oportunidad
+                para desarrollar disciplina, sensibilidad,
+                confianza y una identidad artística propia.
+
+            </p>
+
+
+            <p>
+
+                Más allá de los escenarios y los
+                reconocimientos, Andrés concibe la música
+                como una herramienta capaz de inspirar,
+                transformar y abrir nuevas posibilidades.
+
+                Su propósito como violinista es continuar
+                creciendo artísticamente,
+
+                <span class="highlight">
+                    llevar la música a nuevos escenarios,
+                    inspirar a las nuevas generaciones
+                    y demostrar que una historia musical
+                    puede comenzar con algo tan inesperado
+                    como una escena de una película
+                    y convertirse, con disciplina y pasión,
+                    en un verdadero proyecto de vida.
+                </span>
+
+            </p>
+
+
+            <p>
+
+                Actualmente, continúa desarrollándose
+                como intérprete y docente, con la visión
+                de seguir ampliando sus horizontes
+                musicales y contribuir al crecimiento
+                de nuevos talentos.
+
+            </p>
+
+
+        </div>
+
+
+        <div class="bio-end">
+
+            <h3>
+                Andrés Orozco
+            </h3>
+
+            <p>
+                Violinista · Docente · Músico ·
+                Cofundador de Dúo Agnus Praise
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =======================================================
+     BIOGRAFÍA SAMUEL
+======================================================= -->
+
+<div
+    class="bio-page"
+    id="samuelBio"
+>
+
+    <div class="bio-header">
+
+        <button
+            class="bio-back"
+            onclick="closeBio('samuelBio')"
+        >
+            ← Volver a músicos
+        </button>
+
+        <div class="bio-label">
+            Dúo Agnus Praise
+        </div>
+
+    </div>
+
+
+    <div class="bio-container">
+
+
+        <div class="bio-title">
+
+            <h1>
+                Samuel Manyoma Mallarino
+            </h1>
+
+            <h2>
+                Pianista · Arreglista · Músico
+            </h2>
+
+        </div>
+
+
+        <div class="bio-text">
+
+
+            <p>
+
+                Samuel Manyoma Mallarino es pianista,
+                arreglista y músico colombiano, cuya
+                formación artística se ha construido
+                principalmente desde la
+
+                <span class="highlight">
+                    exploración, la creatividad,
+                    la práctica y una profunda conexión
+                    con la música de iglesia.
+                </span>
+
+            </p>
+
+
+            <!-- FOTO SAMUEL 1 -->
+
+            <figure class="bio-photo">
+
+                <img
+                    src="Fotos manyoma/manyo1.jpeg"
+                    alt="Samuel Manyoma Mallarino"
+                >
+
+                <figcaption>
+                    Samuel Manyoma Mallarino · Pianista
+                </figcaption>
+
+            </figure>
+
+
+            <p>
+
+                Su acercamiento a la música comenzó
+                desde muy temprana edad, creciendo
+                en un entorno familiar estrechamente
+                relacionado con la música y perteneciendo
+                a la familia Manyoma.
+
+                Desde niño tuvo la oportunidad de estar
+                rodeado de diferentes músicos, quienes
+                despertaron en él el interés por aprender
+                canciones y experimentar con el piano.
+
+            </p>
+
+
+            <p>
+
+                Su primer escenario fue la
+
+                <strong>
+                    iglesia
+                </strong>,
+
+                donde comenzó a tocar, equivocarse,
+                aprender y descubrir progresivamente
+                su propio lenguaje musical.
+
+            </p>
+
+
+            <p>
+
+                A los 13 o 14 años aproximadamente,
+                Samuel inició algunas clases de piano.
+                Sin embargo, su formación académica
+                formal fue breve debido a su falta de
+                disciplina en aquella etapa.
+
+                Esto no detuvo su proceso musical;
+                por el contrario, gran parte de su
+                desarrollo surgió de una formación
+                autodidacta basada en escuchar a otros
+                pianistas, observarlos, estudiar sus
+                formas de tocar, experimentar y crear.
+
+            </p>
+
+
+            <!-- FOTO SAMUEL 2 -->
+
+            <figure class="bio-photo">
+
+                <img
+                    src="Fotos manyoma/manyo3.JPG"
+                    alt="Samuel Manyoma pianista"
+                >
+
+                <figcaption>
+                    Samuel Manyoma · Exploración y desarrollo musical
+                </figcaption>
+
+            </figure>
+
+
+            <p>
+
+                Su personalidad creativa y exploradora
+                le permitió desarrollar de manera natural
+                una facilidad para construir ritmos,
+                acompañamientos, ideas musicales y
+                propuestas diferentes.
+
+            </p>
+
+
+            <p>
+
+                Durante sus primeros años, el acceso a
+                un instrumento propio era limitado.
+
+                Al no contar con un piano u organeta
+                en casa, esperaba cada sábado para poder
+                estudiar y practicar en el piano de la
+                iglesia.
+
+                Ese contexto fortaleció su disciplina
+                musical desde la práctica y convirtió
+                el instrumento en un espacio de
+                experimentación y descubrimiento.
+
+            </p>
+
+
+            <!-- FOTO SAMUEL 3 -->
+
+            <figure class="bio-photo">
+
+                <img
+                    src="Fotos manyoma/manyo4.JPG"
+                    alt="Samuel Manyoma durante su trayectoria musical"
+                >
+
+                <figcaption>
+                    Samuel Manyoma · Trayectoria musical
+                </figcaption>
+
+            </figure>
+
+
+            <p>
+
+                Con el paso del tiempo, Samuel amplió
+                sus capacidades incorporándose al
+                aprendizaje de la
+
+                <strong>
+                    técnica vocal
+                </strong>
+
+                y participando en diferentes
+                agrupaciones musicales.
+
+            </p>
+
+
+            <p>
+
+                Llegó a trabajar bajo la dirección de
+
+                <strong>
+                    cinco grupos musicales
+                </strong>,
+
+                desempeñándose principalmente como
+                pianista y asumiendo también el montaje
+                de arreglos musicales y voces.
+
+            </p>
+
+
+            <p>
+
+                En muchas ocasiones realizó estos
+                procesos sin contar previamente con
+                conocimientos formales de armonía o
+                arreglos, apoyándose en su oído,
+                creatividad e intuición musical,
+                logrando propuestas que destacaban
+                por su musicalidad y expresividad.
+
+            </p>
+
+
+            <!-- FOTO SAMUEL 4 -->
+
+            <figure class="bio-photo">
+
+                <img
+                    src="Fotos manyoma/manyo4.png"
+                    alt="Samuel Manyoma músico y arreglista"
+                >
+
+                <figcaption>
+                    Samuel Manyoma · Pianista y arreglista
+                </figcaption>
+
+            </figure>
+
+
+            <p>
+
+                Uno de los momentos más importantes
+                de su trayectoria llegó junto a
+
+                <strong>
+                    Andrés David Orozco
+                </strong>,
+
+                violinista y amigo de infancia.
+
+                Ambos decidieron unir sus talentos y
+                explorar las posibilidades de la música
+                instrumental a través del piano y el
+                violín.
+
+            </p>
+
+
+            <p>
+
+                Su objetivo no era simplemente
+                interpretar canciones, sino crear
+                arreglos capaces de transmitir
+                emociones y llegar al corazón de
+                las personas, aportando un elemento
+                diferente dentro de la música
+                instrumental que tradicionalmente
+                se escuchaba en el ámbito adventista.
+
+            </p>
+
+
+            <div class="bio-divider"></div>
+
+
+            <p>
+
+                Inicialmente, eran conocidos simplemente
+                como
+
+                <strong>
+                    “Andrés y Samuel”
+                </strong>,
+
+                pero debido a la constante presencia
+                del dúo en diferentes espacios y a la
+                identidad musical que fueron construyendo,
+                decidieron formalizar el proyecto y darle
+                un nombre propio:
+
+                <strong class="highlight">
+                    AGNUS PRAISE.
+                </strong>
+
+            </p>
+
+
+            <p>
+
+                Desde entonces, el dúo ha tenido
+                participación en diferentes escenarios
+                y ciudades, alcanzando oyentes no
+                solamente en Colombia, sino también
+                en otros países.
+
+            </p>
+
+
+            <p>
+
+                Su propuesta combina la sensibilidad
+                del violín con la versatilidad del piano
+                y se caracteriza por la búsqueda
+                constante de
+
+                <span class="highlight">
+                    arreglos originales, expresivos
+                    y con un propósito espiritual.
+                </span>
+
+            </p>
+
+
+            <p>
+
+                Más que definirse únicamente por una
+                formación académica, Samuel Manyoma
+                Mallarino representa un proceso de
+                aprendizaje continuo, construido a través
+                de la experiencia, la observación,
+                la escucha, la creatividad y el servicio
+                musical.
+
+            </p>
+
+
+            <p>
+
+                Su historia refleja la de un músico
+                que comenzó aprendiendo en el piano
+                de una iglesia, que encontró en la
+                exploración su propia manera de
+                expresarse y que continúa formándose
+                con el propósito de utilizar sus
+                talentos para crear música que conecte
+                con las personas y glorifique a Dios.
+
+            </p>
+
+
+        </div>
+
+
+        <div class="bio-end">
+
+            <h3>
+                Samuel Manyoma Mallarino
+            </h3>
+
+            <p>
+                Pianista · Arreglista · Músico ·
+                Cofundador de Dúo Agnus Praise
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =======================================================
      NUESTRA MÚSICA
-===================================================== -->
+======================================================= -->
 
 <section
     class="music-section"
@@ -2582,7 +2605,6 @@ body.biography-open > footer {
         <h2>
             Nuestra música
         </h2>
-
 
         <p>
             Más que interpretar:
@@ -2617,7 +2639,6 @@ body.biography-open > footer {
                     Complejidad musical
                 </h3>
 
-
                 <p>
 
                     Arreglos cuidadosamente elaborados,
@@ -2637,7 +2658,6 @@ body.biography-open > footer {
                     Expresión
                 </h3>
 
-
                 <p>
 
                     Cada interpretación busca comunicar
@@ -2654,7 +2674,6 @@ body.biography-open > footer {
                 <h3>
                     Excelencia
                 </h3>
-
 
                 <p>
 
@@ -2674,9 +2693,9 @@ body.biography-open > footer {
 </section>
 
 
-<!-- =====================================================
+<!-- =======================================================
      REPERTORIO
-===================================================== -->
+======================================================= -->
 
 <section class="repertoire">
 
@@ -2685,7 +2704,6 @@ body.biography-open > footer {
         <h2>
             Nuestro repertorio
         </h2>
-
 
         <p>
             Música seleccionada, arreglada y
@@ -2722,11 +2740,9 @@ body.biography-open > footer {
                 ♪
             </div>
 
-
             <h3>
                 Himnos y música cristiana
             </h3>
-
 
             <p>
 
@@ -2745,11 +2761,9 @@ body.biography-open > footer {
                 ♫
             </div>
 
-
             <h3>
                 Arreglos propios
             </h3>
-
 
             <p>
 
@@ -2768,11 +2782,9 @@ body.biography-open > footer {
                 ✦
             </div>
 
-
             <h3>
                 Música para eventos
             </h3>
-
 
             <p>
 
@@ -2791,11 +2803,9 @@ body.biography-open > footer {
                 ♬
             </div>
 
-
             <h3>
                 Repertorio contemporáneo
             </h3>
-
 
             <p>
 
@@ -2813,9 +2823,9 @@ body.biography-open > footer {
 </section>
 
 
-<!-- =====================================================
+<!-- =======================================================
      ESCÚCHANOS
-===================================================== -->
+======================================================= -->
 
 <section class="listen-section">
 
@@ -2824,7 +2834,6 @@ body.biography-open > footer {
         <h2>
             Escúchanos
         </h2>
-
 
         <p>
             Nuestra música también continúa
@@ -2843,7 +2852,6 @@ body.biography-open > footer {
                 Dúo Agnus Praise
             </h3>
 
-
             <p>
 
                 Descubre nuestra música, nuestros
@@ -2852,7 +2860,6 @@ body.biography-open > footer {
                 de Agnus Praise.
 
             </p>
-
 
             <p>
 
@@ -2906,9 +2913,9 @@ body.biography-open > footer {
 </section>
 
 
-<!-- =====================================================
+<!-- =======================================================
      TRAYECTORIA
-===================================================== -->
+======================================================= -->
 
 <section class="trajectory">
 
@@ -2917,7 +2924,6 @@ body.biography-open > footer {
         <h2>
             Trayectoria
         </h2>
-
 
         <p>
             Una historia que continúa creciendo.
@@ -2934,7 +2940,6 @@ body.biography-open > footer {
             <h3>
                 Los comienzos
             </h3>
-
 
             <p>
 
@@ -2954,7 +2959,6 @@ body.biography-open > footer {
                 Dúo Agnus Praise
             </h3>
 
-
             <p>
 
                 El proyecto se consolida como una
@@ -2973,7 +2977,6 @@ body.biography-open > footer {
                 Escenarios y festivales
             </h3>
 
-
             <p>
 
                 El dúo ha llevado su propuesta a
@@ -2990,7 +2993,6 @@ body.biography-open > footer {
             <h3>
                 Nuevos proyectos
             </h3>
-
 
             <p>
 
@@ -3009,9 +3011,9 @@ body.biography-open > footer {
 </section>
 
 
-<!-- =====================================================
+<!-- =======================================================
      GALERÍA
-===================================================== -->
+======================================================= -->
 
 <section
     class="gallery-section"
@@ -3023,7 +3025,6 @@ body.biography-open > footer {
         <h2>
             Galería
         </h2>
-
 
         <p>
             Momentos de nuestra historia.
@@ -3064,9 +3065,9 @@ body.biography-open > footer {
 </section>
 
 
-<!-- =====================================================
+<!-- =======================================================
      CONTACTO
-===================================================== -->
+======================================================= -->
 
 <section
     class="contact"
@@ -3115,649 +3116,9 @@ body.biography-open > footer {
 </section>
 
 
-</main>
-
-
-<!-- =====================================================
-     BIOGRAFÍA DE ANDRÉS
-===================================================== -->
-
-<section
-    class="biography-page"
-    id="biography-andres"
->
-
-
-    <button
-        class="back-button"
-        onclick="closeBiography()"
-    >
-        ← Volver a nuestros músicos
-    </button>
-
-
-    <div class="biography-header">
-
-
-        <img
-            class="biography-main-image"
-            src="Fotos Andrés/andres1.jpeg"
-            alt="Andrés Orozco violinista"
-        >
-
-
-        <div class="biography-header-text">
-
-            <h1>
-                Andrés Orozco
-            </h1>
-
-
-            <div class="biography-role">
-                Violinista · Docente · Músico
-            </div>
-
-
-            <p class="biography-intro">
-
-                Una historia musical que comenzó
-                a los siete años y que continúa
-                creciendo entre escenarios,
-                formación, enseñanza y pasión
-                por el violín.
-
-            </p>
-
-        </div>
-
-    </div>
-
-
-    <div class="biography-content">
-
-
-        <p>
-
-            Andrés Orozco es un violinista colombiano
-            cuya trayectoria musical comenzó a los
-            siete años de edad, cuando tuvo su primer
-            acercamiento al violín motivado por una
-            escena de la película <em>Karate Kid</em>.
-
-            En ella, una joven interpreta el
-            <strong>Nocturno Op. 9 n.º 2 de Frédéric Chopin</strong>,
-            una experiencia que despertó en Andrés
-            el deseo de aprender a tocar aquel
-            instrumento y marcó el inicio de un
-            camino que continúa desarrollando hasta hoy.
-
-        </p>
-
-
-        <div class="bio-photo-block">
-
-            <img
-                src="Fotos Andrés/andres2.jpeg"
-                alt="Andrés Orozco durante su trayectoria musical"
-            >
-
-            <div class="bio-photo-caption">
-                Andrés Orozco · Trayectoria musical
-            </div>
-
-        </div>
-
-
-        <p>
-
-            Su formación musical comenzó en la
-            <strong>Fundación Nacional Batuta</strong>,
-            donde permaneció durante cinco años y
-            tuvo como uno de sus principales maestros
-            al <strong>maestro Diego Felipe Rivera</strong>.
-
-            Esta etapa fue fundamental para desarrollar
-            sus bases técnicas, musicales y de
-            interpretación, además de permitirle
-            descubrir la disciplina y el compromiso
-            que exige la formación de un músico.
-
-        </p>
-
-
-        <p>
-
-            Posteriormente, continuó su preparación
-            durante cinco años en el
-            <strong>Conservatorio de Bellas Artes</strong>,
-            donde fortaleció sus conocimientos y
-            amplió sus capacidades como intérprete.
-
-            Como parte de su experiencia orquestal,
-            también integró durante un año la
-            <strong>Orquesta Sinfónica de la Universidad
-            del Valle</strong>, experiencia que contribuyó
-            significativamente a su crecimiento
-            artístico y a su comprensión del trabajo
-            musical colectivo.
-
-        </p>
-
-
-        <div class="bio-divider"></div>
-
-
-        <div class="bio-photo-block">
-
-            <img
-                src="Fotos Andrés/andres3.jpeg"
-                alt="Andrés Orozco violinista colombiano"
-            >
-
-            <div class="bio-photo-caption">
-                El violín como parte de una identidad artística
-            </div>
-
-        </div>
-
-
-        <p>
-
-            A lo largo de su trayectoria, Andrés ha
-            tenido la oportunidad de presentarse en
-            diferentes escenarios de Colombia, llevando
-            su interpretación a ciudades como
-            <strong>Bogotá, Medellín, Cali, Ibagué,
-            Bucaramanga, Cartagena, Buenaventura y
-            Pasto</strong>, entre otras, consolidándose
-            como uno de los violinistas destacados
-            dentro de la Iglesia Adventista de Colombia.
-
-        </p>
-
-
-        <p>
-
-            Su recorrido musical también ha trascendido
-            las fronteras de Colombia, realizando
-            presentaciones y actividades musicales en
-            diferentes lugares de Estados Unidos,
-            incluyendo <strong>Minnesota, Texas, Arkansas,
-            Chicago, Iowa y Wisconsin</strong>, además de
-            participar en espacios como la
-            <strong>Academia Maplewood, en Minnesota</strong>.
-
-        </p>
-
-
-        <div class="bio-photo-block">
-
-            <img
-                src="Fotos Andrés/andres4.jpeg"
-                alt="Andrés Orozco en presentación musical"
-            >
-
-            <div class="bio-photo-caption">
-                Música, escenarios y experiencias que han marcado su trayectoria
-            </div>
-
-        </div>
-
-
-        <p>
-
-            Uno de los momentos más significativos
-            en la trayectoria de Andrés ha sido la
-            oportunidad de explorar una perspectiva
-            diferente de la
-            <span class="gold">
-                música cristiana instrumental
-            </span>
-            junto a su amigo de la infancia,
-            <strong>Samuel Manyoma</strong>.
-
-        </p>
-
-
-        <p>
-
-            Unidos por una amistad que se remonta
-            a sus primeros años y por una pasión
-            compartida por la música, ambos encontraron
-            en el piano y el violín una forma de
-            construir una propuesta artística propia.
-
-            De esta experiencia nació
-            <strong>Agnus Praise</strong>, un proyecto
-            en el que han buscado llevar la música
-            cristiana instrumental a nuevos espacios,
-            combinando sensibilidad, excelencia
-            interpretativa y una visión contemporánea
-            sin perder la esencia de su mensaje.
-
-        </p>
-
-
-        <div class="bio-photo-block">
-
-            <img
-                src="Fotos Andrés/andres5.jpeg"
-                alt="Andrés Orozco y su desarrollo artístico"
-            >
-
-            <div class="bio-photo-caption">
-                Andrés Orozco · Música y propósito
-            </div>
-
-        </div>
-
-
-        <p>
-
-            Para Andrés, este proyecto representa
-            no solo una etapa importante de su
-            crecimiento como violinista, sino también
-            la oportunidad de reencontrarse
-            musicalmente con alguien que ha formado
-            parte de su historia desde la infancia.
-
-        </p>
-
-
-        <p>
-
-            Su desarrollo artístico ha estado
-            influenciado por grandes referentes de
-            la interpretación del violín, entre ellos
-            <strong>Ray Chen, André Rieu, David Garrett,
-            Jaime Jorge y Néstor Aponte</strong>.
-
-            Estos músicos han contribuido a enriquecer
-            su visión sobre las posibilidades
-            expresivas del instrumento y sobre la
-            manera de acercar la música a públicos
-            diversos.
-
-        </p>
-
-
-        <div class="bio-divider"></div>
-
-
-        <p>
-
-            Actualmente, Andrés combina su actividad
-            como intérprete con la
-            <strong>enseñanza del violín</strong>,
-            compartiendo sus conocimientos y
-            experiencias con nuevas generaciones
-            de músicos.
-
-        </p>
-
-
-        <p>
-
-            Para él, la formación musical no se limita
-            al dominio técnico del instrumento, sino
-            que también representa una oportunidad
-            para desarrollar disciplina, sensibilidad,
-            confianza y una identidad artística propia.
-
-        </p>
-
-
-        <div class="biography-closing">
-
-            <p>
-
-                Más allá de los escenarios y los
-                reconocimientos, Andrés concibe la
-                música como una herramienta capaz de
-                <strong>inspirar, transformar y abrir
-                nuevas posibilidades</strong>.
-
-                Su propósito es continuar creciendo
-                artísticamente, llevar la música a
-                nuevos escenarios e inspirar a las
-                nuevas generaciones.
-
-            </p>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     BIOGRAFÍA DE SAMUEL
-===================================================== -->
-
-<section
-    class="biography-page"
-    id="biography-samuel"
->
-
-
-    <button
-        class="back-button"
-        onclick="closeBiography()"
-    >
-        ← Volver a nuestros músicos
-    </button>
-
-
-    <div class="biography-header">
-
-
-        <img
-            class="biography-main-image"
-            src="Fotos Manyoma/manyo1.Jpeg"
-            alt="Samuel Manyoma pianista"
-        >
-
-
-        <div class="biography-header-text">
-
-            <h1>
-                Samuel Manyoma
-            </h1>
-
-
-            <div class="biography-role">
-                Pianista · Arreglista · Músico
-            </div>
-
-
-            <p class="biography-intro">
-
-                Una historia construida desde la
-                creatividad, la exploración, el oído,
-                la práctica y una profunda conexión
-                con la música de iglesia.
-
-            </p>
-
-        </div>
-
-    </div>
-
-
-    <div class="biography-content">
-
-
-        <p>
-
-            Samuel Manyoma Mallarino es pianista,
-            arreglista y músico colombiano, cuya
-            formación artística se ha construido
-            principalmente desde la exploración,
-            la creatividad, la práctica y una
-            profunda conexión con la música de
-            iglesia.
-
-        </p>
-
-
-        <div class="bio-photo-block">
-
-            <img
-                src="Fotos Manyoma/manyo3.JPG"
-                alt="Samuel Manyoma pianista"
-            >
-
-            <div class="bio-photo-caption">
-                Samuel Manyoma · Exploración y creatividad musical
-            </div>
-
-        </div>
-
-
-        <p>
-
-            Su acercamiento a la música comenzó
-            desde muy temprana edad, creciendo en
-            un entorno familiar estrechamente
-            relacionado con la música y perteneciendo
-            a la familia Manyoma.
-
-            Desde niño tuvo la oportunidad de estar
-            rodeado de diferentes músicos, quienes
-            despertaron en él el interés por aprender
-            canciones y experimentar con el piano.
-
-        </p>
-
-
-        <p>
-
-            Su primer escenario fue la iglesia,
-            donde comenzó a tocar, equivocarse,
-            aprender y descubrir progresivamente
-            su propio lenguaje musical.
-
-        </p>
-
-
-        <p>
-
-            A los 13 o 14 años aproximadamente,
-            Samuel inició algunas clases de piano.
-
-            Sin embargo, su formación académica
-            formal fue breve debido a su falta de
-            disciplina en aquella etapa.
-
-            Esto no detuvo su proceso musical;
-            por el contrario, gran parte de su
-            desarrollo surgió de una formación
-            autodidacta basada en escuchar a otros
-            pianistas, observarlos, estudiar sus
-            formas de tocar, experimentar y crear.
-
-        </p>
-
-
-        <div class="bio-divider"></div>
-
-
-        <p>
-
-            Su personalidad creativa y exploradora
-            le permitió desarrollar de manera natural
-            una facilidad para construir ritmos,
-            acompañamientos, ideas musicales y
-            propuestas diferentes.
-
-        </p>
-
-
-        <p>
-
-            Durante sus primeros años, el acceso a
-            un instrumento propio era limitado.
-
-            Al no contar con un piano u organeta
-            en casa, esperaba cada sábado para poder
-            estudiar y practicar en el piano de la
-            iglesia.
-
-            Ese contexto fortaleció su disciplina
-            musical desde la práctica y convirtió
-            el instrumento en un espacio de
-            experimentación y descubrimiento.
-
-        </p>
-
-
-        <div class="bio-photo-block">
-
-            <img
-                src="Fotos Manyoma/manyo4.JGP"
-                alt="Samuel Manyoma durante su trayectoria"
-            >
-
-            <div class="bio-photo-caption">
-                Samuel Manyoma · Una trayectoria construida desde la práctica
-            </div>
-
-        </div>
-
-
-        <p>
-
-            Con el paso del tiempo, Samuel amplió
-            sus capacidades incorporándose al
-            aprendizaje de la técnica vocal y
-            participando en diferentes agrupaciones
-            musicales.
-
-        </p>
-
-
-        <p>
-
-            Llegó a trabajar bajo la dirección de
-            <strong>cinco grupos musicales</strong>,
-            desempeñándose principalmente como
-            pianista y asumiendo también el montaje
-            de arreglos musicales y voces.
-
-        </p>
-
-
-        <p>
-
-            En muchas ocasiones realizó estos procesos
-            sin contar previamente con conocimientos
-            formales de armonía o arreglos,
-            apoyándose en su oído, creatividad e
-            intuición musical, logrando propuestas
-            que destacaban por su musicalidad y
-            expresividad.
-
-        </p>
-
-
-        <div class="bio-photo-block">
-
-            <img
-                src="Fotos Manyoma/manyo4.PNG"
-                alt="Samuel Manyoma músico colombiano"
-            >
-
-            <div class="bio-photo-caption">
-                Samuel Manyoma · Pianista y arreglista
-            </div>
-
-        </div>
-
-
-        <p>
-
-            Uno de los momentos más importantes de
-            su trayectoria llegó junto a
-            <strong>Andrés David Orozco</strong>,
-            violinista y amigo de infancia.
-
-            Ambos decidieron unir sus talentos y
-            explorar las posibilidades de la música
-            instrumental a través del piano y el
-            violín.
-
-        </p>
-
-
-        <p>
-
-            Su objetivo no era simplemente interpretar
-            canciones, sino crear arreglos capaces
-            de transmitir emociones y llegar al
-            corazón de las personas, aportando un
-            elemento diferente dentro de la música
-            instrumental que tradicionalmente se
-            escuchaba en el ámbito adventista.
-
-        </p>
-
-
-        <div class="bio-divider"></div>
-
-
-        <p>
-
-            Inicialmente, eran conocidos simplemente
-            como <strong>“Andrés y Samuel”</strong>.
-
-            Sin embargo, debido a la constante
-            presencia del dúo en diferentes espacios
-            y a la identidad musical que fueron
-            construyendo, decidieron formalizar el
-            proyecto y darle un nombre propio:
-
-            <span class="gold">
-                AGNUS PRAISE.
-            </span>
-
-        </p>
-
-
-        <p>
-
-            Desde entonces, el dúo ha tenido
-            participación en diferentes escenarios
-            y ciudades, alcanzando oyentes no
-            solamente en Colombia, sino también
-            en otros países.
-
-        </p>
-
-
-        <p>
-
-            Su propuesta combina la sensibilidad
-            del violín con la versatilidad del piano
-            y se caracteriza por la búsqueda
-            constante de arreglos originales,
-            expresivos y con un propósito espiritual.
-
-        </p>
-
-
-        <div class="biography-closing">
-
-            <p>
-
-                Más que definirse únicamente por
-                una formación académica, Samuel
-                representa un proceso de
-                <strong>aprendizaje continuo</strong>,
-                construido a través de la experiencia,
-                la observación, la escucha, la
-                creatividad y el servicio musical.
-
-                Su historia refleja la de un músico
-                que comenzó aprendiendo en el piano
-                de una iglesia y que encontró en la
-                exploración su propia manera de
-                expresarse.
-
-            </p>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
+<!-- =======================================================
      FOOTER
-===================================================== -->
+======================================================= -->
 
 <footer>
 
@@ -3781,129 +3142,88 @@ body.biography-open > footer {
 </footer>
 
 
-<!-- =====================================================
+<!-- =======================================================
      JAVASCRIPT
-===================================================== -->
+======================================================= -->
 
 <script>
 
-
-/* =====================================================
+/* =========================================================
    ABRIR BIOGRAFÍA
-===================================================== */
+========================================================= */
 
-function openBiography(person) {
+function openBio(id) {
 
-    const mainSite =
-        document.getElementById("main-site");
+    const bio = document.getElementById(id);
 
-    const andres =
-        document.getElementById("biography-andres");
-
-    const samuel =
-        document.getElementById("biography-samuel");
-
-
-    mainSite.style.display =
-        "none";
-
-
-    andres.classList.remove("active");
-
-    samuel.classList.remove("active");
-
-
-    if (person === "andres") {
-
-        andres.classList.add("active");
-
+    if (!bio) {
+        return;
     }
 
+    bio.classList.add("active");
 
-    if (person === "samuel") {
+    document.body.classList.add("bio-open");
 
-        samuel.classList.add("active");
+    /*
+       Lleva la pantalla de biografía
+       nuevamente hasta arriba.
+    */
 
-    }
-
-
-    document.body.classList.add(
-        "biography-open"
-    );
-
-
-    window.scrollTo({
-        top: 0,
-        behavior: "instant"
-    });
+    bio.scrollTop = 0;
 
 }
 
 
-/* =====================================================
+/* =========================================================
    CERRAR BIOGRAFÍA
-===================================================== */
+========================================================= */
 
-function closeBiography() {
+function closeBio(id) {
 
-    const mainSite =
-        document.getElementById("main-site");
+    const bio = document.getElementById(id);
 
-    const andres =
-        document.getElementById("biography-andres");
+    if (!bio) {
+        return;
+    }
 
-    const samuel =
-        document.getElementById("biography-samuel");
+    bio.classList.remove("active");
 
-
-    andres.classList.remove("active");
-
-    samuel.classList.remove("active");
-
-
-    document.body.classList.remove(
-        "biography-open"
-    );
-
-
-    mainSite.style.display =
-        "block";
-
-
-    setTimeout(function() {
-
-        document.getElementById("musicos")
-            .scrollIntoView({
-                behavior: "smooth"
-            });
-
-    }, 50);
+    document.body.classList.remove("bio-open");
 
 }
 
 
-/* =====================================================
-   ESC PARA VOLVER
-===================================================== */
+/* =========================================================
+   ESC
+   También permite cerrar la biografía
+   presionando la tecla ESC.
+========================================================= */
 
 document.addEventListener(
     "keydown",
     function(event) {
 
-        if (
-            event.key === "Escape" &&
-            document.body.classList.contains(
-                "biography-open"
-            )
-        ) {
+        if (event.key === "Escape") {
 
-            closeBiography();
+            const bios =
+                document.querySelectorAll(
+                    ".bio-page.active"
+                );
+
+            bios.forEach(function(bio) {
+
+                bio.classList.remove("active");
+
+            });
+
+            document.body.classList.remove(
+                "bio-open"
+            );
 
         }
 
     }
 );
-
 
 </script>
 
